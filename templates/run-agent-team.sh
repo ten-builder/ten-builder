@@ -84,6 +84,9 @@ if [[ ! -d "$PROMPTS_DIR" ]]; then
   exit 1
 fi
 
+# Resolve to absolute path so prompts are accessible from any working directory
+PROMPTS_DIR="$(cd "$PROMPTS_DIR" && pwd)"
+
 # ─── Discover prompt files ───────────────────────────────────
 PROMPT_FILES=()
 while IFS= read -r f; do
@@ -113,6 +116,7 @@ done
 # ─── Prepare output directory ────────────────────────────────
 WORK_DIR="${WORK_DIR:-$(pwd)/output}"
 mkdir -p "$WORK_DIR"
+WORK_DIR="$(cd "$WORK_DIR" && pwd)"
 
 # ─── Build claude command ────────────────────────────────────
 CLAUDE_CMD="claude --model $MODEL"
