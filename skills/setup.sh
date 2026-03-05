@@ -4,7 +4,7 @@
 # https://github.com/ten-builder/ten-builder
 # ──────────────────────────────────────────────
 
-set -e
+set -euo pipefail
 
 SKILLS_DIR="${HOME}/.claude/skills"
 REPO_URL="https://raw.githubusercontent.com/ten-builder/ten-builder/main/skills"
@@ -19,14 +19,14 @@ mkdir -p "${SKILLS_DIR}/study-vault/references"
 mkdir -p "${SKILLS_DIR}/study-quiz/references"
 
 echo "⬇️  study-vault (교재 → 학습 노트 변환)..."
-curl -sL "${REPO_URL}/study-vault/SKILL.md" -o "${SKILLS_DIR}/study-vault/SKILL.md"
-curl -sL "${REPO_URL}/study-vault/references/vault-templates.md" -o "${SKILLS_DIR}/study-vault/references/vault-templates.md"
-curl -sL "${REPO_URL}/study-vault/references/codebase-guide.md" -o "${SKILLS_DIR}/study-vault/references/codebase-guide.md"
-curl -sL "${REPO_URL}/study-vault/references/quality-check.md" -o "${SKILLS_DIR}/study-vault/references/quality-check.md"
+curl -fsSL "${REPO_URL}/study-vault/SKILL.md" -o "${SKILLS_DIR}/study-vault/SKILL.md"
+curl -fsSL "${REPO_URL}/study-vault/references/vault-templates.md" -o "${SKILLS_DIR}/study-vault/references/vault-templates.md"
+curl -fsSL "${REPO_URL}/study-vault/references/codebase-guide.md" -o "${SKILLS_DIR}/study-vault/references/codebase-guide.md"
+curl -fsSL "${REPO_URL}/study-vault/references/quality-check.md" -o "${SKILLS_DIR}/study-vault/references/quality-check.md"
 
 echo "⬇️  study-quiz (대화형 퀴즈 + 숙달도 추적)..."
-curl -sL "${REPO_URL}/study-quiz/SKILL.md" -o "${SKILLS_DIR}/study-quiz/SKILL.md"
-curl -sL "${REPO_URL}/study-quiz/references/quiz-policy.md" -o "${SKILLS_DIR}/study-quiz/references/quiz-policy.md"
+curl -fsSL "${REPO_URL}/study-quiz/SKILL.md" -o "${SKILLS_DIR}/study-quiz/SKILL.md"
+curl -fsSL "${REPO_URL}/study-quiz/references/quiz-policy.md" -o "${SKILLS_DIR}/study-quiz/references/quiz-policy.md"
 
 echo ""
 echo "✅ 설치 완료!"

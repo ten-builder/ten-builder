@@ -35,18 +35,24 @@ description: PDF/문서를 Obsidian StudyVault(학습 노트)로 변환합니다
 
 ```
 - [ ] 학습 자료 존재 확인 (파일 경로 유효성)
+- [ ] PDF인 경우 pdftotext 설치 확인 (없으면 안내 후 중단)
 - [ ] PDF인 경우 pdftotext로 텍스트 추출
+- [ ] 텍스트 파일인 경우 직접 읽기
 - [ ] 전체 분량 파악 (페이지 수, 예상 토픽 수)
 - [ ] 핵심 주제 목록 추출 (최소 5개)
 ```
 
 **PDF 텍스트 추출:**
 ```bash
+# pdftotext 존재 확인 (없으면 설치 안내)
+which pdftotext || echo "pdftotext가 필요합니다: brew install poppler (macOS) / apt install poppler-utils (Linux)"
+
 pdftotext "파일경로.pdf" -
 ```
 
 > **주의:** PDF 파일을 직접 읽지 마세요. 반드시 `pdftotext` CLI를 사용합니다.
 > 토큰 비용을 최소화하면서 정확한 텍스트를 얻을 수 있습니다.
+> 텍스트 파일(.md, .txt 등)은 `pdftotext` 없이 직접 읽습니다.
 
 **분석 결과물:**
 | 항목 | 내용 |
