@@ -1,6 +1,6 @@
-# 텐빌더 학습 스킬
+# 텐빌더 스킬
 
-> Claude Code에서 `/study-vault`, `/study-quiz` 명령으로 사용할 수 있는 학습 도구입니다.
+> Claude Code에서 `/study-vault`, `/study-quiz`, `/bye` 명령으로 사용할 수 있는 도구입니다.
 
 ## 무엇을 할 수 있나요?
 
@@ -8,6 +8,7 @@
 |------|--------|------|
 | **study-vault** | `/study-vault` | PDF/문서를 Obsidian 학습 노트로 변환 |
 | **study-quiz** | `/study-quiz` | 대화형 퀴즈로 숙달도 추적 |
+| **session-bye** | `/bye` | 세션 종료 시 Memory/Handoff 자동 정리 |
 
 ## 설치
 
@@ -25,6 +26,15 @@ curl -sSL https://raw.githubusercontent.com/ten-builder/ten-builder/main/skills/
 git clone https://github.com/ten-builder/ten-builder.git
 cp -r ten-builder/skills/study-vault ~/.claude/skills/
 cp -r ten-builder/skills/study-quiz ~/.claude/skills/
+cp -r ten-builder/skills/session-bye ~/.claude/skills/
+
+# session-bye 에이전트는 별도 위치에 설치
+cp ten-builder/skills/session-bye/agents/memory-extractor.md ~/.claude/agents/session-bye-memory-extractor.md
+cp ten-builder/skills/session-bye/agents/followup-planner.md ~/.claude/agents/session-bye-followup-planner.md
+cp ten-builder/skills/session-bye/agents/duplicate-checker.md ~/.claude/agents/session-bye-duplicate-checker.md
+
+# Handoff 디렉토리 생성
+mkdir -p ~/.claude/handoff
 ```
 
 ## 사용법
@@ -64,7 +74,25 @@ AWS-SAA-StudyVault/
 # 한 문제씩 풀고 즉시 피드백을 받습니다.
 ```
 
-### 3. 숙달도 추적
+### 3. 세션 마무리
+
+```
+/bye
+
+# 3개 에이전트가 세션 내용을 분석합니다:
+# - Memory Extractor: 영구 지식 추출
+# - Followup Planner: 미완성 작업 인계서
+# - Duplicate Checker: 중복/충돌 검증
+#
+# 결과를 확인 후 선택 적용합니다.
+```
+
+**자동 감지 항목:**
+- `MEMORY.md` — `~/.claude/projects/*/memory/MEMORY.md` 패턴으로 자동 탐색
+- Context 파일 — `~/.claude/**/*-context.md` 패턴으로 자동 탐색
+- Handoff — `~/.claude/handoff/HANDOFF-*.md`
+
+### 4. 숙달도 추적
 
 Dashboard에서 진행 상황을 확인할 수 있습니다:
 
@@ -87,19 +115,31 @@ Dashboard에서 진행 상황을 확인할 수 있습니다:
 
 ```
 skills/
-├── README.md                ← 지금 보고 있는 파일
-├── setup.sh                 ← 자동 설치 스크립트
+├── README.md                          ← 지금 보고 있는 파일
+├── setup.sh                           ← 자동 설치 스크립트
 ├── study-vault/
-│   ├── SKILL.md             ← 학습 노트 생성 스킬
+│   ├── SKILL.md                       ← 학습 노트 생성 스킬
 │   └── references/
-│       ├── vault-templates.md  ← Obsidian 노트 템플릿
-│       ├── codebase-guide.md   ← 코드베이스 분석 가이드
-│       └── quality-check.md    ← 품질 검증 체크리스트
-└── study-quiz/
-    ├── SKILL.md             ← 대화형 퀴즈 스킬
+│       ├── vault-templates.md         ← Obsidian 노트 템플릿
+│       ├── codebase-guide.md          ← 코드베이스 분석 가이드
+│       └── quality-check.md           ← 품질 검증 체크리스트
+├── study-quiz/
+│   ├── SKILL.md                       ← 대화형 퀴즈 스킬
+│   └── references/
+│       └── quiz-policy.md             ← 퀴즈 출제 정책
+└── session-bye/
+    ├── SKILL.md                       ← 세션 마무리 오케스트레이터
+    ├── agents/
+    │   ├── memory-extractor.md        ← Memory + Context + 학습 추출
+    │   ├── followup-planner.md        ← Handoff 판단 + 초안
+    │   └── duplicate-checker.md       ← 중복/충돌 검증
     └── references/
-        └── quiz-policy.md   ← 퀴즈 출제 정책
+        └── handoff-template.md        ← Handoff 문서 템플릿
 ```
+
+> **참고:** session-bye의 에이전트 파일은 설치 시 `~/.claude/agents/` 디렉토리에
+> `session-bye-{name}.md` 형태로 복사됩니다. Claude Code가 에이전트를 인식하려면
+> 이 위치에 있어야 합니다.
 
 ---
 
