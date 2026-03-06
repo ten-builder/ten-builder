@@ -32,18 +32,18 @@ curl -fsSL "${REPO_URL}/study-quiz/references/quiz-policy.md" -o "${SKILLS_DIR}/
 
 # ─── 세션 관리 스킬 ────────────────────────
 
-echo "⬇️  session-bye (세션 종료 시 자동 기록)..."
+echo "⬇️  session-pack (세션 종료 시 자동 기록)..."
 
 # Skill
-mkdir -p "${SKILLS_DIR}/session-bye/references"
-curl -fsSL "${REPO_URL}/session-bye/SKILL.md" -o "${SKILLS_DIR}/session-bye/SKILL.md"
-curl -fsSL "${REPO_URL}/session-bye/references/handoff-template.md" -o "${SKILLS_DIR}/session-bye/references/handoff-template.md"
+mkdir -p "${SKILLS_DIR}/session-pack/references"
+curl -fsSL "${REPO_URL}/session-pack/SKILL.md" -o "${SKILLS_DIR}/session-pack/SKILL.md"
+curl -fsSL "${REPO_URL}/session-pack/references/handoff-template.md" -o "${SKILLS_DIR}/session-pack/references/handoff-template.md"
 
 # Agents (→ ~/.claude/agents/)
 mkdir -p "${AGENTS_DIR}"
-curl -fsSL "${REPO_URL}/session-bye/agents/memory-extractor.md" -o "${AGENTS_DIR}/session-bye-memory-extractor.md"
-curl -fsSL "${REPO_URL}/session-bye/agents/followup-planner.md" -o "${AGENTS_DIR}/session-bye-followup-planner.md"
-curl -fsSL "${REPO_URL}/session-bye/agents/duplicate-checker.md" -o "${AGENTS_DIR}/session-bye-duplicate-checker.md"
+curl -fsSL "${REPO_URL}/session-pack/agents/memory-extractor.md" -o "${AGENTS_DIR}/session-pack-memory-extractor.md"
+curl -fsSL "${REPO_URL}/session-pack/agents/followup-planner.md" -o "${AGENTS_DIR}/session-pack-followup-planner.md"
+curl -fsSL "${REPO_URL}/session-pack/agents/duplicate-checker.md" -o "${AGENTS_DIR}/session-pack-duplicate-checker.md"
 
 # Handoff 디렉토리 생성
 mkdir -p "${HOME}/.claude/handoff"
@@ -54,7 +54,7 @@ echo ""
 echo "사용법:"
 echo "  /study-vault   → PDF/문서를 학습 노트로 변환"
 echo "  /study-quiz    → 대화형 퀴즈로 학습"
-echo "  /bye           → 세션 종료 시 Memory/Handoff 자동 정리"
+echo "  /pack          → 세션 종료 시 Memory/Handoff 자동 정리"
 echo ""
 echo "──────────────────────────────────"
 echo "📮 더 많은 AI 코딩 팁: maily.so/tenbuilder"

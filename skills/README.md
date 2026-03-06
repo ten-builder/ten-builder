@@ -1,6 +1,6 @@
 # 텐빌더 스킬
 
-> Claude Code에서 `/study-vault`, `/study-quiz`, `/bye` 명령으로 사용할 수 있는 도구입니다.
+> Claude Code에서 `/study-vault`, `/study-quiz`, `/pack` 명령으로 사용할 수 있는 도구입니다.
 
 ## 무엇을 할 수 있나요?
 
@@ -8,7 +8,7 @@
 |------|--------|------|
 | **study-vault** | `/study-vault` | PDF/문서를 Obsidian 학습 노트로 변환 |
 | **study-quiz** | `/study-quiz` | 대화형 퀴즈로 숙달도 추적 |
-| **session-bye** | `/bye` | 세션 종료 시 Memory/Handoff 자동 정리 |
+| **session-pack** | `/pack` | 세션 종료 시 Memory/Handoff 자동 정리 |
 
 ## 설치
 
@@ -26,12 +26,12 @@ curl -sSL https://raw.githubusercontent.com/ten-builder/ten-builder/main/skills/
 git clone https://github.com/ten-builder/ten-builder.git
 cp -r ten-builder/skills/study-vault ~/.claude/skills/
 cp -r ten-builder/skills/study-quiz ~/.claude/skills/
-cp -r ten-builder/skills/session-bye ~/.claude/skills/
+cp -r ten-builder/skills/session-pack ~/.claude/skills/
 
-# session-bye 에이전트는 별도 위치에 설치
-cp ten-builder/skills/session-bye/agents/memory-extractor.md ~/.claude/agents/session-bye-memory-extractor.md
-cp ten-builder/skills/session-bye/agents/followup-planner.md ~/.claude/agents/session-bye-followup-planner.md
-cp ten-builder/skills/session-bye/agents/duplicate-checker.md ~/.claude/agents/session-bye-duplicate-checker.md
+# session-pack 에이전트는 별도 위치에 설치
+cp ten-builder/skills/session-pack/agents/memory-extractor.md ~/.claude/agents/session-pack-memory-extractor.md
+cp ten-builder/skills/session-pack/agents/followup-planner.md ~/.claude/agents/session-pack-followup-planner.md
+cp ten-builder/skills/session-pack/agents/duplicate-checker.md ~/.claude/agents/session-pack-duplicate-checker.md
 
 # Handoff 디렉토리 생성
 mkdir -p ~/.claude/handoff
@@ -77,7 +77,7 @@ AWS-SAA-StudyVault/
 ### 3. 세션 마무리
 
 ```
-/bye
+/pack
 
 # 3개 에이전트가 세션 내용을 분석합니다:
 # - Memory Extractor: 영구 지식 추출
@@ -127,7 +127,7 @@ skills/
 │   ├── SKILL.md                       ← 대화형 퀴즈 스킬
 │   └── references/
 │       └── quiz-policy.md             ← 퀴즈 출제 정책
-└── session-bye/
+└── session-pack/
     ├── SKILL.md                       ← 세션 마무리 오케스트레이터
     ├── agents/
     │   ├── memory-extractor.md        ← Memory + Context + 학습 추출
@@ -137,8 +137,8 @@ skills/
         └── handoff-template.md        ← Handoff 문서 템플릿
 ```
 
-> **참고:** session-bye의 에이전트 파일은 설치 시 `~/.claude/agents/` 디렉토리에
-> `session-bye-{name}.md` 형태로 복사됩니다. Claude Code가 에이전트를 인식하려면
+> **참고:** session-pack의 에이전트 파일은 설치 시 `~/.claude/agents/` 디렉토리에
+> `session-pack-{name}.md` 형태로 복사됩니다. Claude Code가 에이전트를 인식하려면
 > 이 위치에 있어야 합니다.
 
 ---

@@ -1,15 +1,15 @@
 ---
-name: session-bye
-description: 세션 종료 시 Memory, Handoff를 자동 정리. /bye
+name: session-pack
+description: 세션 종료 시 Memory, Handoff를 자동 정리. /pack
 user_invocable: true
 ---
 
-# Session Bye (Multi-Agent Orchestrator)
+# Session Pack (Multi-Agent Orchestrator)
 
 세션 중 대화한 내용을 3개 전문 에이전트가 병렬 분석하여 Memory와 Handoff에 자동 반영합니다.
 
 ## Trigger Keywords
-- `/bye` — 전체 분석 + 반영
+- `/pack` — 전체 분석 + 반영
 
 ## Architecture
 
@@ -39,9 +39,9 @@ Phase 6: 확인 리포트 (메인 Claude)
 
 | Agent | 파일 | 역할 |
 |-------|------|------|
-| `Session Wrap Memory Extractor` | `session-bye-memory-extractor` | Memory + Context + 학습 통합 추출 |
-| `Session Wrap Followup Planner` | `session-bye-followup-planner` | Handoff 필요 여부 + 초안 |
-| `Session Wrap Duplicate Checker` | `session-bye-duplicate-checker` | Phase 2 결과 중복/충돌 검증 |
+| `Session Wrap Memory Extractor` | `session-pack-memory-extractor` | Memory + Context + 학습 통합 추출 |
+| `Session Wrap Followup Planner` | `session-pack-followup-planner` | Handoff 필요 여부 + 초안 |
+| `Session Wrap Duplicate Checker` | `session-pack-duplicate-checker` | Phase 2 결과 중복/충돌 검증 |
 
 ---
 
@@ -231,7 +231,7 @@ Phase 3(duplicate-checker)의 **최종 분류 결과**를 기반으로 번호 �
 **출력 형식:**
 
 ```markdown
-# Session Bye Proposals
+# Session Pack Proposals
 
 ## Memory Updates (N items)
 
@@ -345,7 +345,7 @@ mv ~/.claude/handoff/HANDOFF-{name}.md ~/.claude/handoff/archived/
 ## Phase 6: 확인 리포트
 
 ```markdown
-## Session Bye Complete
+## Session Pack Complete
 
 | Action | File | Status |
 |--------|------|--------|
@@ -356,10 +356,10 @@ mv ~/.claude/handoff/HANDOFF-{name}.md ~/.claude/handoff/archived/
 | Skipped | N items | — |
 | Conflicts resolved | N items | Done |
 
-> 다음 세션에서 /bye 결과가 잘 반영되었는지 확인하세요.
+> 다음 세션에서 /pack 결과가 잘 반영되었는지 확인하세요.
 ```
 
-> "None" 선택 시: "No changes applied. Session bye cancelled." 만 출력.
+> "None" 선택 시: "No changes applied. Session pack cancelled." 만 출력.
 
 ---
 
