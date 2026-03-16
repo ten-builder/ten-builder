@@ -38,7 +38,7 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~15 단계별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~16 단계별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -107,6 +107,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 13 | [하네스 엔지니어링](./guides/13-harness-engineering.md) | AI 에이전트 실행 환경 설계 |
 | 14 | [비용 최적화](./guides/14-cost-optimization.md) | AI 코딩 도구 비용 관리 전략 |
 | 15 | [서브에이전트 오케스트레이션](./guides/15-subagent-orchestration.md) | 서브에이전트 분할 & 병렬 실행 전략 |
+| 16 | [AI 코딩 보안](./guides/16-ai-coding-security.md) | AI 코딩 시 보안 위험 & 방어 전략 |
 
 ## 에피소드별 코드
 
@@ -133,6 +134,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [하네스 엔지니어링](./cheatsheets/harness-engineering-cheatsheet.md) | Model/Harness/Surfaces 구조 요약 |
 | [AI CLI 도구 비교](./cheatsheets/ai-cli-tools-comparison.md) | Claude Code vs Codex CLI vs Gemini CLI |
 | [서브에이전트 오케스트레이션](./cheatsheets/subagent-orchestration-cheatsheet.md) | 서브에이전트 분할 & 위임 패턴 |
+| [Git + AI 워크플로우](./cheatsheets/git-ai-workflow-cheatsheet.md) | Git과 AI 도구를 함께 쓰는 패턴 |
 
 ## 실전 예제
 
@@ -148,6 +150,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [Rust API](./examples/rust-api.md) | Rust API 예제 |
 | [Next.js SaaS](./examples/nextjs-saas.md) | SaaS 보일러플레이트 |
 | [Terraform + AI IaC](./examples/terraform-ai-iac) | Terraform AI 인프라 자동화 |
+| [Express.js + AI API](./examples/express-api-ai) | Express.js REST API AI 개발 |
 | [CLAUDE.md 작성법](./examples/user-claudemd.md) | 사용자 CLAUDE.md 가이드 |
 
 ## 워크플로
@@ -160,6 +163,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [GitHub Actions AI 리뷰](./workflows/github-actions-ai-review.md) | PR 자동 리뷰 워크플로 |
 | [모노레포 AI 워크플로](./workflows/monorepo-ai-workflow.md) | 모노레포 AI 개발 패턴 |
 | [AI 에이전트 감독](./workflows/ai-agent-supervision.md) | AI 에이전트 태스크 위임 & 검수 |
+| [AI 테스트 강화](./workflows/ai-test-augmentation.md) | AI로 테스트 스위트 강화 & CI 통합 |
 
 ## 플레이북
 
