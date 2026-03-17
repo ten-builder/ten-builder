@@ -38,7 +38,7 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~16 단계별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~19 단계별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -108,6 +108,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 14 | [비용 최적화](./guides/14-cost-optimization.md) | AI 코딩 도구 비용 관리 전략 |
 | 15 | [서브에이전트 오케스트레이션](./guides/15-subagent-orchestration.md) | 서브에이전트 분할 & 병렬 실행 전략 |
 | 16 | [AI 코딩 보안](./guides/16-ai-coding-security.md) | AI 코딩 시 보안 위험 & 방어 전략 |
+| 19 | [태스크 분해](./guides/19-task-decomposition.md) | AI 에이전트에게 작업 잘 맡기는 기법 |
 
 ## 에피소드별 코드
 
@@ -177,6 +178,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [코드 리뷰 심화](./claude-code/playbooks/10-code-review.md) | AI 코드 리뷰 고급 패턴 |
 | [보안 감사](./claude-code/playbooks/11-security-audit.md) | AI로 보안 취약점 점검 |
 | [컨텍스트 관리](./claude-code/playbooks/12-context-management.md) | AI 컨텍스트 윈도우 최적화 |
+| [코드베이스 온보딩](./claude-code/playbooks/15-codebase-onboarding.md) | AI와 새 코드베이스 빠르게 파악 |
 
 ## 템플릿
 
