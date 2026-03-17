@@ -38,7 +38,7 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~15 단계별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~21 단계별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -107,6 +107,9 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 13 | [하네스 엔지니어링](./guides/13-harness-engineering.md) | AI 에이전트 실행 환경 설계 |
 | 14 | [비용 최적화](./guides/14-cost-optimization.md) | AI 코딩 도구 비용 관리 전략 |
 | 15 | [서브에이전트 오케스트레이션](./guides/15-subagent-orchestration.md) | 서브에이전트 분할 & 병렬 실행 전략 |
+| 16 | [AI 코딩 보안](./guides/16-ai-coding-security.md) | AI 코딩 보안 위험 & 방어 전략 |
+| 19 | [태스크 분해](./guides/19-task-decomposition.md) | AI 에이전트 태스크 분해 기법 |
+| 21 | [팀 AI 도입](./guides/21-team-ai-adoption.md) | 팀 단위 AI 도구 도입 전략 |
 
 ## 에피소드별 코드
 
@@ -133,6 +136,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [하네스 엔지니어링](./cheatsheets/harness-engineering-cheatsheet.md) | Model/Harness/Surfaces 구조 요약 |
 | [AI CLI 도구 비교](./cheatsheets/ai-cli-tools-comparison.md) | Claude Code vs Codex CLI vs Gemini CLI |
 | [서브에이전트 오케스트레이션](./cheatsheets/subagent-orchestration-cheatsheet.md) | 서브에이전트 분할 & 위임 패턴 |
+| [Git + AI 워크플로우](./cheatsheets/git-ai-workflow-cheatsheet.md) | Git + AI 브랜치/커밋 패턴 |
 
 ## 실전 예제
 
@@ -143,6 +147,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [FastAPI + AI 테스팅](./examples/fastapi-ai-testing) | FastAPI 프로젝트 AI 테스트 |
 | [Python CLI + AI](./examples/python-cli-ai) | CLI 도구 AI 개발 |
 | [Chrome Extension + AI](./examples/chrome-extension-ai) | 크롬 확장 AI 개발 |
+| [Express.js + AI API](./examples/express-api-ai) | Express.js REST API AI 개발 |
 | [Django API](./examples/django-api.md) | Django REST API 예제 |
 | [Go Microservice](./examples/go-microservice.md) | Go 마이크로서비스 예제 |
 | [Rust API](./examples/rust-api.md) | Rust API 예제 |
@@ -160,6 +165,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [GitHub Actions AI 리뷰](./workflows/github-actions-ai-review.md) | PR 자동 리뷰 워크플로 |
 | [모노레포 AI 워크플로](./workflows/monorepo-ai-workflow.md) | 모노레포 AI 개발 패턴 |
 | [AI 에이전트 감독](./workflows/ai-agent-supervision.md) | AI 에이전트 태스크 위임 & 검수 |
+| [AI 테스트 강화](./workflows/ai-test-augmentation.md) | AI로 테스트 스위트 강화 & CI 통합 |
 
 ## 플레이북
 
@@ -173,6 +179,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [코드 리뷰 심화](./claude-code/playbooks/10-code-review.md) | AI 코드 리뷰 고급 패턴 |
 | [보안 감사](./claude-code/playbooks/11-security-audit.md) | AI로 보안 취약점 점검 |
 | [컨텍스트 관리](./claude-code/playbooks/12-context-management.md) | AI 컨텍스트 윈도우 최적화 |
+| [CLAUDE.md 최적화](./claude-code/playbooks/13-claudemd-optimization.md) | CLAUDE.md 프로젝트 설정 최적화 |
+| [코드베이스 온보딩](./claude-code/playbooks/15-codebase-onboarding.md) | AI와 레포 구조 파악 & 온보딩 |
 
 ## 템플릿
 
@@ -183,6 +191,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [CLAUDE.md](./templates/CLAUDE.md.template) | 프로젝트 기본 설정 템플릿 |
 | [AGENTS.md](./templates/agents.md.template) | 에이전트 역할 정의 템플릿 |
 | [.cursorrules](./templates/cursorrules.template) | Cursor AI IDE 설정 |
+| [.zshrc.ai](./templates/.zshrc.ai) | AI 코딩 쉘 설정 |
 | [macOS 셋업](./templates/macos-setup.sh) | AI 코딩 환경 원클릭 설치 |
 | [에이전트 팀 실행](./templates/run-agent-team.sh) | tmux 에이전트 팀 실행 스크립트 |
 | [에이전트 팀 프롬프트](./templates/agent-team-example) | 5인 에이전트 팀 프롬프트 예시 |
