@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n24개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n25개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n8개 영상 코드"]
-    R --> C["cheatsheets/\n16개 원페이저"]
-    R --> EX["examples/\n16개 실전 예제"]
-    R --> W["workflows/\n13개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n13개 심화 플레이북"]
+    R --> C["cheatsheets/\n17개 원페이저"]
+    R --> EX["examples/\n17개 실전 예제"]
+    R --> W["workflows/\n14개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n14개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~24 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~25 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -176,6 +176,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 22 | [스펙 기반 AI 개발](./guides/22-spec-driven-ai-development.md) | 스펙 먼저 정의하고 AI에게 맡기기 |
 | 23 | [AI 테스팅 전략](./guides/23-ai-testing-strategy.md) | AI와 테스트 전략 수립 & 자동화 |
 | 24 | [프롬프트 캐싱 최적화](./guides/24-prompt-caching-optimization.md) | 프롬프트 캐싱으로 비용 & 속도 개선 |
+| 25 | [Background Agent 워크플로](./guides/25-background-agent-workflow.md) | Background Agent & Worktree 병렬 개발 |
 
 ### 주제별 가이드
 
@@ -216,6 +217,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI CLI 도구 비교](./cheatsheets/ai-cli-tools-comparison.md) | Claude Code vs Codex CLI vs Gemini CLI |
 | [Git + AI 워크플로우](./cheatsheets/git-ai-workflow-cheatsheet.md) | Git + AI 브랜치/커밋 패턴 |
 | [Windsurf](./cheatsheets/windsurf-cheatsheet.md) | Windsurf AI IDE 가이드 |
+| [Gemini CLI](./cheatsheets/gemini-cli-cheatsheet.md) | Google Gemini CLI 핵심 기능 & 활용법 |
 
 ## 실전 예제
 
@@ -232,6 +234,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [React Native + AI](./examples/react-native-ai) | React Native 모바일 앱 AI 개발 |
 | [Terraform + AI IaC](./examples/terraform-ai-iac) | Terraform AI 인프라 자동화 |
 | [서브에이전트 병렬 개발](./examples/subagent-parallel-dev) | 서브에이전트 병렬 실행 예제 |
+| [Rust Axum + AI](./examples/rust-axum-ai) | Rust Axum REST API AI 개발 |
 | [Django API](./examples/django-api.md) | Django REST API 예제 |
 | [Go Microservice](./examples/go-microservice.md) | Go 마이크로서비스 예제 |
 | [Rust API](./examples/rust-api.md) | Rust API 예제 |
@@ -255,6 +258,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 기술 부채 해소](./workflows/ai-tech-debt-reduction.md) | AI로 기술 부채 식별 & 점진적 개선 |
 | [AI 변경로그 자동화](./workflows/ai-changelog-automation.md) | AI로 변경로그 자동 생성 & 관리 |
 | [AI 코드 품질 지표](./workflows/ai-code-quality-metrics.md) | AI 기반 코드 품질 메트릭 수집 & 모니터링 |
+| [AI 크로스 언어 마이그레이션](./workflows/ai-cross-language-migration.md) | AI로 프로그래밍 언어 전환 & 이관 |
 
 ## 플레이북
 
@@ -275,6 +279,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [프로토타이핑](./claude-code/playbooks/17-rapid-prototyping.md) | AI로 아이디어를 빠르게 프로토타입으로 |
 | [프론트엔드 컴포넌트](./claude-code/playbooks/18-frontend-component-ai.md) | AI로 프론트엔드 컴포넌트 설계 & 구현 |
 | [타입 마이그레이션](./claude-code/playbooks/19-type-migration.md) | AI로 타입 시스템 안전하게 마이그레이션 |
+| [로컬 LLM 코딩](./claude-code/playbooks/20-local-llm-coding.md) | Ollama 등 로컬 LLM 개발 워크플로 |
 
 ## 템플릿
 
