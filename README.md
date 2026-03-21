@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n25개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n26개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n8개 영상 코드"]
     R --> C["cheatsheets/\n17개 원페이저"]
     R --> EX["examples/\n17개 실전 예제"]
     R --> W["workflows/\n14개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n14개 심화 플레이북"]
+    R --> P["claude-code/playbooks/\n15개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~25 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~26 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -177,6 +177,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 23 | [AI 테스팅 전략](./guides/23-ai-testing-strategy.md) | AI와 테스트 전략 수립 & 자동화 |
 | 24 | [프롬프트 캐싱 최적화](./guides/24-prompt-caching-optimization.md) | 프롬프트 캐싱으로 비용 & 속도 개선 |
 | 25 | [Background Agent 워크플로](./guides/25-background-agent-workflow.md) | Background Agent & Worktree 병렬 개발 |
+| 26 | [멀티 AI 도구 조합](./guides/26-multi-tool-ai-workflow.md) | 여러 AI 코딩 도구 조합 워크플로 |
 
 ### 주제별 가이드
 
@@ -280,6 +281,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [프론트엔드 컴포넌트](./claude-code/playbooks/18-frontend-component-ai.md) | AI로 프론트엔드 컴포넌트 설계 & 구현 |
 | [타입 마이그레이션](./claude-code/playbooks/19-type-migration.md) | AI로 타입 시스템 안전하게 마이그레이션 |
 | [로컬 LLM 코딩](./claude-code/playbooks/20-local-llm-coding.md) | Ollama 등 로컬 LLM 개발 워크플로 |
+| [E2E 테스트 자동화](./claude-code/playbooks/21-e2e-testing-ai.md) | AI로 Playwright E2E 테스트 작성 & 유지보수 |
 
 ## 템플릿
 
