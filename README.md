@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n27개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n33개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n8개 영상 코드"]
-    R --> C["cheatsheets/\n18개 원페이저"]
-    R --> EX["examples/\n17개 실전 예제"]
-    R --> W["workflows/\n14개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n15개 심화 플레이북"]
+    R --> C["cheatsheets/\n22개 원페이저"]
+    R --> EX["examples/\n21개 실전 예제"]
+    R --> W["workflows/\n18개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n19개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~27 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~33 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -179,6 +179,12 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 25 | [Background Agent 워크플로](./guides/25-background-agent-workflow.md) | Background Agent & Worktree 병렬 개발 |
 | 26 | [멀티 AI 도구 조합](./guides/26-multi-tool-ai-workflow.md) | 여러 AI 코딩 도구 조합 워크플로 |
 | 27 | [AI 에이전트 샌드박싱](./guides/27-ai-agent-sandboxing.md) | AI 에이전트 격리 환경 구축 |
+| 28 | [AI 코딩 ROI 측정](./guides/28-ai-coding-roi-measurement.md) | AI 코딩 도구 투자 수익 측정 |
+| 29 | [AI 에이전트 옵저버빌리티](./guides/29-ai-agent-observability.md) | AI 에이전트 모니터링 & 로그 분석 |
+| 30 | [Skills 아키텍처 설계](./guides/30-ai-coding-skills-architecture.md) | Claude Code Skills 구조 설계 |
+| 31 | [컨텍스트 엔지니어링](./guides/31-context-engineering.md) | AI 에이전트 컨텍스트 관리 기법 |
+| 32 | [AI 에이전트 평가 프레임워크](./guides/32-ai-agent-evaluation-framework.md) | AI 코딩 에이전트 비교 평가 |
+| 33 | [AI 위임 판단](./guides/33-ai-delegation-patterns.md) | AI에 맡길 작업 판단 프레임워크 |
 
 ### 주제별 가이드
 
@@ -217,9 +223,13 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [서브에이전트 오케스트레이션](./cheatsheets/subagent-orchestration-cheatsheet.md) | 서브에이전트 분할 & 위임 패턴 |
 | [에이전트 모드 비교](./cheatsheets/agent-mode-comparison-cheatsheet.md) | AI 에이전트 모드 기능 비교 |
 | [AI CLI 도구 비교](./cheatsheets/ai-cli-tools-comparison.md) | Claude Code vs Codex CLI vs Gemini CLI |
+| [AI 코드 리뷰 프롬프트](./cheatsheets/ai-code-review-prompt-cheatsheet.md) | 코드 리뷰 관점별 프롬프트 패턴 |
 | [Git + AI 워크플로우](./cheatsheets/git-ai-workflow-cheatsheet.md) | Git + AI 브랜치/커밋 패턴 |
 | [Windsurf](./cheatsheets/windsurf-cheatsheet.md) | Windsurf AI IDE 가이드 |
 | [Gemini CLI](./cheatsheets/gemini-cli-cheatsheet.md) | Google Gemini CLI 핵심 기능 & 활용법 |
+| [Kiro IDE](./cheatsheets/kiro-ide-cheatsheet.md) | AWS Kiro 스펙 기반 에이전틱 IDE 가이드 |
+| [Cline](./cheatsheets/cline-cheatsheet.md) | 오픈소스 VS Code AI 코딩 에이전트 가이드 |
+| [Aider](./cheatsheets/aider-cheatsheet.md) | Git 네이티브 터미널 AI 코딩 에이전트 가이드 |
 | [OpenCode](./cheatsheets/opencode-cheatsheet.md) | 오픈소스 AI 코딩 에이전트 가이드 |
 
 ## 실전 예제
@@ -238,6 +248,10 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [Terraform + AI IaC](./examples/terraform-ai-iac) | Terraform AI 인프라 자동화 |
 | [서브에이전트 병렬 개발](./examples/subagent-parallel-dev) | 서브에이전트 병렬 실행 예제 |
 | [Rust Axum + AI](./examples/rust-axum-ai) | Rust Axum REST API AI 개발 |
+| [MCP 에이전트 도구 키트](./examples/mcp-agent-toolkit) | MCP 멀티 서버 통합 자동화 예제 |
+| [AI 비용 모니터링](./examples/ai-cost-monitor) | AI 도구 사용량 & 비용 추적 대시보드 |
+| [Discord 봇 + AI](./examples/discord-bot-ai) | Discord 봇 AI 개발 예제 |
+| [CrewAI 멀티 에이전트](./examples/crewai-multi-agent) | CrewAI 멀티 에이전트 협업 코딩 예제 |
 | [Django API](./examples/django-api.md) | Django REST API 예제 |
 | [Go Microservice](./examples/go-microservice.md) | Go 마이크로서비스 예제 |
 | [Rust API](./examples/rust-api.md) | Rust API 예제 |
@@ -262,6 +276,10 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 변경로그 자동화](./workflows/ai-changelog-automation.md) | AI로 변경로그 자동 생성 & 관리 |
 | [AI 코드 품질 지표](./workflows/ai-code-quality-metrics.md) | AI 기반 코드 품질 메트릭 수집 & 모니터링 |
 | [AI 크로스 언어 마이그레이션](./workflows/ai-cross-language-migration.md) | AI로 프로그래밍 언어 전환 & 이관 |
+| [AI 원격 코딩 에이전트](./workflows/ai-remote-coding-agent.md) | 채팅 앱에서 AI 코딩 에이전트 원격 제어 |
+| [AI API 문서 자동 동기화](./workflows/ai-api-docs-sync.md) | 코드 변경 시 API 문서 자동 업데이트 |
+| [AI 의존성 감사](./workflows/ai-dependency-audit.md) | AI로 의존성 감사 & 자동 업데이트 |
+| [AI 모노레포 도구 체인](./workflows/ai-monorepo-toolchain.md) | Turborepo/Nx 패키지별 AI 에이전트 분리 실행 |
 
 ## 플레이북
 
@@ -284,6 +302,10 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [타입 마이그레이션](./claude-code/playbooks/19-type-migration.md) | AI로 타입 시스템 안전하게 마이그레이션 |
 | [로컬 LLM 코딩](./claude-code/playbooks/20-local-llm-coding.md) | Ollama 등 로컬 LLM 개발 워크플로 |
 | [E2E 테스트 자동화](./claude-code/playbooks/21-e2e-testing-ai.md) | AI로 Playwright E2E 테스트 작성 & 유지보수 |
+| [자율 실행 설계](./claude-code/playbooks/22-autonomous-execution.md) | AI 에이전트 자율 실행 범위 & 안전 장치 |
+| [멀티 레포 AI](./claude-code/playbooks/23-multi-repo-ai.md) | 마이크로서비스 멀티 레포 동시 작업 전략 |
+| [프롬프트 체이닝](./claude-code/playbooks/24-prompt-chaining.md) | 복잡한 태스크를 프롬프트 단계로 분해 |
+| [장애 대응](./claude-code/playbooks/25-ai-incident-response.md) | 프로덕션 장애 AI 분석 & 핫픽스 |
 
 ## 템플릿
 
