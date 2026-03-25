@@ -26,7 +26,7 @@ flowchart TD
     R --> E["episodes/\n8개 영상 코드"]
     R --> C["cheatsheets/\n22개 원페이저"]
     R --> EX["examples/\n21개 실전 예제"]
-    R --> W["workflows/\n18개 자동화 워크플로"]
+    R --> W["workflows/\n19개 자동화 워크플로"]
     R --> P["claude-code/playbooks/\n19개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
@@ -280,6 +280,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI API 문서 자동 동기화](./workflows/ai-api-docs-sync.md) | 코드 변경 시 API 문서 자동 업데이트 |
 | [AI 의존성 감사](./workflows/ai-dependency-audit.md) | AI로 의존성 감사 & 자동 업데이트 |
 | [AI 모노레포 도구 체인](./workflows/ai-monorepo-toolchain.md) | Turborepo/Nx 패키지별 AI 에이전트 분리 실행 |
+| [AI 에이전트 설정 최적화](./workflows/ai-agent-config-optimization.md) | AI 코딩 에이전트 환경 설정 & 모델 라우팅 최적화 |
 
 ## 플레이북
 
