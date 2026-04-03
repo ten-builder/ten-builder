@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n48개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n50개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n11개 영상 코드"]
-    R --> C["cheatsheets/\n31개 원페이저"]
-    R --> EX["examples/\n28개 실전 예제"]
-    R --> W["workflows/\n27개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n36개 심화 플레이북"]
+    R --> C["cheatsheets/\n34개 원페이저"]
+    R --> EX["examples/\n29개 실전 예제"]
+    R --> W["workflows/\n30개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n31개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~48 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~50 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -200,6 +200,9 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 46 | [백그라운드 코딩 에이전트](./guides/46-background-coding-agents.md) | 백그라운드에서 작업하는 AI 코딩 에이전트 |
 | 47 | [추론 모델 코딩 활용](./guides/47-reasoning-models-coding.md) | 추론 모델을 코딩에 활용하는 전략 |
 | 48 | [Git Worktree AI 병렬 개발](./guides/48-git-worktree-ai-parallel-dev.md) | Git Worktree로 AI 에이전트 병렬 개발 |
+| 49 | [AI PR 영향 범위 분석](./guides/49-ai-pr-blast-radius.md) | AI PR의 Blast Radius 자동 평가 & 리스크 점수 |
+| 49 | [AI + TDD 워크플로](./guides/49-ai-tdd-workflow.md) | AI 시대의 Red-Green-Refactor 실전 적용 |
+| 50 | [프롬프트 체이닝 고급 패턴](./guides/50-advanced-prompt-chaining-patterns.md) | 복잡한 태스크를 프롬프트 체인으로 분해 |
 
 ### 주제별 가이드
 
@@ -261,6 +264,9 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [Cline](./cheatsheets/cline-cheatsheet.md) | 오픈소스 VS Code AI 코딩 에이전트 |
 | [Aider](./cheatsheets/aider-cheatsheet.md) | Git 네이티브 터미널 AI 코딩 에이전트 |
 | [Devin AI](./cheatsheets/devin-ai-cheatsheet.md) | Cognition Devin 2.0 AI 소프트웨어 엔지니어 |
+| [AI 에이전트 디버깅 플로우](./cheatsheets/ai-agent-debug-flow-cheatsheet.md) | AI 에이전트 에러 5단계 디버깅 플로우 |
+| [2026 AI 코드 리뷰 도구 비교](./cheatsheets/ai-code-review-tools-2026.md) | AI 코드 리뷰 도구 기능/가격 비교 |
+| [MCP 프로덕션 보안](./cheatsheets/mcp-production-security-cheatsheet.md) | MCP 서버 프로덕션 보안 운영 체크리스트 |
 
 ## 실전 예제
 
@@ -294,6 +300,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [Rust API](./examples/rust-api.md) | Rust API 예제 |
 | [Next.js SaaS](./examples/nextjs-saas.md) | SaaS 보일러플레이트 |
 | [CLAUDE.md 작성법](./examples/user-claudemd.md) | 사용자 CLAUDE.md 가이드 |
+| [CLI 도구 AI 자동 생성](./examples/cli-tool-ai-generation) | AI 에이전트로 CLI 도구 처음부터 끝까지 생성 |
 
 ## 워크플로
 
@@ -326,6 +333,9 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 프롬프트 회귀 테스트](./workflows/ai-prompt-regression-testing.md) | AI 프롬프트 변경 시 자동 회귀 테스트 |
 | [AI Feature Flag 워크플로](./workflows/ai-feature-flag-workflow.md) | AI로 Feature Flag 기반 점진적 배포 |
 | [AI 프라이버시 컴플라이언스](./workflows/ai-privacy-compliance-pipeline.md) | AI 코딩 도구 프라이버시 컴플라이언스 파이프라인 |
+| [AI 시맨틱 Diff 파이프라인](./workflows/ai-semantic-diff-pipeline.md) | AST 분석 기반 코드 변경 의미 파악 CI 파이프라인 |
+| [AI 마이그레이션 테스트](./workflows/ai-migration-test-pipeline.md) | 프레임워크 업그레이드 시 AI 테스트 커버리지 확보 |
+| [AI 레거시 코드 문서화](./workflows/ai-legacy-code-documentation.md) | 레거시 코드베이스 AI 자동 문서화 파이프라인 |
 
 ## 플레이북
 
@@ -363,6 +373,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [코드 생성 검증 루프](./claude-code/playbooks/34-ai-code-generation-validation.md) | AI 생성 코드 자동 검증 파이프라인 |
 | [Git Worktree 병렬 에이전트](./claude-code/playbooks/35-git-worktree-parallel-agents.md) | Git Worktree 기반 병렬 AI 에이전트 |
 | [에이전트 로컬 테스트](./claude-code/playbooks/36-ai-agent-local-testing.md) | AI 에이전트 로컬 테스트 환경 구축 |
+| [컨텍스트 윈도우 관리](./claude-code/playbooks/37-context-window-management.md) | 대규모 코드베이스 컨텍스트 윈도우 관리 |
 
 ## 템플릿
 
