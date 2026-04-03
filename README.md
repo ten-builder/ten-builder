@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n42개 단계별 가이드\n+ 주제별 가이드"]
-    R --> E["episodes/\n10개 영상 코드"]
-    R --> C["cheatsheets/\n26개 원페이저"]
-    R --> EX["examples/\n25개 실전 예제"]
-    R --> W["workflows/\n23개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n24개 심화 플레이북"]
+    R["ten-builder"] --> G["guides/\n48개 단계별 가이드\n+ 주제별 가이드"]
+    R --> E["episodes/\n11개 영상 코드"]
+    R --> C["cheatsheets/\n31개 원페이저"]
+    R --> EX["examples/\n28개 실전 예제"]
+    R --> W["workflows/\n27개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n36개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~42 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~48 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -195,6 +195,11 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 41 | [AI 에이전트 트러블슈팅](./guides/41-ai-agent-troubleshooting.md) | AI 에이전트 문제 해결 7가지 패턴 |
 | 42 | [AI 벤치마크 실전 측정](./guides/42-ai-coding-benchmark-practice.md) | SWE-bench 직접 돌려보고 에이전트 선택 |
 | 43 | [LLM 코딩 워크플로우 최적화](./guides/43-llm-coding-workflow-optimization.md) | 스펙→생성→검증→커밋 실전 루프 |
+| 44 | [1M 컨텍스트 윈도우 전략](./guides/44-1m-context-window-strategy.md) | 대규모 컨텍스트 윈도우 실전 활용법 |
+| 45 | [AI 코딩 데이터 프라이버시](./guides/45-ai-coding-data-privacy.md) | AI 코딩 도구 데이터 프라이버시 관리 |
+| 46 | [백그라운드 코딩 에이전트](./guides/46-background-coding-agents.md) | 백그라운드에서 작업하는 AI 코딩 에이전트 |
+| 47 | [추론 모델 코딩 활용](./guides/47-reasoning-models-coding.md) | 추론 모델을 코딩에 활용하는 전략 |
+| 48 | [Git Worktree AI 병렬 개발](./guides/48-git-worktree-ai-parallel-dev.md) | Git Worktree로 AI 에이전트 병렬 개발 |
 
 ### 주제별 가이드
 
@@ -216,6 +221,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | EP08 | OpenAI Codex 리뷰 | [`/episodes/EP08-openai-codex-review`](./episodes/EP08-openai-codex-review) |
 | EP09 | AI 코딩 거버넌스 | [`/episodes/EP09-ai-coding-governance`](./episodes/EP09-ai-coding-governance) |
 | EP10 | MCP 서버 직접 만들기 | [`/episodes/EP10-mcp-server-hands-on`](./episodes/EP10-mcp-server-hands-on) |
+| EP11 | AI 코딩 도구 구매 가이드 | [`/episodes/EP11-ai-coding-tools-buying-guide`](./episodes/EP11-ai-coding-tools-buying-guide) |
 
 ## 치트시트
 
@@ -224,6 +230,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 코딩 기본](./cheatsheets/ai-coding-cheatsheet.md) | AI 코딩 핵심 명령어 모음 |
 | [에이전틱 코딩](./cheatsheets/agentic-coding-cheatsheet.md) | 에이전트 기반 코딩 패턴 |
 | [프롬프트 엔지니어링](./cheatsheets/prompt-engineering-cheatsheet.md) | 효과적인 프롬프트 작성법 |
+| [AI 프롬프트 라이브러리](./cheatsheets/ai-prompt-library-cheatsheet.md) | 팀 재사용 프롬프트 템플릿 모음 |
 | [Claude Code Hooks](./cheatsheets/claude-code-hooks-cheatsheet.md) | Hooks 설정 & 패턴 |
 | [Claude Code 커맨드](./cheatsheets/claude-code-commands-cheatsheet.md) | 커스텀 슬래시 커맨드 가이드 |
 | [Claude Code 고급 패턴](./cheatsheets/claude-code-advanced-patterns.md) | 멀티 파일 편집, 컨텍스트 관리 고급 팁 |
@@ -232,6 +239,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [MCP 컨텍스트 최적화](./cheatsheets/mcp-context-optimization-cheatsheet.md) | MCP 컨텍스트 윈도우 활용 전략 |
 | [토큰 최적화](./cheatsheets/token-optimization-cheatsheet.md) | 토큰 사용량 절약 팁 |
 | [AI 모델 라우팅](./cheatsheets/ai-model-routing-cheatsheet.md) | AI 모델별 최적 라우팅 전략 |
+| [AI 코딩 비용 최적화](./cheatsheets/ai-coding-cost-optimization-cheatsheet.md) | AI 코딩 도구 비용 절감 실전 팁 |
 | [하네스 엔지니어링](./cheatsheets/harness-engineering-cheatsheet.md) | Model/Harness/Surfaces 구조 요약 |
 | [서브에이전트 오케스트레이션](./cheatsheets/subagent-orchestration-cheatsheet.md) | 서브에이전트 분할 & 위임 패턴 |
 | [에이전트 모드 비교](./cheatsheets/agent-mode-comparison-cheatsheet.md) | AI 에이전트 모드 기능 비교 |
@@ -239,7 +247,10 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [CLI 코딩 에이전트 비교](./cheatsheets/cli-coding-agents-comparison.md) | 터미널 기반 AI 코딩 에이전트 15종 비교 |
 | [AI 코드 리뷰 프롬프트](./cheatsheets/ai-code-review-prompt-cheatsheet.md) | 코드 리뷰 프롬프트 패턴 모음 |
 | [AI 에이전트 디버깅](./cheatsheets/ai-agent-debugging-cheatsheet.md) | AI 에이전트 문제 해결 치트시트 |
+| [AI 코딩 프라이버시 설정](./cheatsheets/ai-coding-privacy-settings-cheatsheet.md) | AI 코딩 도구별 프라이버시 설정 가이드 |
 | [Git + AI 워크플로우](./cheatsheets/git-ai-workflow-cheatsheet.md) | Git + AI 브랜치/커밋 패턴 |
+| [Git Worktree](./cheatsheets/git-worktree-cheatsheet.md) | Git Worktree 병렬 개발 패턴 |
+| [추론 모델 활용](./cheatsheets/reasoning-model-cheatsheet.md) | 추론 모델 코딩 활용 패턴 |
 | [Cursor AI](./cheatsheets/cursor-ai-cheatsheet.md) | Cursor AI IDE 핵심 기능 & 단축키 |
 | [GitHub Copilot](./cheatsheets/github-copilot-cheatsheet.md) | GitHub Copilot 필수 기능 & 활용 패턴 |
 | [Windsurf](./cheatsheets/windsurf-cheatsheet.md) | Windsurf AI IDE 가이드 |
@@ -269,8 +280,11 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [Terraform + AI IaC](./examples/terraform-ai-iac) | Terraform AI 인프라 자동화 |
 | [서브에이전트 병렬 개발](./examples/subagent-parallel-dev) | 서브에이전트 병렬 실행 예제 |
 | [MCP 에이전트 도구 키트](./examples/mcp-agent-toolkit) | MCP 서버 3종 조합 자동화 |
+| [MCP 에이전트 대시보드](./examples/mcp-agent-dashboard) | MCP 에이전트 모니터링 대시보드 |
 | [AI 비용 모니터링](./examples/ai-cost-monitor) | AI 도구 비용 추적 CLI 대시보드 |
 | [AI 비용 대시보드](./examples/ai-cost-dashboard) | 멀티 프로바이더 API 비용 실시간 추적 |
+| [AI 프롬프트 테스트](./examples/ai-prompt-testing) | AI 프롬프트 품질 자동 테스트 |
+| [AI 코드 리뷰 봇](./examples/ai-code-review-bot) | AI 자동 코드 리뷰 봇 |
 | [Discord 봇 + AI](./examples/discord-bot-ai) | Discord 봇 AI 개발 |
 | [Slack 봇 + AI](./examples/slack-bot-ai) | Slack 봇 AI 개발 |
 | [CrewAI 멀티 에이전트](./examples/crewai-multi-agent) | CrewAI 멀티 에이전트 코딩 |
@@ -308,6 +322,10 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 에이전트 설정 최적화](./workflows/ai-agent-config-optimization.md) | AI 에이전트 settings.json & 권한 최적화 |
 | [AI 모노레포 도구 체인](./workflows/ai-monorepo-toolchain.md) | Turborepo/Nx 모노레포 AI 자동화 |
 | [AI 문서 자동 번역](./workflows/ai-docs-translation.md) | 다국어 기술 문서 AI 번역 & CI 동기화 |
+| [AI 에이전트 옵저버빌리티 파이프라인](./workflows/ai-agent-observability-pipeline.md) | AI 에이전트 세션 로그 & 비용 대시보드 |
+| [AI 프롬프트 회귀 테스트](./workflows/ai-prompt-regression-testing.md) | AI 프롬프트 변경 시 자동 회귀 테스트 |
+| [AI Feature Flag 워크플로](./workflows/ai-feature-flag-workflow.md) | AI로 Feature Flag 기반 점진적 배포 |
+| [AI 프라이버시 컴플라이언스](./workflows/ai-privacy-compliance-pipeline.md) | AI 코딩 도구 프라이버시 컴플라이언스 파이프라인 |
 
 ## 플레이북
 
@@ -339,6 +357,12 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 페어 리뷰](./claude-code/playbooks/28-ai-pair-review.md) | 사람과 AI가 함께 코드 리뷰하기 |
 | [영속 메모리 구축](./claude-code/playbooks/29-persistent-memory.md) | AI 에이전트 세션 간 메모리 시스템 구축 |
 | [규칙 파일 통합 관리](./claude-code/playbooks/30-ai-rules-file-management.md) | CLAUDE.md, .cursorrules 통합 관리 워크플로 |
+| [CI 파이프라인 디버깅](./claude-code/playbooks/31-ai-ci-debugging.md) | AI로 CI 빨간불 원인 분석 & 수정 |
+| [에러 핸들링 가드레일](./claude-code/playbooks/32-ai-error-retry-guardrails.md) | AI 에이전트 에러 재시도 & 서킷 브레이커 |
+| [데이터 위생 관리](./claude-code/playbooks/33-ai-data-hygiene.md) | AI 코딩 데이터 위생 & 정리 |
+| [코드 생성 검증 루프](./claude-code/playbooks/34-ai-code-generation-validation.md) | AI 생성 코드 자동 검증 파이프라인 |
+| [Git Worktree 병렬 에이전트](./claude-code/playbooks/35-git-worktree-parallel-agents.md) | Git Worktree 기반 병렬 AI 에이전트 |
+| [에이전트 로컬 테스트](./claude-code/playbooks/36-ai-agent-local-testing.md) | AI 에이전트 로컬 테스트 환경 구축 |
 
 ## 템플릿
 
