@@ -22,11 +22,11 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n50개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n51개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n11개 영상 코드"]
     R --> C["cheatsheets/\n34개 원페이저"]
-    R --> EX["examples/\n29개 실전 예제"]
-    R --> W["workflows/\n30개 자동화 워크플로"]
+    R --> EX["examples/\n30개 실전 예제"]
+    R --> W["workflows/\n31개 자동화 워크플로"]
     R --> P["claude-code/playbooks/\n32개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
@@ -203,6 +203,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 49 | [AI PR 영향 범위 분석](./guides/49-ai-pr-blast-radius.md) | AI PR의 Blast Radius 자동 평가 & 리스크 점수 |
 | 49 | [AI + TDD 워크플로](./guides/49-ai-tdd-workflow.md) | AI 시대의 Red-Green-Refactor 실전 적용 |
 | 50 | [프롬프트 체이닝 고급 패턴](./guides/50-advanced-prompt-chaining-patterns.md) | 복잡한 태스크를 프롬프트 체인으로 분해 |
+| 51 | [터미널 AI 코딩 에이전트 비교 2026](./guides/51-terminal-ai-agents-comparison-2026.md) | 터미널 기반 AI 코딩 에이전트 실전 비교 |
 
 ### 주제별 가이드
 
@@ -301,6 +302,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [Next.js SaaS](./examples/nextjs-saas.md) | SaaS 보일러플레이트 |
 | [CLAUDE.md 작성법](./examples/user-claudemd.md) | 사용자 CLAUDE.md 가이드 |
 | [CLI 도구 AI 자동 생성](./examples/cli-tool-ai-generation) | AI 에이전트로 CLI 도구 처음부터 끝까지 생성 |
+| [AI 세션 메모리 시스템](./examples/ai-session-memory-system) | AI 에이전트 세션 메모리 시스템 구현 |
 
 ## 워크플로
 
@@ -336,6 +338,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 시맨틱 Diff 파이프라인](./workflows/ai-semantic-diff-pipeline.md) | AST 분석 기반 코드 변경 의미 파악 CI 파이프라인 |
 | [AI 마이그레이션 테스트](./workflows/ai-migration-test-pipeline.md) | 프레임워크 업그레이드 시 AI 테스트 커버리지 확보 |
 | [AI 레거시 코드 문서화](./workflows/ai-legacy-code-documentation.md) | 레거시 코드베이스 AI 자동 문서화 파이프라인 |
+| [AI 멀티 모델 라우팅](./workflows/ai-multi-model-routing.md) | 태스크 복잡도별 AI 모델 자동 라우팅 |
 
 ## 플레이북
 
