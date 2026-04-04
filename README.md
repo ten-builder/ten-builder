@@ -27,7 +27,7 @@ flowchart TD
     R --> C["cheatsheets/\n35개 원페이저"]
     R --> EX["examples/\n31개 실전 예제"]
     R --> W["workflows/\n32개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n33개 심화 플레이북"]
+    R --> P["claude-code/playbooks/\n34개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -383,6 +383,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [컨텍스트 윈도우 관리](./claude-code/playbooks/37-context-window-management.md) | 대규모 코드베이스 컨텍스트 윈도우 관리 |
 | [비용 최적화](./claude-code/playbooks/38-cost-optimization-playbook.md) | AI 코딩 에이전트 비용 최적화 실전 전략 |
 | [코드베이스 헬스체크](./claude-code/playbooks/39-codebase-health-check.md) | AI 에이전트로 코드베이스 종합 진단 |
+| [인텐트 기반 태스크 분해](./claude-code/playbooks/40-intent-based-task-decomposition.md) | AI 에이전트 인텐트 맵 & 의존성 그래프 기반 태스크 분해 |
 
 ## 템플릿
 
