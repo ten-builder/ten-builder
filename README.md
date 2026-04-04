@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n51개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n52개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n11개 영상 코드"]
-    R --> C["cheatsheets/\n34개 원페이저"]
+    R --> C["cheatsheets/\n35개 원페이저"]
     R --> EX["examples/\n30개 실전 예제"]
     R --> W["workflows/\n31개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n32개 심화 플레이북"]
+    R --> P["claude-code/playbooks/\n33개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~50 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~52 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -204,6 +204,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 49 | [AI + TDD 워크플로](./guides/49-ai-tdd-workflow.md) | AI 시대의 Red-Green-Refactor 실전 적용 |
 | 50 | [프롬프트 체이닝 고급 패턴](./guides/50-advanced-prompt-chaining-patterns.md) | 복잡한 태스크를 프롬프트 체인으로 분해 |
 | 51 | [터미널 AI 코딩 에이전트 비교 2026](./guides/51-terminal-ai-agents-comparison-2026.md) | 터미널 기반 AI 코딩 에이전트 실전 비교 |
+| 52 | [커스텀 룰 파일 설계](./guides/52-custom-rules-file-design.md) | AI 에이전트 룰 파일 프로젝트 규모별 설계 |
 
 ### 주제별 가이드
 
@@ -268,6 +269,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 에이전트 디버깅 플로우](./cheatsheets/ai-agent-debug-flow-cheatsheet.md) | AI 에이전트 에러 5단계 디버깅 플로우 |
 | [2026 AI 코드 리뷰 도구 비교](./cheatsheets/ai-code-review-tools-2026.md) | AI 코드 리뷰 도구 기능/가격 비교 |
 | [MCP 프로덕션 보안](./cheatsheets/mcp-production-security-cheatsheet.md) | MCP 서버 프로덕션 보안 운영 체크리스트 |
+| [AI 에이전트 보안 위협 대응](./cheatsheets/ai-agent-security-threat-response.md) | AI 코딩 보안 위협 실전 대응 체크리스트 |
 
 ## 실전 예제
 
@@ -378,6 +380,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [에이전트 로컬 테스트](./claude-code/playbooks/36-ai-agent-local-testing.md) | AI 에이전트 로컬 테스트 환경 구축 |
 | [컨텍스트 윈도우 관리](./claude-code/playbooks/37-context-window-management.md) | 대규모 코드베이스 컨텍스트 윈도우 관리 |
 | [비용 최적화](./claude-code/playbooks/38-cost-optimization-playbook.md) | AI 코딩 에이전트 비용 최적화 실전 전략 |
+| [코드베이스 헬스체크](./claude-code/playbooks/39-codebase-health-check.md) | AI 에이전트로 코드베이스 종합 진단 |
+
 ## 템플릿
 
 > 복사해서 바로 쓰는 설정 파일 - [`/templates`](./templates)
