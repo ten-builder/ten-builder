@@ -27,7 +27,7 @@ flowchart TD
     R --> C["cheatsheets/\n34개 원페이저"]
     R --> EX["examples/\n29개 실전 예제"]
     R --> W["workflows/\n30개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n31개 심화 플레이북"]
+    R --> P["claude-code/playbooks/\n32개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -374,7 +374,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [Git Worktree 병렬 에이전트](./claude-code/playbooks/35-git-worktree-parallel-agents.md) | Git Worktree 기반 병렬 AI 에이전트 |
 | [에이전트 로컬 테스트](./claude-code/playbooks/36-ai-agent-local-testing.md) | AI 에이전트 로컬 테스트 환경 구축 |
 | [컨텍스트 윈도우 관리](./claude-code/playbooks/37-context-window-management.md) | 대규모 코드베이스 컨텍스트 윈도우 관리 |
-
+| [비용 최적화](./claude-code/playbooks/38-cost-optimization-playbook.md) | AI 코딩 에이전트 비용 최적화 실전 전략 |
 ## 템플릿
 
 > 복사해서 바로 쓰는 설정 파일 - [`/templates`](./templates)
