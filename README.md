@@ -26,7 +26,7 @@ flowchart TD
     R --> E["episodes/\n11개 영상 코드"]
     R --> C["cheatsheets/\n35개 원페이저"]
     R --> EX["examples/\n31개 실전 예제"]
-    R --> W["workflows/\n32개 자동화 워크플로"]
+    R --> W["workflows/\n33개 자동화 워크플로"]
     R --> P["claude-code/playbooks/\n34개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
@@ -343,6 +343,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 레거시 코드 문서화](./workflows/ai-legacy-code-documentation.md) | 레거시 코드베이스 AI 자동 문서화 파이프라인 |
 | [AI 멀티 모델 라우팅](./workflows/ai-multi-model-routing.md) | 태스크 복잡도별 AI 모델 자동 라우팅 |
 | [AI API 계약 테스트](./workflows/ai-api-contract-testing.md) | OpenAPI 기반 AI 계약 테스트 자동화 |
+| [AI 성능 프로파일링](./workflows/ai-performance-profiling.md) | AI 에이전트 기반 백엔드 성능 프로파일링 자동화 |
 
 ## 플레이북
 
