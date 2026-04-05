@@ -24,7 +24,7 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 flowchart TD
     R["ten-builder"] --> G["guides/\n52개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n11개 영상 코드"]
-    R --> C["cheatsheets/\n35개 원페이저"]
+    R --> C["cheatsheets/\n36개 원페이저"]
     R --> EX["examples/\n31개 실전 예제"]
     R --> W["workflows/\n33개 자동화 워크플로"]
     R --> P["claude-code/playbooks/\n34개 심화 플레이북"]
@@ -270,6 +270,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [2026 AI 코드 리뷰 도구 비교](./cheatsheets/ai-code-review-tools-2026.md) | AI 코드 리뷰 도구 기능/가격 비교 |
 | [MCP 프로덕션 보안](./cheatsheets/mcp-production-security-cheatsheet.md) | MCP 서버 프로덕션 보안 운영 체크리스트 |
 | [AI 에이전트 보안 위협 대응](./cheatsheets/ai-agent-security-threat-response.md) | AI 코딩 보안 위협 실전 대응 체크리스트 |
+| [A2A + MCP 프로토콜 통합](./cheatsheets/a2a-mcp-protocol-cheatsheet.md) | A2A(에이전트 간) + MCP(에이전트-도구 간) 프로토콜 한 페이지 정리 |
 
 ## 실전 예제
 
