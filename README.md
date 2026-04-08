@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n55개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n56개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n11개 영상 코드"]
     R --> C["cheatsheets/\n37개 원페이저"]
     R --> EX["examples/\n32개 실전 예제"]
     R --> W["workflows/\n34개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n35개 심화 플레이북"]
+    R --> P["claude-code/playbooks/\n36개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -392,7 +392,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [코드베이스 헬스체크](./claude-code/playbooks/39-codebase-health-check.md) | AI 에이전트로 코드베이스 종합 진단 |
 | [인텐트 기반 태스크 분해](./claude-code/playbooks/40-intent-based-task-decomposition.md) | AI 에이전트 인텐트 맵 & 의존성 그래프 기반 태스크 분해 |
 | [멀티 파일 동시 편집](./claude-code/playbooks/41-multi-file-coherent-editing.md) | AI 에이전트 멀티 파일 일관성 있는 동시 수정 전략 |
-
+| [AI 생성 코드 신뢰성 검증](./claude-code/playbooks/42-ai-code-trust-verification.md) | AI 생성 코드 pre-commit 자동 검증 & 신뢰 레벨 분류 파이프라인 |
 ## 템플릿
 
 > 복사해서 바로 쓰는 설정 파일 - [`/templates`](./templates)
