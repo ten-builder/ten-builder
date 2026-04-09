@@ -352,6 +352,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI API 계약 테스트](./workflows/ai-api-contract-testing.md) | OpenAPI 기반 AI 계약 테스트 자동화 |
 | [AI 성능 프로파일링](./workflows/ai-performance-profiling.md) | AI 에이전트 기반 백엔드 성능 프로파일링 자동화 |
 | [AI 자율 에러 복구](./workflows/ai-autonomous-error-recovery.md) | AI 에이전트 자동 빌드/테스트 실패 감지 & 자율 복구 루프 |
+| [AI 실시간 페어 코딩](./workflows/ai-realtime-pair-coding.md) | 개발자 2명 + AI 에이전트 실시간 페어 코딩 세션 운영 |
 
 ## 플레이북
 
