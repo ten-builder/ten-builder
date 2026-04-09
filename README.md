@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n56개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n57개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n11개 영상 코드"]
-    R --> C["cheatsheets/\n37개 원페이저"]
-    R --> EX["examples/\n32개 실전 예제"]
-    R --> W["workflows/\n34개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n36개 심화 플레이북"]
+    R --> C["cheatsheets/\n38개 원페이저"]
+    R --> EX["examples/\n33개 실전 예제"]
+    R --> W["workflows/\n35개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n37개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~54 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~55 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -313,6 +313,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 세션 메모리 시스템](./examples/ai-session-memory-system) | AI 에이전트 세션 메모리 시스템 구현 |
 | [AI 스마트 계약 감사](./examples/ai-smart-contract-auditor) | Solidity 스마트 계약 AI 자동 보안 감사 |
 | [AI 모노레포 오너십 대시보드](./examples/ai-monorepo-ownership-dashboard) | AI 에이전트 기반 모노레포 코드 오너십 분석 대시보드 |
+| [AI CLI 챗봇](./examples/ai-cli-chatbot) | LangGraph + Claude API로 대화 메모리와 도구 호출 기능 갖춘 CLI 챗봇 구현 |
 
 ## 워크플로
 
@@ -396,6 +397,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [인텐트 기반 태스크 분해](./claude-code/playbooks/40-intent-based-task-decomposition.md) | AI 에이전트 인텐트 맵 & 의존성 그래프 기반 태스크 분해 |
 | [멀티 파일 동시 편집](./claude-code/playbooks/41-multi-file-coherent-editing.md) | AI 에이전트 멀티 파일 일관성 있는 동시 수정 전략 |
 | [AI 생성 코드 신뢰성 검증](./claude-code/playbooks/42-ai-code-trust-verification.md) | AI 생성 코드 pre-commit 자동 검증 & 신뢰 레벨 분류 파이프라인 |
+| [팀 온보딩 자동화](./claude-code/playbooks/43-team-onboarding-automation.md) | 신규 팀원 AI 기반 코드베이스 온보딩 & 개발환경 자동화 플레이북 |
 ## 템플릿
 
 > 복사해서 바로 쓰는 설정 파일 - [`/templates`](./templates)
