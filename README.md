@@ -208,6 +208,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 53 | [백그라운드 에이전트 실행](./guides/53-background-agent-execution.md) | 비동기 AI 에이전트 실행 & 자동화 패턴 |
 | 54 | [데이터 기반 AI 도구 선택](./guides/54-data-driven-ai-tool-selection.md) | 실사용 데이터 기반 AI 코딩 도구 선택 가이드 |
 | 55 | [바이브 코딩 함정 피하기](./guides/55-vibe-coding-pitfalls-and-safety.md) | 실제 프로덕션 사례로 배우는 안전한 AI 코딩 |
+| 56 | [Claude Code 서브에이전트 병렬 실행 심화](./guides/56-claude-code-subagent-parallel-guide.md) | 서브에이전트 최대 7개 동시 실행, Plan Mode, 독립 체크아웃 패턴 |
 
 ### 주제별 가이드
 
@@ -355,6 +356,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 성능 프로파일링](./workflows/ai-performance-profiling.md) | AI 에이전트 기반 백엔드 성능 프로파일링 자동화 |
 | [AI 자율 에러 복구](./workflows/ai-autonomous-error-recovery.md) | AI 에이전트 자동 빌드/테스트 실패 감지 & 자율 복구 루프 |
 | [AI 실시간 페어 코딩](./workflows/ai-realtime-pair-coding.md) | 개발자 2명 + AI 에이전트 실시간 페어 코딩 세션 운영 |
+| [AI CI/CD 파이프라인 최적화](./workflows/ai-cicd-pipeline-optimization.md) | AI 에이전트로 GitHub Actions 빌드 시간 단축 & 파이프라인 병목 자동 해소 |
 
 ## 플레이북
 
