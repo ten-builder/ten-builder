@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n57개 단계별 가이드\n+ 주제별 가이드"]
-    R --> E["episodes/\n11개 영상 코드"]
-    R --> C["cheatsheets/\n38개 원페이저"]
-    R --> EX["examples/\n33개 실전 예제"]
-    R --> W["workflows/\n35개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n37개 심화 플레이북"]
+    R["ten-builder"] --> G["guides/\n59개 단계별 가이드\n+ 주제별 가이드"]
+    R --> E["episodes/\n12개 영상 코드"]
+    R --> C["cheatsheets/\n40개 원페이저"]
+    R --> EX["examples/\n34개 실전 예제"]
+    R --> W["workflows/\n36개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n39개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~55 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~58 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -209,6 +209,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 54 | [데이터 기반 AI 도구 선택](./guides/54-data-driven-ai-tool-selection.md) | 실사용 데이터 기반 AI 코딩 도구 선택 가이드 |
 | 55 | [바이브 코딩 함정 피하기](./guides/55-vibe-coding-pitfalls-and-safety.md) | 실제 프로덕션 사례로 배우는 안전한 AI 코딩 |
 | 56 | [Claude Code 서브에이전트 병렬 실행 심화](./guides/56-claude-code-subagent-parallel-guide.md) | 서브에이전트 최대 7개 동시 실행, Plan Mode, 독립 체크아웃 패턴 |
+| 57 | [Gemini CLI 실전 가이드 2026](./guides/57-gemini-cli-practical-guide-2026.md) | 설치부터 고급 코딩 워크플로우까지 — 대규모 코드베이스 분석, 멀티모달 입력, MCP 통합 |
+| 58 | [오케스트레이터-워커 패턴 심화 가이드](./guides/58-ai-agent-orchestrator-patterns.md) | 단일 에이전트 한계를 넘어 여러 AI 에이전트를 조율하는 실전 가이드 |
 
 ### 주제별 가이드
 
@@ -231,6 +233,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | EP09 | AI 코딩 거버넌스 | [`/episodes/EP09-ai-coding-governance`](./episodes/EP09-ai-coding-governance) |
 | EP10 | MCP 서버 직접 만들기 | [`/episodes/EP10-mcp-server-hands-on`](./episodes/EP10-mcp-server-hands-on) |
 | EP11 | AI 코딩 도구 구매 가이드 | [`/episodes/EP11-ai-coding-tools-buying-guide`](./episodes/EP11-ai-coding-tools-buying-guide) |
+| EP13 | 말로 코딩하기 — AI 에이전트 음성 워크플로우 | [`/episodes/EP13-voice-coding-workflow`](./episodes/EP13-voice-coding-workflow) |
 
 ## 치트시트
 
@@ -278,6 +281,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [A2A + MCP 프로토콜 통합](./cheatsheets/a2a-mcp-protocol-cheatsheet.md) | A2A(에이전트 간) + MCP(에이전트-도구 간) 프로토콜 한 페이지 정리 |
 | [스펙 주도 개발](./cheatsheets/spec-driven-development-cheatsheet.md) | 바이브 코딩 대안 — 스펙 먼저 쓰는 AI 코딩 패턴 한 페이지 정리 |
 | [AI 보이스 코딩](./cheatsheets/ai-voice-coding-cheatsheet.md) | 음성 입력으로 핸즈프리 개발 — Claude Code 음성 모드 설정 & 패턴 |
+| [AI 에이전트 메모리 아키텍처](./cheatsheets/ai-agent-memory-architecture-cheatsheet.md) | 단기/장기/외부 메모리 패턴 — CLAUDE.md, 메모리 파일, 벡터 DB 연동 |
+| [Codex CLI 실전](./cheatsheets/codex-cli-cheatsheet.md) | OpenAI Codex CLI 핵심 명령어, Approval 모드, 샌드박스 실행 완전 정복 |
 
 ## 실전 예제
 
@@ -316,6 +321,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 스마트 계약 감사](./examples/ai-smart-contract-auditor) | Solidity 스마트 계약 AI 자동 보안 감사 |
 | [AI 모노레포 오너십 대시보드](./examples/ai-monorepo-ownership-dashboard) | AI 에이전트 기반 모노레포 코드 오너십 분석 대시보드 |
 | [AI CLI 챗봇](./examples/ai-cli-chatbot) | LangGraph + Claude API로 대화 메모리와 도구 호출 기능 갖춘 CLI 챗봇 구현 |
+| [AI Slack 알림 봇](./examples/ai-slack-notification-bot) | 코드 리뷰, 빌드 실패, 배포 이벤트를 맥락 있게 요약해 Slack 전송하는 봇 |
 
 ## 워크플로
 
@@ -357,6 +363,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 자율 에러 복구](./workflows/ai-autonomous-error-recovery.md) | AI 에이전트 자동 빌드/테스트 실패 감지 & 자율 복구 루프 |
 | [AI 실시간 페어 코딩](./workflows/ai-realtime-pair-coding.md) | 개발자 2명 + AI 에이전트 실시간 페어 코딩 세션 운영 |
 | [AI CI/CD 파이프라인 최적화](./workflows/ai-cicd-pipeline-optimization.md) | AI 에이전트로 GitHub Actions 빌드 시간 단축 & 파이프라인 병목 자동 해소 |
+| [AI 피처 플래그 점진적 롤아웃](./workflows/ai-feature-flag-progressive-rollout.md) | 카나리 → 10% → 100% 단계 자동 관리, 이상 감지 시 즉시 롤백 |
 
 ## 플레이북
 
@@ -402,6 +409,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 생성 코드 신뢰성 검증](./claude-code/playbooks/42-ai-code-trust-verification.md) | AI 생성 코드 pre-commit 자동 검증 & 신뢰 레벨 분류 파이프라인 |
 | [팀 온보딩 자동화](./claude-code/playbooks/43-team-onboarding-automation.md) | 신규 팀원 AI 기반 코드베이스 온보딩 & 개발환경 자동화 플레이북 |
 | [AI TDD 워크플로우](./claude-code/playbooks/44-ai-tdd-workflow.md) | 테스트 먼저 쓰고 AI가 구현하는 TDD 실전 플레이북 |
+| [커스텀 MCP 서버 빌드 & 배포](./claude-code/playbooks/45-custom-mcp-server-build-deploy.md) | Node.js + TypeScript로 커스텀 MCP 서버를 만들고 Cloudflare Workers에 배포 |
+| [스키마 마이그레이션 자동화](./claude-code/playbooks/46-schema-migration-automation.md) | AI 에이전트로 DB 스키마 변경 시 마이그레이션 생성, 검증, 롤백 자동화 |
 
 ## 템플릿
 
