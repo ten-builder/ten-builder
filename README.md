@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n59개 단계별 가이드\n+ 주제별 가이드"]
-    R --> E["episodes/\n12개 영상 코드"]
-    R --> C["cheatsheets/\n40개 원페이저"]
-    R --> EX["examples/\n34개 실전 예제"]
-    R --> W["workflows/\n36개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n39개 심화 플레이북"]
+    R["ten-builder"] --> G["guides/\n60개 단계별 가이드\n+ 주제별 가이드"]
+    R --> E["episodes/\n13개 영상 코드"]
+    R --> C["cheatsheets/\n41개 원페이저"]
+    R --> EX["examples/\n35개 실전 예제"]
+    R --> W["workflows/\n37개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n40개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~58 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~59 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -322,6 +322,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 모노레포 오너십 대시보드](./examples/ai-monorepo-ownership-dashboard) | AI 에이전트 기반 모노레포 코드 오너십 분석 대시보드 |
 | [AI CLI 챗봇](./examples/ai-cli-chatbot) | LangGraph + Claude API로 대화 메모리와 도구 호출 기능 갖춘 CLI 챗봇 구현 |
 | [AI Slack 알림 봇](./examples/ai-slack-notification-bot) | 코드 리뷰, 빌드 실패, 배포 이벤트를 맥락 있게 요약해 Slack 전송하는 봇 |
+| [AI PR 자동 리뷰 봇](./examples/ai-pr-review-bot) | PR 오픈 시 코드 품질, 보안, 테스트 커버리지 자동 분석 후 코멘트를 남기는 GitHub Actions 봇 |
 
 ## 워크플로
 
