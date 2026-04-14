@@ -211,6 +211,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 56 | [Claude Code 서브에이전트 병렬 실행 심화](./guides/56-claude-code-subagent-parallel-guide.md) | 서브에이전트 최대 7개 동시 실행, Plan Mode, 독립 체크아웃 패턴 |
 | 57 | [Gemini CLI 실전 가이드 2026](./guides/57-gemini-cli-practical-guide-2026.md) | 설치부터 고급 코딩 워크플로우까지 — 대규모 코드베이스 분석, 멀티모달 입력, MCP 통합 |
 | 58 | [오케스트레이터-워커 패턴 심화 가이드](./guides/58-ai-agent-orchestrator-patterns.md) | 단일 에이전트 한계를 넘어 여러 AI 에이전트를 조율하는 실전 가이드 |
+| 59 | [AI 코딩 도구 ROI 측정 실전 가이드](./guides/59-ai-coding-roi-measurement.md) | 허수 지표 없이 실제 생산성 변화를 측정하는 방법 — DORA 지표, 리드타임, 결함율, ROI 계산 예시 |
 
 ### 주제별 가이드
 
