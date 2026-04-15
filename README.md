@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~59 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~60 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -212,6 +212,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 57 | [Gemini CLI 실전 가이드 2026](./guides/57-gemini-cli-practical-guide-2026.md) | 설치부터 고급 코딩 워크플로우까지 — 대규모 코드베이스 분석, 멀티모달 입력, MCP 통합 |
 | 58 | [오케스트레이터-워커 패턴 심화 가이드](./guides/58-ai-agent-orchestrator-patterns.md) | 단일 에이전트 한계를 넘어 여러 AI 에이전트를 조율하는 실전 가이드 |
 | 59 | [AI 코딩 도구 ROI 측정 실전 가이드](./guides/59-ai-coding-roi-measurement.md) | 허수 지표 없이 실제 생산성 변화를 측정하는 방법 — DORA 지표, 리드타임, 결함율, ROI 계산 예시 |
+| 60 | [Kiro IDE 실전 가이드](./guides/60-kiro-ide-practical-guide.md) | Amazon Kiro 스펙 주도 워크플로우, Agent Hooks, Steering Files 완전 가이드 — Claude Code와 차이점 비교 |
 
 ### 주제별 가이드
 
@@ -366,6 +367,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 실시간 페어 코딩](./workflows/ai-realtime-pair-coding.md) | 개발자 2명 + AI 에이전트 실시간 페어 코딩 세션 운영 |
 | [AI CI/CD 파이프라인 최적화](./workflows/ai-cicd-pipeline-optimization.md) | AI 에이전트로 GitHub Actions 빌드 시간 단축 & 파이프라인 병목 자동 해소 |
 | [AI 피처 플래그 점진적 롤아웃](./workflows/ai-feature-flag-progressive-rollout.md) | 카나리 → 10% → 100% 단계 자동 관리, 이상 감지 시 즉시 롤백 |
+| [AI 의존성 업그레이드 자동화](./workflows/ai-dependency-upgrade-automation.md) | npm/pip/cargo 의존성 AI 호환성 분석 후 안전 PR 자동 생성 |
+| [AI IaC 코드 리뷰](./workflows/ai-iac-code-review.md) | Terraform/Pulumi 인프라 코드 AI 자동 리뷰 — 보안/비용/모범 사례 개선점 PR 제안 |
 
 ## 플레이북
 
