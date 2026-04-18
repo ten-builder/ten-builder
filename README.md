@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n63개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n65개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n13개 영상 코드"]
-    R --> C["cheatsheets/\n44개 원페이저"]
+    R --> C["cheatsheets/\n46개 원페이저"]
     R --> EX["examples/\n37개 실전 예제"]
-    R --> W["workflows/\n39개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n43개 심화 플레이북"]
+    R --> W["workflows/\n41개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n45개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~63 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~65 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -213,6 +213,9 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 58 | [오케스트레이터-워커 패턴 심화 가이드](./guides/58-ai-agent-orchestrator-patterns.md) | 단일 에이전트 한계를 넘어 여러 AI 에이전트를 조율하는 실전 가이드 |
 | 59 | [AI 코딩 도구 ROI 측정 실전 가이드](./guides/59-ai-coding-roi-measurement.md) | 허수 지표 없이 실제 생산성 변화를 측정하는 방법 — DORA 지표, 리드타임, 결함율, ROI 계산 예시 |
 | 60 | [Kiro IDE 실전 가이드](./guides/60-kiro-ide-practical-guide.md) | Amazon Kiro 스펙 주도 워크플로우, Agent Hooks, Steering Files 완전 가이드 — Claude Code와 차이점 비교 |
+| 61 | [AI 에이전트 결과물 검수 패턴](./guides/61-ai-agent-output-review-patterns.md) | AI 에이전트 출력 체계적 검수 & Human-in-the-Loop 패턴 |
+| 62 | [멀티 모델 교차 검증 워크플로우](./guides/62-multi-model-adversarial-review.md) | Claude Code 작성 + Gemini CLI 리뷰 — 고위험 코드 검증 가이드 |
+| 63 | [컨텍스트 엔지니어링](./guides/63-context-engineering-2026.md) | AI 에이전트 성능의 90%를 결정하는 컨텍스트 설계 — 5가지 레이어, 실전 패턴 |
 
 ### 주제별 가이드
 
@@ -281,6 +284,16 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 에이전트 보안 위협 대응](./cheatsheets/ai-agent-security-threat-response.md) | AI 코딩 보안 위협 실전 대응 체크리스트 |
 | [AI 에이전트 평가 프레임워크](./cheatsheets/ai-agent-evaluation-framework-cheatsheet.md) | AI 코딩 에이전트 정량적 평가 메트릭 & 프레임워크 |
 | [A2A + MCP 프로토콜 통합](./cheatsheets/a2a-mcp-protocol-cheatsheet.md) | A2A(에이전트 간) + MCP(에이전트-도구 간) 프로토콜 한 페이지 정리 |
+| [AI 에이전트 평가 프레임워크](./cheatsheets/ai-agent-evaluation-framework-cheatsheet.md) | AI 코딩 에이전트 정량 평가 기준 — SWE-bench, 완료율, 토큰 효율 |
+| [AI 보이스 코딩](./cheatsheets/ai-voice-coding-cheatsheet.md) | AI 코딩 도구 음성 입력 설정 & 핸즈프리 개발 패턴 |
+| [스펙 주도 개발](./cheatsheets/spec-driven-development-cheatsheet.md) | 스펙 먼저 정의하고 AI에게 구현 맡기는 패턴 한 페이지 정리 |
+| [Codex CLI 실전](./cheatsheets/codex-cli-cheatsheet.md) | OpenAI Codex CLI 핵심 명령어, Approval 모드, 샌드박스 실행 |
+| [AI 에이전트 메모리 아키텍처](./cheatsheets/ai-agent-memory-architecture-cheatsheet.md) | 단기/장기/외부 메모리 패턴 — CLAUDE.md, 메모리 파일, 벡터 DB 연동 |
+| [Git Hooks 자동화](./cheatsheets/ai-git-hooks-automation-cheatsheet.md) | pre-commit/pre-push/post-merge 훅 AI 연동 & 코드 품질 자동 강제 |
+| [AI 코딩 팀 온보딩](./cheatsheets/ai-coding-team-onboarding-cheatsheet.md) | 팀에 AI 코딩 도구 도입 시 필요한 설정, 규칙, 교육 항목 체크리스트 |
+| [AI 에이전트 워크플로우 관찰](./cheatsheets/ai-agent-observability-cheatsheet.md) | AI 에이전트 내부 상태 관찰 & 디버깅 — 로그, 토큰 추적, 툴 호출 모니터링 |
+| [AI 코딩 에이전트 실수 패턴](./cheatsheets/ai-coding-mistake-patterns-cheatsheet.md) | 2026년 AI 코딩 에이전트 실수 유형별 패턴 & 즉시 감지/교정 체크리스트 |
+| [AI 코딩 에이전트 선택 가이드](./cheatsheets/ai-coding-agent-selector-2026.md) | Cursor vs Claude Code vs Gemini CLI — 상황별 선택 기준 실용 치트시트 |
 | [스펙 주도 개발](./cheatsheets/spec-driven-development-cheatsheet.md) | 바이브 코딩 대안 — 스펙 먼저 쓰는 AI 코딩 패턴 한 페이지 정리 |
 | [AI 보이스 코딩](./cheatsheets/ai-voice-coding-cheatsheet.md) | 음성 입력으로 핸즈프리 개발 — Claude Code 음성 모드 설정 & 패턴 |
 | [AI 에이전트 메모리 아키텍처](./cheatsheets/ai-agent-memory-architecture-cheatsheet.md) | 단기/장기/외부 메모리 패턴 — CLAUDE.md, 메모리 파일, 벡터 DB 연동 |
@@ -325,6 +338,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI CLI 챗봇](./examples/ai-cli-chatbot) | LangGraph + Claude API로 대화 메모리와 도구 호출 기능 갖춘 CLI 챗봇 구현 |
 | [AI Slack 알림 봇](./examples/ai-slack-notification-bot) | 코드 리뷰, 빌드 실패, 배포 이벤트를 맥락 있게 요약해 Slack 전송하는 봇 |
 | [AI PR 자동 리뷰 봇](./examples/ai-pr-review-bot) | PR 오픈 시 코드 품질, 보안, 테스트 커버리지 자동 분석 후 코멘트를 남기는 GitHub Actions 봇 |
+| [AI API 문서 자동 생성기](./examples/ai-api-docs-generator) | FastAPI, Express 코드를 AI로 분석해 OpenAPI 스펙과 개발자 문서를 자동 생성 |
+| [AI 코드 리뷰 스타일 가이드 생성기](./examples/ai-style-guide-generator) | 기존 코드 패턴을 AI로 분석하여 팀 스타일 가이드와 린트 룰을 자동 생성 |
 
 ## 워크플로
 
@@ -368,6 +383,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI CI/CD 파이프라인 최적화](./workflows/ai-cicd-pipeline-optimization.md) | AI 에이전트로 GitHub Actions 빌드 시간 단축 & 파이프라인 병목 자동 해소 |
 | [AI 피처 플래그 점진적 롤아웃](./workflows/ai-feature-flag-progressive-rollout.md) | 카나리 → 10% → 100% 단계 자동 관리, 이상 감지 시 즉시 롤백 |
 | [AI 의존성 업그레이드 자동화](./workflows/ai-dependency-upgrade-automation.md) | npm/pip/cargo 의존성 AI 호환성 분석 후 안전 PR 자동 생성 |
+| [AI 생성 코드 신뢰 검증 파이프라인](./workflows/ai-code-trust-validation-pipeline.md) | 프로덕션 배포 전 AI 생성 코드 신뢰도를 체계적으로 검증하는 파이프라인 |
+| [AI 에이전트 기반 인시던트 대응](./workflows/ai-incident-response-workflow.md) | 프로덕션 장애 시 AI 보조로 근본 원인 파악 & 핫픽스 배포 5단계 워크플로우 |
 | [AI IaC 코드 리뷰](./workflows/ai-iac-code-review.md) | Terraform/Pulumi 인프라 코드 AI 자동 리뷰 — 보안/비용/모범 사례 개선점 PR 제안 |
 
 ## 플레이북
@@ -416,6 +433,11 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI TDD 워크플로우](./claude-code/playbooks/44-ai-tdd-workflow.md) | 테스트 먼저 쓰고 AI가 구현하는 TDD 실전 플레이북 |
 | [커스텀 MCP 서버 빌드 & 배포](./claude-code/playbooks/45-custom-mcp-server-build-deploy.md) | Node.js + TypeScript로 커스텀 MCP 서버를 만들고 Cloudflare Workers에 배포 |
 | [스키마 마이그레이션 자동화](./claude-code/playbooks/46-schema-migration-automation.md) | AI 에이전트로 DB 스키마 변경 시 마이그레이션 생성, 검증, 롤백 자동화 |
+| [플래닝 루프 복구 패턴](./claude-code/playbooks/47-planning-loop-recovery.md) | AI 에이전트 플래닝 단계 복구 — 타임아웃 감지, 체크포인트, 멀티 에이전트 페일오버 |
+| [보안 취약점 자동 패치](./claude-code/playbooks/48-security-vulnerability-auto-patch.md) | CVE 감지 → AI 자동 패치 → 테스트 → PR 생성 전 과정 자동화 |
+| [비동기 백그라운드 에이전트 운영](./claude-code/playbooks/49-async-background-agent-operations.md) | Claude Code Tasks 기능으로 장시간 태스크 백그라운드 실행 & 관리 |
+| [AI 코드 신뢰 앵커 설정](./claude-code/playbooks/50-ai-code-trust-anchors.md) | 팀 AI 생성 코드 신뢰 기준선 수립 — 리뷰 체크포인트, 자동화 게이트 |
+| [팀 AI 에이전트 협업 워크플로우](./claude-code/playbooks/51-team-ai-collaboration-workflow.md) | 협업 저장소에서 여러 개발자가 AI 에이전트를 동시 활용할 때 충돌 예방 |
 
 ## 템플릿
 
