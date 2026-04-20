@@ -27,7 +27,7 @@ flowchart TD
     R --> C["cheatsheets/\n46개 원페이저"]
     R --> EX["examples/\n37개 실전 예제"]
     R --> W["workflows/\n41개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n45개 심화 플레이북"]
+    R --> P["claude-code/playbooks/\n46개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -438,6 +438,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [비동기 백그라운드 에이전트 운영](./claude-code/playbooks/49-async-background-agent-operations.md) | Claude Code Tasks 기능으로 장시간 태스크 백그라운드 실행 & 관리 |
 | [AI 코드 신뢰 앵커 설정](./claude-code/playbooks/50-ai-code-trust-anchors.md) | 팀 AI 생성 코드 신뢰 기준선 수립 — 리뷰 체크포인트, 자동화 게이트 |
 | [팀 AI 에이전트 협업 워크플로우](./claude-code/playbooks/51-team-ai-collaboration-workflow.md) | 협업 저장소에서 여러 개발자가 AI 에이전트를 동시 활용할 때 충돌 예방 |
+| [AI 스페셜리스트 에이전트 역할 분담](./claude-code/playbooks/52-specialist-agent-roles.md) | 보안/성능/QA 전문가 역할을 서브에이전트에 부여해 코드를 다각도로 검증 |
 
 ## 템플릿
 
