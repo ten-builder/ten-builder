@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n65개 단계별 가이드\n+ 주제별 가이드"]
-    R --> E["episodes/\n13개 영상 코드"]
-    R --> C["cheatsheets/\n46개 원페이저"]
-    R --> EX["examples/\n37개 실전 예제"]
-    R --> W["workflows/\n41개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n46개 심화 플레이북"]
+    R["ten-builder"] --> G["guides/\n68개 단계별 가이드\n+ 주제별 가이드"]
+    R --> E["episodes/\n14개 영상 코드"]
+    R --> C["cheatsheets/\n47개 원페이저"]
+    R --> EX["examples/\n39개 실전 예제"]
+    R --> W["workflows/\n43개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n47개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~65 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~68 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -216,6 +216,9 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 61 | [AI 에이전트 결과물 검수 패턴](./guides/61-ai-agent-output-review-patterns.md) | AI 에이전트 출력 체계적 검수 & Human-in-the-Loop 패턴 |
 | 62 | [멀티 모델 교차 검증 워크플로우](./guides/62-multi-model-adversarial-review.md) | Claude Code 작성 + Gemini CLI 리뷰 — 고위험 코드 검증 가이드 |
 | 63 | [컨텍스트 엔지니어링](./guides/63-context-engineering-2026.md) | AI 에이전트 성능의 90%를 결정하는 컨텍스트 설계 — 5가지 레이어, 실전 패턴 |
+| 64 | [GitHub Copilot 팀 맞춤 설정](./guides/64-github-copilot-customization-guide.md) | 커스텀 지시사항 & 익스텐션으로 팀 특화 AI 코딩 환경 구성 |
+| 65 | [Windsurf IDE 실전 가이드 2026](./guides/65-windsurf-ide-practical-guide.md) | Cascade 에이전트 기반 흐름형 AI 코딩 — 설치, 패턴, Cursor/Claude Code 비교 |
+| 66 | [Amazon Q Developer CLI 실전 가이드 2026](./guides/66-amazon-q-developer-cli-guide.md) | AWS 네이티브 통합, IaC 코드 생성, 보안 스캔, 대화 저장/재개 — AWS 환경 AI 에이전트 |
 
 ### 주제별 가이드
 
@@ -239,6 +242,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | EP10 | MCP 서버 직접 만들기 | [`/episodes/EP10-mcp-server-hands-on`](./episodes/EP10-mcp-server-hands-on) |
 | EP11 | AI 코딩 도구 구매 가이드 | [`/episodes/EP11-ai-coding-tools-buying-guide`](./episodes/EP11-ai-coding-tools-buying-guide) |
 | EP13 | 말로 코딩하기 — AI 에이전트 음성 워크플로우 | [`/episodes/EP13-voice-coding-workflow`](./episodes/EP13-voice-coding-workflow) |
+| EP14 | AGENTS.md로 AI 팀 구성하기 | [`/episodes/EP14-agents-md-team-coding`](./episodes/EP14-agents-md-team-coding) |
 
 ## 치트시트
 
@@ -282,22 +286,18 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [2026 AI 코드 리뷰 도구 비교](./cheatsheets/ai-code-review-tools-2026.md) | AI 코드 리뷰 도구 기능/가격 비교 |
 | [MCP 프로덕션 보안](./cheatsheets/mcp-production-security-cheatsheet.md) | MCP 서버 프로덕션 보안 운영 체크리스트 |
 | [AI 에이전트 보안 위협 대응](./cheatsheets/ai-agent-security-threat-response.md) | AI 코딩 보안 위협 실전 대응 체크리스트 |
-| [AI 에이전트 평가 프레임워크](./cheatsheets/ai-agent-evaluation-framework-cheatsheet.md) | AI 코딩 에이전트 정량적 평가 메트릭 & 프레임워크 |
-| [A2A + MCP 프로토콜 통합](./cheatsheets/a2a-mcp-protocol-cheatsheet.md) | A2A(에이전트 간) + MCP(에이전트-도구 간) 프로토콜 한 페이지 정리 |
 | [AI 에이전트 평가 프레임워크](./cheatsheets/ai-agent-evaluation-framework-cheatsheet.md) | AI 코딩 에이전트 정량 평가 기준 — SWE-bench, 완료율, 토큰 효율 |
-| [AI 보이스 코딩](./cheatsheets/ai-voice-coding-cheatsheet.md) | AI 코딩 도구 음성 입력 설정 & 핸즈프리 개발 패턴 |
-| [스펙 주도 개발](./cheatsheets/spec-driven-development-cheatsheet.md) | 스펙 먼저 정의하고 AI에게 구현 맡기는 패턴 한 페이지 정리 |
-| [Codex CLI 실전](./cheatsheets/codex-cli-cheatsheet.md) | OpenAI Codex CLI 핵심 명령어, Approval 모드, 샌드박스 실행 |
+| [A2A + MCP 프로토콜 통합](./cheatsheets/a2a-mcp-protocol-cheatsheet.md) | A2A(에이전트 간) + MCP(에이전트-도구 간) 프로토콜 한 페이지 정리 |
+| [AI 보이스 코딩](./cheatsheets/ai-voice-coding-cheatsheet.md) | 음성 입력으로 핸즈프리 개발 — Claude Code 음성 모드 설정 & 패턴 |
+| [스펙 주도 개발](./cheatsheets/spec-driven-development-cheatsheet.md) | 바이브 코딩 대안 — 스펙 먼저 쓰는 AI 코딩 패턴 한 페이지 정리 |
+| [Codex CLI 실전](./cheatsheets/codex-cli-cheatsheet.md) | OpenAI Codex CLI 핵심 명령어, Approval 모드, 샌드박스 실행 완전 정복 |
 | [AI 에이전트 메모리 아키텍처](./cheatsheets/ai-agent-memory-architecture-cheatsheet.md) | 단기/장기/외부 메모리 패턴 — CLAUDE.md, 메모리 파일, 벡터 DB 연동 |
 | [Git Hooks 자동화](./cheatsheets/ai-git-hooks-automation-cheatsheet.md) | pre-commit/pre-push/post-merge 훅 AI 연동 & 코드 품질 자동 강제 |
 | [AI 코딩 팀 온보딩](./cheatsheets/ai-coding-team-onboarding-cheatsheet.md) | 팀에 AI 코딩 도구 도입 시 필요한 설정, 규칙, 교육 항목 체크리스트 |
 | [AI 에이전트 워크플로우 관찰](./cheatsheets/ai-agent-observability-cheatsheet.md) | AI 에이전트 내부 상태 관찰 & 디버깅 — 로그, 토큰 추적, 툴 호출 모니터링 |
 | [AI 코딩 에이전트 실수 패턴](./cheatsheets/ai-coding-mistake-patterns-cheatsheet.md) | 2026년 AI 코딩 에이전트 실수 유형별 패턴 & 즉시 감지/교정 체크리스트 |
 | [AI 코딩 에이전트 선택 가이드](./cheatsheets/ai-coding-agent-selector-2026.md) | Cursor vs Claude Code vs Gemini CLI — 상황별 선택 기준 실용 치트시트 |
-| [스펙 주도 개발](./cheatsheets/spec-driven-development-cheatsheet.md) | 바이브 코딩 대안 — 스펙 먼저 쓰는 AI 코딩 패턴 한 페이지 정리 |
-| [AI 보이스 코딩](./cheatsheets/ai-voice-coding-cheatsheet.md) | 음성 입력으로 핸즈프리 개발 — Claude Code 음성 모드 설정 & 패턴 |
-| [AI 에이전트 메모리 아키텍처](./cheatsheets/ai-agent-memory-architecture-cheatsheet.md) | 단기/장기/외부 메모리 패턴 — CLAUDE.md, 메모리 파일, 벡터 DB 연동 |
-| [Codex CLI 실전](./cheatsheets/codex-cli-cheatsheet.md) | OpenAI Codex CLI 핵심 명령어, Approval 모드, 샌드박스 실행 완전 정복 |
+| [AGENTS.md 컨텍스트 파일 설계](./cheatsheets/agents-md-context-engineering-cheatsheet.md) | AGENTS.md와 CLAUDE.md 구조, 작성 패턴, 실전 예시 한 페이지 정리 |
 
 ## 실전 예제
 
@@ -340,6 +340,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI PR 자동 리뷰 봇](./examples/ai-pr-review-bot) | PR 오픈 시 코드 품질, 보안, 테스트 커버리지 자동 분석 후 코멘트를 남기는 GitHub Actions 봇 |
 | [AI API 문서 자동 생성기](./examples/ai-api-docs-generator) | FastAPI, Express 코드를 AI로 분석해 OpenAPI 스펙과 개발자 문서를 자동 생성 |
 | [AI 코드 리뷰 스타일 가이드 생성기](./examples/ai-style-guide-generator) | 기존 코드 패턴을 AI로 분석하여 팀 스타일 가이드와 린트 룰을 자동 생성 |
+| [AI 시장 데이터 분석기](./examples/ai-market-data-analyzer) | Claude API + Tool Use로 실시간 주식/암호화폐 데이터를 분석하고 리포트 생성 |
+| [LangGraph 멀티 에이전트 코딩 파이프라인](./examples/langgraph-multi-agent) | LangGraph로 여러 AI 에이전트가 협력하는 코딩 파이프라인 구현 예제 |
 
 ## 워크플로
 
@@ -386,6 +388,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 생성 코드 신뢰 검증 파이프라인](./workflows/ai-code-trust-validation-pipeline.md) | 프로덕션 배포 전 AI 생성 코드 신뢰도를 체계적으로 검증하는 파이프라인 |
 | [AI 에이전트 기반 인시던트 대응](./workflows/ai-incident-response-workflow.md) | 프로덕션 장애 시 AI 보조로 근본 원인 파악 & 핫픽스 배포 5단계 워크플로우 |
 | [AI IaC 코드 리뷰](./workflows/ai-iac-code-review.md) | Terraform/Pulumi 인프라 코드 AI 자동 리뷰 — 보안/비용/모범 사례 개선점 PR 제안 |
+| [AI 데이터 파이프라인 개발](./workflows/ai-data-pipeline-development.md) | AI 에이전트로 ETL/ELT 데이터 파이프라인 설계, 구현, 테스트, 배포 단계별 워크플로우 |
+| [Ollama + Claude Code 하이브리드](./workflows/ollama-claude-hybrid-workflow.md) | 로컬 모델과 Claude Code 조합으로 API 비용 60-80% 절감하는 하이브리드 워크플로우 |
 
 ## 플레이북
 
@@ -439,6 +443,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 코드 신뢰 앵커 설정](./claude-code/playbooks/50-ai-code-trust-anchors.md) | 팀 AI 생성 코드 신뢰 기준선 수립 — 리뷰 체크포인트, 자동화 게이트 |
 | [팀 AI 에이전트 협업 워크플로우](./claude-code/playbooks/51-team-ai-collaboration-workflow.md) | 협업 저장소에서 여러 개발자가 AI 에이전트를 동시 활용할 때 충돌 예방 |
 | [AI 스페셜리스트 에이전트 역할 분담](./claude-code/playbooks/52-specialist-agent-roles.md) | 보안/성능/QA 전문가 역할을 서브에이전트에 부여해 코드를 다각도로 검증 |
+| [Claude Code Max 플랜 200% 활용](./claude-code/playbooks/53-claude-code-max-plan-guide.md) | Max 플랜 CLAUDE.md 최적화, 컨텍스트 관리, 에이전트 팀, Hooks 자동화 7단계 가이드 |
 
 ## 템플릿
 
