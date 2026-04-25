@@ -23,11 +23,11 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 ```mermaid
 flowchart TD
     R["ten-builder"] --> G["guides/\n74개 단계별 가이드\n+ 주제별 가이드"]
-    R --> E["episodes/\n14개 영상 코드"]
+    R --> E["episodes/\n15개 영상 코드"]
     R --> C["cheatsheets/\n51개 원페이저"]
     R --> EX["examples/\n39개 실전 예제"]
-    R --> W["workflows/\n44개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n47개 심화 플레이북"]
+    R --> W["workflows/\n46개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n48개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -243,6 +243,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | EP11 | AI 코딩 도구 구매 가이드 | [`/episodes/EP11-ai-coding-tools-buying-guide`](./episodes/EP11-ai-coding-tools-buying-guide) |
 | EP13 | 말로 코딩하기 — AI 에이전트 음성 워크플로우 | [`/episodes/EP13-voice-coding-workflow`](./episodes/EP13-voice-coding-workflow) |
 | EP14 | AGENTS.md로 AI 팀 구성하기 | [`/episodes/EP14-agents-md-team-coding`](./episodes/EP14-agents-md-team-coding) |
+| EP15 | SWE-Bench 에이전트 직접 만들기 | [`/episodes/EP15-swe-bench-agent-build`](./episodes/EP15-swe-bench-agent-build) |
 
 ## 치트시트
 
@@ -390,6 +391,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI IaC 코드 리뷰](./workflows/ai-iac-code-review.md) | Terraform/Pulumi 인프라 코드 AI 자동 리뷰 — 보안/비용/모범 사례 개선점 PR 제안 |
 | [AI 데이터 파이프라인 개발](./workflows/ai-data-pipeline-development.md) | AI 에이전트로 ETL/ELT 데이터 파이프라인 설계, 구현, 테스트, 배포 단계별 워크플로우 |
 | [Ollama + Claude Code 하이브리드](./workflows/ollama-claude-hybrid-workflow.md) | 로컬 모델과 Claude Code 조합으로 API 비용 60-80% 절감하는 하이브리드 워크플로우 |
+| [Stacked PR 워크플로우](./workflows/ai-stacked-pr-workflow.md) | 대형 기능을 작은 PR로 분해해 리뷰 부담을 줄이고 머지 속도를 높이는 실전 워크플로우 |
+| [AI 브라운필드 마이그레이션](./workflows/ai-brownfield-migration-workflow.md) | 레거시 시스템을 AI 에이전트로 단계적으로 현대화하는 전략 — 위험 분류, 점진적 교체, 호환성 레이어 |
 
 ## 플레이북
 
@@ -444,6 +447,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [팀 AI 에이전트 협업 워크플로우](./claude-code/playbooks/51-team-ai-collaboration-workflow.md) | 협업 저장소에서 여러 개발자가 AI 에이전트를 동시 활용할 때 충돌 예방 |
 | [AI 스페셜리스트 에이전트 역할 분담](./claude-code/playbooks/52-specialist-agent-roles.md) | 보안/성능/QA 전문가 역할을 서브에이전트에 부여해 코드를 다각도로 검증 |
 | [Claude Code Max 플랜 200% 활용](./claude-code/playbooks/53-claude-code-max-plan-guide.md) | Max 플랜 CLAUDE.md 최적화, 컨텍스트 관리, 에이전트 팀, Hooks 자동화 7단계 가이드 |
+| [AI 에이전트 프롬프트 버전 관리](./claude-code/playbooks/54-prompt-version-control.md) | 시스템 프롬프트를 Git으로 버전 관리하고 프롬프트 변경이 결과물에 미치는 영향을 추적하는 플레이북 |
 
 ## 템플릿
 
