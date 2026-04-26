@@ -22,11 +22,11 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n74개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n81개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n15개 영상 코드"]
-    R --> C["cheatsheets/\n51개 원페이저"]
-    R --> EX["examples/\n39개 실전 예제"]
-    R --> W["workflows/\n46개 자동화 워크플로"]
+    R --> C["cheatsheets/\n52개 원페이저"]
+    R --> EX["examples/\n40개 실전 예제"]
+    R --> W["workflows/\n47개 자동화 워크플로"]
     R --> P["claude-code/playbooks/\n48개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~74 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~73 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -219,6 +219,13 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 64 | [GitHub Copilot 팀 맞춤 설정](./guides/64-github-copilot-customization-guide.md) | 커스텀 지시사항 & 익스텐션으로 팀 특화 AI 코딩 환경 구성 |
 | 65 | [Windsurf IDE 실전 가이드 2026](./guides/65-windsurf-ide-practical-guide.md) | Cascade 에이전트 기반 흐름형 AI 코딩 — 설치, 패턴, Cursor/Claude Code 비교 |
 | 66 | [Amazon Q Developer CLI 실전 가이드 2026](./guides/66-amazon-q-developer-cli-guide.md) | AWS 네이티브 통합, IaC 코드 생성, 보안 스캔, 대화 저장/재개 — AWS 환경 AI 에이전트 |
+| 67 | [AI PR 리뷰 자동화 가이드 2026](./guides/67-ai-pr-review-automation-guide.md) | PR 대기 시간을 줄이는 AI 리뷰 자동화 — GitHub Actions 파이프라인 구축 |
+| 68 | [Junie CLI 실전 가이드 2026](./guides/68-junie-cli-practical-guide-2026.md) | JetBrains 터미널 AI 에이전트 — IDE 연동, 모델 선택, 자율 실행 패턴 |
+| 69 | [Claude Agent SDK & 장기 실행 에이전트 실전 가이드 2026](./guides/69-claude-agent-sdk-long-running-guide.md) | 장시간 자율 실행, Hooks 3가지 유형, 서브에이전트 컨텍스트 격리 패턴 |
+| 70 | [AI 에이전트 품질 저하 감지법](./guides/70-ai-agent-quality-degradation-detection.md) | Claude Code 사후 분석으로 배우는 AI 에이전트 신뢰성 설계 |
+| 71 | [Claude Code Agent Teams GA 실전 가이드](./guides/71-claude-code-agent-teams-ga-guide.md) | 정식 출시된 Agent Teams — AI 팀과 협업하는 새로운 개발 방식 |
+| 72 | [AI 에이전트 팀 구성 가이드](./guides/72-ai-coding-agent-team-composition-guide.md) | 역할 분담으로 복잡한 기능 완성하기 — 플래너, 아키텍트, 구현자, 테스터 |
+| 73 | [Cursor IDE 실전 가이드 2026](./guides/73-cursor-ide-practical-guide-2026.md) | Background Agents, Notepads, .cursorrules, Composer 완전 정복 |
 
 ### 주제별 가이드
 
@@ -299,6 +306,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 코딩 에이전트 실수 패턴](./cheatsheets/ai-coding-mistake-patterns-cheatsheet.md) | 2026년 AI 코딩 에이전트 실수 유형별 패턴 & 즉시 감지/교정 체크리스트 |
 | [AI 코딩 에이전트 선택 가이드](./cheatsheets/ai-coding-agent-selector-2026.md) | Cursor vs Claude Code vs Gemini CLI — 상황별 선택 기준 실용 치트시트 |
 | [AGENTS.md 컨텍스트 파일 설계](./cheatsheets/agents-md-context-engineering-cheatsheet.md) | AGENTS.md와 CLAUDE.md 구조, 작성 패턴, 실전 예시 한 페이지 정리 |
+| [Cursor Rules 2026](./cheatsheets/cursor-rules-2026-cheatsheet.md) | .cursorrules 작성 패턴, Meta-Rules, 팀 공유 전략 — Cursor 2.6+ 기준 |
 
 ## 실전 예제
 
@@ -343,6 +351,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 코드 리뷰 스타일 가이드 생성기](./examples/ai-style-guide-generator) | 기존 코드 패턴을 AI로 분석하여 팀 스타일 가이드와 린트 룰을 자동 생성 |
 | [AI 시장 데이터 분석기](./examples/ai-market-data-analyzer) | Claude API + Tool Use로 실시간 주식/암호화폐 데이터를 분석하고 리포트 생성 |
 | [LangGraph 멀티 에이전트 코딩 파이프라인](./examples/langgraph-multi-agent) | LangGraph로 여러 AI 에이전트가 협력하는 코딩 파이프라인 구현 예제 |
+| [AI GitHub App 코드 리뷰 봇](./examples/ai-github-app-reviewer) | PR 오픈 시 코드 품질, 보안, 테스트 커버리지를 자동 분석하고 인라인 코멘트를 남기는 GitHub App |
 
 ## 워크플로
 
@@ -393,6 +402,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [Ollama + Claude Code 하이브리드](./workflows/ollama-claude-hybrid-workflow.md) | 로컬 모델과 Claude Code 조합으로 API 비용 60-80% 절감하는 하이브리드 워크플로우 |
 | [Stacked PR 워크플로우](./workflows/ai-stacked-pr-workflow.md) | 대형 기능을 작은 PR로 분해해 리뷰 부담을 줄이고 머지 속도를 높이는 실전 워크플로우 |
 | [AI 브라운필드 마이그레이션](./workflows/ai-brownfield-migration-workflow.md) | 레거시 시스템을 AI 에이전트로 단계적으로 현대화하는 전략 — 위험 분류, 점진적 교체, 호환성 레이어 |
+| [AI E2E 테스트 자동 생성](./workflows/ai-e2e-test-generation.md) | Playwright + AI 에이전트로 신규 기능 구현 후 E2E 테스트를 자동 생성하고 CI/CD에 통합 |
 
 ## 플레이북
 
