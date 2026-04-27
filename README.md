@@ -24,7 +24,7 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 flowchart TD
     R["ten-builder"] --> G["guides/\n81개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n15개 영상 코드"]
-    R --> C["cheatsheets/\n52개 원페이저"]
+    R --> C["cheatsheets/\n53개 원페이저"]
     R --> EX["examples/\n40개 실전 예제"]
     R --> W["workflows/\n47개 자동화 워크플로"]
     R --> P["claude-code/playbooks/\n48개 심화 플레이북"]
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~73 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~74 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -226,6 +226,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 71 | [Claude Code Agent Teams GA 실전 가이드](./guides/71-claude-code-agent-teams-ga-guide.md) | 정식 출시된 Agent Teams — AI 팀과 협업하는 새로운 개발 방식 |
 | 72 | [AI 에이전트 팀 구성 가이드](./guides/72-ai-coding-agent-team-composition-guide.md) | 역할 분담으로 복잡한 기능 완성하기 — 플래너, 아키텍트, 구현자, 테스터 |
 | 73 | [Cursor IDE 실전 가이드 2026](./guides/73-cursor-ide-practical-guide-2026.md) | Background Agents, Notepads, .cursorrules, Composer 완전 정복 |
+| 74 | [Zed IDE 실전 가이드 2026](./guides/74-zed-ide-practical-guide-2026.md) | ACP로 AI 에이전트 팀 구성하기 — Rust 기반 초고속 에디터의 새로운 정체성 |
 
 ### 주제별 가이드
 
@@ -307,6 +308,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 코딩 에이전트 선택 가이드](./cheatsheets/ai-coding-agent-selector-2026.md) | Cursor vs Claude Code vs Gemini CLI — 상황별 선택 기준 실용 치트시트 |
 | [AGENTS.md 컨텍스트 파일 설계](./cheatsheets/agents-md-context-engineering-cheatsheet.md) | AGENTS.md와 CLAUDE.md 구조, 작성 패턴, 실전 예시 한 페이지 정리 |
 | [Cursor Rules 2026](./cheatsheets/cursor-rules-2026-cheatsheet.md) | .cursorrules 작성 패턴, Meta-Rules, 팀 공유 전략 — Cursor 2.6+ 기준 |
+| [2026 에이전틱 코딩 트렌드](./cheatsheets/agentic-coding-trends-2026-cheatsheet.md) | 84% 도입률, 29% 신뢰율 격차, 에이전트 팀 — 2026 AI 코딩 현황 핵심 수치 |
 
 ## 실전 예제
 
