@@ -252,6 +252,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | EP13 | 말로 코딩하기 — AI 에이전트 음성 워크플로우 | [`/episodes/EP13-voice-coding-workflow`](./episodes/EP13-voice-coding-workflow) |
 | EP14 | AGENTS.md로 AI 팀 구성하기 | [`/episodes/EP14-agents-md-team-coding`](./episodes/EP14-agents-md-team-coding) |
 | EP15 | SWE-Bench 에이전트 직접 만들기 | [`/episodes/EP15-swe-bench-agent-build`](./episodes/EP15-swe-bench-agent-build) |
+| EP16 | OpenCode 실전 — 오픈소스 AI 코딩 에이전트 직접 써보기 | [`/episodes/EP16-opencode-live`](./episodes/EP16-opencode-live) |
 
 ## 치트시트
 
@@ -405,6 +406,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [Stacked PR 워크플로우](./workflows/ai-stacked-pr-workflow.md) | 대형 기능을 작은 PR로 분해해 리뷰 부담을 줄이고 머지 속도를 높이는 실전 워크플로우 |
 | [AI 브라운필드 마이그레이션](./workflows/ai-brownfield-migration-workflow.md) | 레거시 시스템을 AI 에이전트로 단계적으로 현대화하는 전략 — 위험 분류, 점진적 교체, 호환성 레이어 |
 | [AI E2E 테스트 자동 생성](./workflows/ai-e2e-test-generation.md) | Playwright + AI 에이전트로 신규 기능 구현 후 E2E 테스트를 자동 생성하고 CI/CD에 통합 |
+| [AI 다중 저장소 동시 작업](./workflows/ai-multi-repo-synchronized-workflow.md) | 여러 레포에 걸쳐 AI 에이전트가 일관성 있게 변경사항을 적용하는 워크플로우 — 의존성 맵, 변경 전파, 크로스-레포 PR 관리 |
 
 ## 플레이북
 
@@ -460,6 +462,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 스페셜리스트 에이전트 역할 분담](./claude-code/playbooks/52-specialist-agent-roles.md) | 보안/성능/QA 전문가 역할을 서브에이전트에 부여해 코드를 다각도로 검증 |
 | [Claude Code Max 플랜 200% 활용](./claude-code/playbooks/53-claude-code-max-plan-guide.md) | Max 플랜 CLAUDE.md 최적화, 컨텍스트 관리, 에이전트 팀, Hooks 자동화 7단계 가이드 |
 | [AI 에이전트 프롬프트 버전 관리](./claude-code/playbooks/54-prompt-version-control.md) | 시스템 프롬프트를 Git으로 버전 관리하고 프롬프트 변경이 결과물에 미치는 영향을 추적하는 플레이북 |
+| [AI 에이전트 도입 실패 패턴](./claude-code/playbooks/55-ai-agent-adoption-failure-patterns.md) | AI 코딩 에이전트 도입 시 실패하는 5가지 패턴과 팀별 성공 전략 |
 
 ## 템플릿
 
