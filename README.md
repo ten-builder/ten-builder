@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n81개 단계별 가이드\n+ 주제별 가이드"]
-    R --> E["episodes/\n15개 영상 코드"]
-    R --> C["cheatsheets/\n53개 원페이저"]
-    R --> EX["examples/\n40개 실전 예제"]
-    R --> W["workflows/\n47개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n48개 심화 플레이북"]
+    R["ten-builder"] --> G["guides/\n77개 단계별 가이드\n+ 주제별 가이드"]
+    R --> E["episodes/\n16개 영상 코드"]
+    R --> C["cheatsheets/\n57개 원페이저"]
+    R --> EX["examples/\n43개 실전 예제"]
+    R --> W["workflows/\n48개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n49개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~74 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~77 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -227,6 +227,9 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 72 | [AI 에이전트 팀 구성 가이드](./guides/72-ai-coding-agent-team-composition-guide.md) | 역할 분담으로 복잡한 기능 완성하기 — 플래너, 아키텍트, 구현자, 테스터 |
 | 73 | [Cursor IDE 실전 가이드 2026](./guides/73-cursor-ide-practical-guide-2026.md) | Background Agents, Notepads, .cursorrules, Composer 완전 정복 |
 | 74 | [Zed IDE 실전 가이드 2026](./guides/74-zed-ide-practical-guide-2026.md) | ACP로 AI 에이전트 팀 구성하기 — Rust 기반 초고속 에디터의 새로운 정체성 |
+| 75 | [React Native + Expo AI 에이전트 개발 가이드 2026](./guides/75-react-native-mobile-ai-agent-guide.md) | Expo Skills 연동, 컴포넌트 개발, 네이티브 기능 통합, E2E 테스트 자동화 |
+| 76 | [AI 에이전트 코드 리팩토링 가이드 2026](./guides/76-ai-agent-refactoring-guide-2026.md) | 기술 부채 우선순위, 안전한 리팩토링 패턴, 테스트 커버리지 확보, 팀 합의 프로세스 |
+| 77 | [Claude Code Week 17 실전 가이드](./guides/77-claude-code-week17-features-guide.md) | 커스텀 테마, /team-onboarding 커맨드, UI 개편, 기업 CA 인증서 자동 신뢰 |
 
 ### 주제별 가이드
 
@@ -249,10 +252,12 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | EP09 | AI 코딩 거버넌스 | [`/episodes/EP09-ai-coding-governance`](./episodes/EP09-ai-coding-governance) |
 | EP10 | MCP 서버 직접 만들기 | [`/episodes/EP10-mcp-server-hands-on`](./episodes/EP10-mcp-server-hands-on) |
 | EP11 | AI 코딩 도구 구매 가이드 | [`/episodes/EP11-ai-coding-tools-buying-guide`](./episodes/EP11-ai-coding-tools-buying-guide) |
+| EP12 | AI 코딩 에이전트 실시간 비용 대시보드 만들기 | [`/episodes/EP12-ai-cost-dashboard-live`](./episodes/EP12-ai-cost-dashboard-live) |
 | EP13 | 말로 코딩하기 — AI 에이전트 음성 워크플로우 | [`/episodes/EP13-voice-coding-workflow`](./episodes/EP13-voice-coding-workflow) |
 | EP14 | AGENTS.md로 AI 팀 구성하기 | [`/episodes/EP14-agents-md-team-coding`](./episodes/EP14-agents-md-team-coding) |
 | EP15 | SWE-Bench 에이전트 직접 만들기 | [`/episodes/EP15-swe-bench-agent-build`](./episodes/EP15-swe-bench-agent-build) |
 | EP16 | OpenCode 실전 — 오픈소스 AI 코딩 에이전트 직접 써보기 | [`/episodes/EP16-opencode-live`](./episodes/EP16-opencode-live) |
+| EP17 | AI 에이전트로 풀스택 SaaS 48시간 만에 만들기 | [`/episodes/EP17-saas-48h-build`](./episodes/EP17-saas-48h-build) |
 
 ## 치트시트
 
@@ -310,6 +315,10 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AGENTS.md 컨텍스트 파일 설계](./cheatsheets/agents-md-context-engineering-cheatsheet.md) | AGENTS.md와 CLAUDE.md 구조, 작성 패턴, 실전 예시 한 페이지 정리 |
 | [Cursor Rules 2026](./cheatsheets/cursor-rules-2026-cheatsheet.md) | .cursorrules 작성 패턴, Meta-Rules, 팀 공유 전략 — Cursor 2.6+ 기준 |
 | [2026 에이전틱 코딩 트렌드](./cheatsheets/agentic-coding-trends-2026-cheatsheet.md) | 84% 도입률, 29% 신뢰율 격차, 에이전트 팀 — 2026 AI 코딩 현황 핵심 수치 |
+| [GPT-5.5 vs Claude Opus 4.7 vs Gemini 3.1 Pro](./cheatsheets/gpt55-vs-claude-vs-gemini-coding-cheatsheet.md) | AI 코딩 모델 성능 벤치마크 비교, 작업 유형별 최적 모델 선택 기준 2026 |
+| [AI 멀티 툴 코딩 스택](./cheatsheets/ai-multi-tool-coding-stack-cheatsheet.md) | Cursor + Claude Code + Codex CLI 조합 참조 카드 — 도구별 역할 분담 & 비용 비교 |
+| [AI 터미널 워크플로우](./cheatsheets/ai-terminal-workflow-cheatsheet.md) | zsh/bash에서 Claude Code, Gemini CLI, Codex CLI 단축키, 별칭, 파이프라인 패턴 |
+| [Claude Code Opus 4.7 신기능](./cheatsheets/claude-code-opus47-new-features-cheatsheet.md) | /ultrareview, xhigh effort 슬라이더, Dispatch 실행, Auto Mode Max 치트시트 |
 
 ## 실전 예제
 
@@ -350,6 +359,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI CLI 챗봇](./examples/ai-cli-chatbot) | LangGraph + Claude API로 대화 메모리와 도구 호출 기능 갖춘 CLI 챗봇 구현 |
 | [AI Slack 알림 봇](./examples/ai-slack-notification-bot) | 코드 리뷰, 빌드 실패, 배포 이벤트를 맥락 있게 요약해 Slack 전송하는 봇 |
 | [AI PR 자동 리뷰 봇](./examples/ai-pr-review-bot) | PR 오픈 시 코드 품질, 보안, 테스트 커버리지 자동 분석 후 코멘트를 남기는 GitHub Actions 봇 |
+| [AI GraphQL 스키마 생성기](./examples/ai-graphql-schema-generator) | Prisma/Drizzle 스키마에서 GraphQL 타입, 리졸버, 뮤테이션을 AI 에이전트로 자동 생성 |
+| [AI 실시간 협업 코딩 도구](./examples/ai-realtime-collab-editor) | WebSocket과 AI 에이전트로 여러 개발자가 동시에 코드를 편집하는 실시간 협업 구현 예제 |
 | [AI API 문서 자동 생성기](./examples/ai-api-docs-generator) | FastAPI, Express 코드를 AI로 분석해 OpenAPI 스펙과 개발자 문서를 자동 생성 |
 | [AI 코드 리뷰 스타일 가이드 생성기](./examples/ai-style-guide-generator) | 기존 코드 패턴을 AI로 분석하여 팀 스타일 가이드와 린트 룰을 자동 생성 |
 | [AI 시장 데이터 분석기](./examples/ai-market-data-analyzer) | Claude API + Tool Use로 실시간 주식/암호화폐 데이터를 분석하고 리포트 생성 |
@@ -405,6 +416,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [Ollama + Claude Code 하이브리드](./workflows/ollama-claude-hybrid-workflow.md) | 로컬 모델과 Claude Code 조합으로 API 비용 60-80% 절감하는 하이브리드 워크플로우 |
 | [Stacked PR 워크플로우](./workflows/ai-stacked-pr-workflow.md) | 대형 기능을 작은 PR로 분해해 리뷰 부담을 줄이고 머지 속도를 높이는 실전 워크플로우 |
 | [AI 브라운필드 마이그레이션](./workflows/ai-brownfield-migration-workflow.md) | 레거시 시스템을 AI 에이전트로 단계적으로 현대화하는 전략 — 위험 분류, 점진적 교체, 호환성 레이어 |
+| [AI API 게이트웨이 설계](./workflows/ai-api-gateway-design-workflow.md) | 마이크로서비스 API 게이트웨이를 AI 에이전트로 설계하는 워크플로우 — 라우팅, 인증, 속도 제한, 모니터링 |
 | [AI E2E 테스트 자동 생성](./workflows/ai-e2e-test-generation.md) | Playwright + AI 에이전트로 신규 기능 구현 후 E2E 테스트를 자동 생성하고 CI/CD에 통합 |
 | [AI 다중 저장소 동시 작업](./workflows/ai-multi-repo-synchronized-workflow.md) | 여러 레포에 걸쳐 AI 에이전트가 일관성 있게 변경사항을 적용하는 워크플로우 — 의존성 맵, 변경 전파, 크로스-레포 PR 관리 |
 
@@ -463,6 +475,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [Claude Code Max 플랜 200% 활용](./claude-code/playbooks/53-claude-code-max-plan-guide.md) | Max 플랜 CLAUDE.md 최적화, 컨텍스트 관리, 에이전트 팀, Hooks 자동화 7단계 가이드 |
 | [AI 에이전트 프롬프트 버전 관리](./claude-code/playbooks/54-prompt-version-control.md) | 시스템 프롬프트를 Git으로 버전 관리하고 프롬프트 변경이 결과물에 미치는 영향을 추적하는 플레이북 |
 | [AI 에이전트 도입 실패 패턴](./claude-code/playbooks/55-ai-agent-adoption-failure-patterns.md) | AI 코딩 에이전트 도입 시 실패하는 5가지 패턴과 팀별 성공 전략 |
+| [그린필드 프로젝트 킥오프](./claude-code/playbooks/56-greenfield-project-kickoff.md) | AI 에이전트와 새 프로젝트를 처음부터 설정하는 단계별 플레이북 — CLAUDE.md, 구조 설계, 첫 스프린트 자동화 |
 
 ## 템플릿
 
