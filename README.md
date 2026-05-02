@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n79개 단계별 가이드\n+ 주제별 가이드"]
-    R --> E["episodes/\n16개 영상 코드"]
-    R --> C["cheatsheets/\n57개 원페이저"]
+    R["ten-builder"] --> G["guides/\n81개 단계별 가이드\n+ 주제별 가이드"]
+    R --> E["episodes/\n17개 영상 코드"]
+    R --> C["cheatsheets/\n56개 원페이저"]
     R --> EX["examples/\n43개 실전 예제"]
-    R --> W["workflows/\n48개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n50개 심화 플레이북"]
+    R --> W["workflows/\n50개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n52개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~77 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~79 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -370,6 +370,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 시장 데이터 분석기](./examples/ai-market-data-analyzer) | Claude API + Tool Use로 실시간 주식/암호화폐 데이터를 분석하고 리포트 생성 |
 | [LangGraph 멀티 에이전트 코딩 파이프라인](./examples/langgraph-multi-agent) | LangGraph로 여러 AI 에이전트가 협력하는 코딩 파이프라인 구현 예제 |
 | [AI GitHub App 코드 리뷰 봇](./examples/ai-github-app-reviewer) | PR 오픈 시 코드 품질, 보안, 테스트 커버리지를 자동 분석하고 인라인 코멘트를 남기는 GitHub App |
+| [AI 로그 이상 감지 시스템](./examples/ai-log-anomaly-detection) | OpenSearch RCF + Claude API로 대규모 서비스 로그의 이상 패턴을 실시간 감지하고 근본 원인 분석 |
 
 ## 워크플로
 
