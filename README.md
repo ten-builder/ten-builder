@@ -22,9 +22,9 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n81개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n82개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n17개 영상 코드"]
-    R --> C["cheatsheets/\n56개 원페이저"]
+    R --> C["cheatsheets/\n57개 원페이저"]
     R --> EX["examples/\n43개 실전 예제"]
     R --> W["workflows/\n50개 자동화 워크플로"]
     R --> P["claude-code/playbooks/\n52개 심화 플레이북"]
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~79 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~80 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -232,6 +232,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 77 | [Claude Code Week 17 실전 가이드](./guides/77-claude-code-week17-features-guide.md) | 커스텀 테마, /team-onboarding 커맨드, UI 개편, 기업 CA 인증서 자동 신뢰 |
 | 78 | [Claude Code Remote Control + Dispatch 실전 가이드](./guides/78-claude-code-remote-dispatch-guide.md) | 여러 머신에서 AI 에이전트를 원격 조율하는 분산 에이전트 배포, 네트워크 격리, 태스크 라우팅 |
 | 79 | [Claude Code Week 18 실전 가이드](./guides/79-claude-code-week18-features-guide.md) | ultraplan 자동 클라우드, /resume, /model 영속화, 포크 서브에이전트 |
+| 80 | [스펙-퍼스트 개발 실전 가이드 2026](./guides/80-spec-first-ai-workflow-guide.md) | 코드 전에 AI와 함께 설계하는 4단계 워크플로우 — CLAUDE.md 규칙, 스펙-구현 검증, 팀 도입 전략 |
 
 ### 주제별 가이드
 
@@ -323,6 +324,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [Claude Code Opus 4.7 신기능](./cheatsheets/claude-code-opus47-new-features-cheatsheet.md) | /ultrareview, xhigh effort 슬라이더, Dispatch 실행, Auto Mode Max 치트시트 |
 | [AI 에이전트 프롬프트 캐싱 전략](./cheatsheets/ai-prompt-caching-2026-cheatsheet.md) | 캐시 히트율 최적화, 시스템 프롬프트 구조화, Claude/Gemini/GPT 플랫폼별 캐싱 정책 비교 |
 | [Claude Code Channels 다중 에이전트 조율](./cheatsheets/claude-code-channels-cheatsheet.md) | Channels 기능으로 에이전트 실시간 협력 — 채널 생성, 구독, 메시지 라우팅, Dispatch 연동 |
+| [바이브 코딩 프로덕션 배포 체크리스트](./cheatsheets/vibe-coding-production-checklist.md) | AI 생성 코드를 프로덕션에 안전하게 배포하기 위한 보안·검증·모니터링 체크리스트 |
+| [PIV 루프 에이전틱 코딩](./cheatsheets/piv-loop-agentic-coding-cheatsheet.md) | Plan→Implement→Validate 3단계 반복 워크플로우로 구조화된 AI 코딩을 실천하는 치트시트 |
 
 ## 실전 예제
 
