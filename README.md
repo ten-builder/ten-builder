@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n77개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n79개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n16개 영상 코드"]
     R --> C["cheatsheets/\n57개 원페이저"]
     R --> EX["examples/\n43개 실전 예제"]
     R --> W["workflows/\n48개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n49개 심화 플레이북"]
+    R --> P["claude-code/playbooks/\n50개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -230,6 +230,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 75 | [React Native + Expo AI 에이전트 개발 가이드 2026](./guides/75-react-native-mobile-ai-agent-guide.md) | Expo Skills 연동, 컴포넌트 개발, 네이티브 기능 통합, E2E 테스트 자동화 |
 | 76 | [AI 에이전트 코드 리팩토링 가이드 2026](./guides/76-ai-agent-refactoring-guide-2026.md) | 기술 부채 우선순위, 안전한 리팩토링 패턴, 테스트 커버리지 확보, 팀 합의 프로세스 |
 | 77 | [Claude Code Week 17 실전 가이드](./guides/77-claude-code-week17-features-guide.md) | 커스텀 테마, /team-onboarding 커맨드, UI 개편, 기업 CA 인증서 자동 신뢰 |
+| 78 | [Claude Code Remote Control + Dispatch 실전 가이드](./guides/78-claude-code-remote-dispatch-guide.md) | 여러 머신에서 AI 에이전트를 원격 조율하는 분산 에이전트 배포, 네트워크 격리, 태스크 라우팅 |
+| 79 | [Claude Code Week 18 실전 가이드](./guides/79-claude-code-week18-features-guide.md) | ultraplan 자동 클라우드, /resume, /model 영속화, 포크 서브에이전트 |
 
 ### 주제별 가이드
 
@@ -319,6 +321,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 멀티 툴 코딩 스택](./cheatsheets/ai-multi-tool-coding-stack-cheatsheet.md) | Cursor + Claude Code + Codex CLI 조합 참조 카드 — 도구별 역할 분담 & 비용 비교 |
 | [AI 터미널 워크플로우](./cheatsheets/ai-terminal-workflow-cheatsheet.md) | zsh/bash에서 Claude Code, Gemini CLI, Codex CLI 단축키, 별칭, 파이프라인 패턴 |
 | [Claude Code Opus 4.7 신기능](./cheatsheets/claude-code-opus47-new-features-cheatsheet.md) | /ultrareview, xhigh effort 슬라이더, Dispatch 실행, Auto Mode Max 치트시트 |
+| [AI 에이전트 프롬프트 캐싱 전략](./cheatsheets/ai-prompt-caching-2026-cheatsheet.md) | 캐시 히트율 최적화, 시스템 프롬프트 구조화, Claude/Gemini/GPT 플랫폼별 캐싱 정책 비교 |
+| [Claude Code Channels 다중 에이전트 조율](./cheatsheets/claude-code-channels-cheatsheet.md) | Channels 기능으로 에이전트 실시간 협력 — 채널 생성, 구독, 메시지 라우팅, Dispatch 연동 |
 
 ## 실전 예제
 
@@ -419,6 +423,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI API 게이트웨이 설계](./workflows/ai-api-gateway-design-workflow.md) | 마이크로서비스 API 게이트웨이를 AI 에이전트로 설계하는 워크플로우 — 라우팅, 인증, 속도 제한, 모니터링 |
 | [AI E2E 테스트 자동 생성](./workflows/ai-e2e-test-generation.md) | Playwright + AI 에이전트로 신규 기능 구현 후 E2E 테스트를 자동 생성하고 CI/CD에 통합 |
 | [AI 다중 저장소 동시 작업](./workflows/ai-multi-repo-synchronized-workflow.md) | 여러 레포에 걸쳐 AI 에이전트가 일관성 있게 변경사항을 적용하는 워크플로우 — 의존성 맵, 변경 전파, 크로스-레포 PR 관리 |
+| [AI 블록체인 트랜잭션 모니터링](./workflows/ai-blockchain-transaction-monitor.md) | AI 에이전트로 Solana 온체인 이벤트를 실시간 구독하고 이상 거래를 자동 감지하는 워크플로우 |
+| [AI SDLC 전 단계 자동화](./workflows/ai-full-sdlc-automation.md) | 요구사항 분석→설계→구현→테스트→배포→모니터링까지 소프트웨어 개발 생명주기 전 단계를 AI 에이전트로 자동화하는 통합 워크플로우 |
 
 ## 플레이북
 
@@ -476,6 +482,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 에이전트 프롬프트 버전 관리](./claude-code/playbooks/54-prompt-version-control.md) | 시스템 프롬프트를 Git으로 버전 관리하고 프롬프트 변경이 결과물에 미치는 영향을 추적하는 플레이북 |
 | [AI 에이전트 도입 실패 패턴](./claude-code/playbooks/55-ai-agent-adoption-failure-patterns.md) | AI 코딩 에이전트 도입 시 실패하는 5가지 패턴과 팀별 성공 전략 |
 | [그린필드 프로젝트 킥오프](./claude-code/playbooks/56-greenfield-project-kickoff.md) | AI 에이전트와 새 프로젝트를 처음부터 설정하는 단계별 플레이북 — CLAUDE.md, 구조 설계, 첫 스프린트 자동화 |
+| [AI 에이전트 컨텍스트 오염 방지](./claude-code/playbooks/57-context-contamination-prevention.md) | 계획→실행→검증 루프에서 발생하는 컨텍스트 오염과 할루시네이션을 탐지하고 방지하는 플레이북 |
+| [AI 에이전트 체크포인트 기반 장기 실행](./claude-code/playbooks/58-checkpoint-autonomous-operation.md) | 체크포인트 기능으로 장시간 자율 실행 중 상태를 저장하고 실패 시 복구하는 실전 플레이북 |
 
 ## 템플릿
 
