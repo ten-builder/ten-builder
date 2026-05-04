@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n84개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n85개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n18개 영상 코드"]
-    R --> C["cheatsheets/\n57개 원페이저"]
+    R --> C["cheatsheets/\n58개 원페이저"]
     R --> EX["examples/\n43개 실전 예제"]
-    R --> W["workflows/\n50개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n52개 심화 플레이북"]
+    R --> W["workflows/\n51개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n53개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~82 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~83 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -235,6 +235,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 80 | [스펙-퍼스트 개발 실전 가이드 2026](./guides/80-spec-first-ai-workflow-guide.md) | 코드 전에 AI와 함께 설계하는 4단계 워크플로우 — CLAUDE.md 규칙, 스펙-구현 검증, 팀 도입 전략 |
 | 81 | [Claude Code Week 19 실전 가이드](./guides/81-claude-code-week19-features-guide.md) | alwaysLoad MCP, PostToolUse Hooks, 동적 비주얼 — Week 19 신기능 실전 적용법 |
 | 82 | [Next.js + Vercel AI SDK 풀스택 AI 앱 개발 가이드 2026](./guides/82-nextjs-vercel-ai-sdk-guide-2026.md) | useChat, streamText, generateObject로 실시간 스트리밍 AI 앱을 처음부터 배포까지 |
+| 83 | [Claude Code Week 20 실전 가이드](./guides/83-claude-code-week20-features-guide.md) | project purge, SSH OAuth, --channels 권한 중계 — v2.1.126~v2.1.128 핵심 업데이트 |
 
 ### 주제별 가이드
 
@@ -329,6 +330,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [Claude Code Channels 다중 에이전트 조율](./cheatsheets/claude-code-channels-cheatsheet.md) | Channels 기능으로 에이전트 실시간 협력 — 채널 생성, 구독, 메시지 라우팅, Dispatch 연동 |
 | [바이브 코딩 프로덕션 배포 체크리스트](./cheatsheets/vibe-coding-production-checklist.md) | AI 생성 코드를 프로덕션에 안전하게 배포하기 위한 보안·검증·모니터링 체크리스트 |
 | [PIV 루프 에이전틱 코딩](./cheatsheets/piv-loop-agentic-coding-cheatsheet.md) | Plan→Implement→Validate 3단계 반복 워크플로우로 구조화된 AI 코딩을 실천하는 치트시트 |
+| [Vercel AI SDK 핵심 패턴](./cheatsheets/vercel-ai-sdk-patterns-cheatsheet.md) | useChat, streamText, generateObject, Tool Use, 멀티모달까지 한 페이지로 정리 |
 
 ## 실전 예제
 
@@ -432,6 +434,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 다중 저장소 동시 작업](./workflows/ai-multi-repo-synchronized-workflow.md) | 여러 레포에 걸쳐 AI 에이전트가 일관성 있게 변경사항을 적용하는 워크플로우 — 의존성 맵, 변경 전파, 크로스-레포 PR 관리 |
 | [AI 블록체인 트랜잭션 모니터링](./workflows/ai-blockchain-transaction-monitor.md) | AI 에이전트로 Solana 온체인 이벤트를 실시간 구독하고 이상 거래를 자동 감지하는 워크플로우 |
 | [AI SDLC 전 단계 자동화](./workflows/ai-full-sdlc-automation.md) | 요구사항 분석→설계→구현→테스트→배포→모니터링까지 소프트웨어 개발 생명주기 전 단계를 AI 에이전트로 자동화하는 통합 워크플로우 |
+| [AI 에이전트 GraphQL API 개발](./workflows/ai-graphql-api-development.md) | 스키마 설계부터 리졸버 구현, N+1 문제 해결, 인증 미들웨어, 테스트 자동화까지 GraphQL API 개발 전체를 AI 에이전트로 자동화 |
 
 ## 플레이북
 
@@ -491,6 +494,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [그린필드 프로젝트 킥오프](./claude-code/playbooks/56-greenfield-project-kickoff.md) | AI 에이전트와 새 프로젝트를 처음부터 설정하는 단계별 플레이북 — CLAUDE.md, 구조 설계, 첫 스프린트 자동화 |
 | [AI 에이전트 컨텍스트 오염 방지](./claude-code/playbooks/57-context-contamination-prevention.md) | 계획→실행→검증 루프에서 발생하는 컨텍스트 오염과 할루시네이션을 탐지하고 방지하는 플레이북 |
 | [AI 에이전트 체크포인트 기반 장기 실행](./claude-code/playbooks/58-checkpoint-autonomous-operation.md) | 체크포인트 기능으로 장시간 자율 실행 중 상태를 저장하고 실패 시 복구하는 실전 플레이북 |
+| [모놀리스 마이크로서비스 분해](./claude-code/playbooks/59-microservices-decomposition-playbook.md) | AI 에이전트와 함께 모놀리스를 마이크로서비스로 분해하는 플레이북 — 도메인 경계 분석, API 계약 설계, 점진적 전환 |
 
 ## 템플릿
 
