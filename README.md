@@ -495,6 +495,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 에이전트 컨텍스트 오염 방지](./claude-code/playbooks/57-context-contamination-prevention.md) | 계획→실행→검증 루프에서 발생하는 컨텍스트 오염과 할루시네이션을 탐지하고 방지하는 플레이북 |
 | [AI 에이전트 체크포인트 기반 장기 실행](./claude-code/playbooks/58-checkpoint-autonomous-operation.md) | 체크포인트 기능으로 장시간 자율 실행 중 상태를 저장하고 실패 시 복구하는 실전 플레이북 |
 | [모놀리스 마이크로서비스 분해](./claude-code/playbooks/59-microservices-decomposition-playbook.md) | AI 에이전트와 함께 모놀리스를 마이크로서비스로 분해하는 플레이북 — 도메인 경계 분석, API 계약 설계, 점진적 전환 |
+| [풀스택 타입 안전성 확보](./claude-code/playbooks/60-fullstack-type-safety-playbook.md) | TypeScript strict mode, Zod 런타임 검증, tRPC/GraphQL 타입 생성을 AI 에이전트로 자동화하는 플레이북 |
 
 ## 템플릿
 
