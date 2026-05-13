@@ -244,6 +244,9 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 89 | [Claude Code vs GitHub Copilot 2026 완전 비교](./guides/89-claude-code-vs-github-copilot-2026.md) | 터미널 에이전트 vs IDE 코파일럿 — 기능, 비용, 워크플로우, 팀 도입 기준 비교 |
 | 90 | [Claude Code Week 23 실전 가이드](./guides/90-claude-code-week23-features-guide.md) | /powerup 대화형 레슨, worktree.baseRef 설정, 레이트 리밋 2배 — v2.1.133~v2.1.138 |
 | 91 | [Git Worktree 기반 병렬 에이전트 실전 가이드 2026](./guides/91-git-worktree-parallel-agents-guide.md) | baseRef 설정, 서브에이전트 격리 전략, 충돌 없는 병렬 작업, 워크트리 정리 |
+| 92 | [AI 에이전트 스킬 시스템 실전 가이드 2026](./guides/92-ai-agent-skills-guide-2026.md) | 에이전트 역량 모듈화, 스킬 설계 원칙, 재사용 가능한 컴포넌트 패턴 |
+| 93 | [Claude Code Routines + Dreaming + Outcomes 실전 가이드 2026](./guides/93-claude-code-routines-dreaming-outcomes-guide.md) | 스케줄 기반 자동화, 에이전트 자기 개선 루프, rubric 기반 품질 검증 |
+| 94 | [에이전틱 워크플로우 설계 패턴 실전 가이드](./guides/94-agentic-workflow-design-patterns-guide.md) | 오케스트레이터-워커, 병렬 탐색, 반성 루프, 평가자-최적화 — 6가지 패턴과 Claude Code 실전 적용법 |
 
 ### 주제별 가이드
 
