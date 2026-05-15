@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n91개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n96개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n22개 영상 코드"]
-    R --> C["cheatsheets/\n64개 원페이저"]
-    R --> EX["examples/\n44개 실전 예제"]
-    R --> W["workflows/\n58개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n58개 심화 플레이북"]
+    R --> C["cheatsheets/\n67개 원페이저"]
+    R --> EX["examples/\n45개 실전 예제"]
+    R --> W["workflows/\n59개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n59개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~91 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~96 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -247,6 +247,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 92 | [AI 에이전트 스킬 시스템 실전 가이드 2026](./guides/92-ai-agent-skills-guide-2026.md) | 에이전트 역량 모듈화, 스킬 설계 원칙, 재사용 가능한 컴포넌트 패턴 |
 | 93 | [Claude Code Routines + Dreaming + Outcomes 실전 가이드 2026](./guides/93-claude-code-routines-dreaming-outcomes-guide.md) | 스케줄 기반 자동화, 에이전트 자기 개선 루프, rubric 기반 품질 검증 |
 | 94 | [에이전틱 워크플로우 설계 패턴 실전 가이드](./guides/94-agentic-workflow-design-patterns-guide.md) | 오케스트레이터-워커, 병렬 탐색, 반성 루프, 평가자-최적화 — 6가지 패턴과 Claude Code 실전 적용법 |
+| 95 | [Hermes Agent 실전 가이드 2026](./guides/95-hermes-agent-practical-guide-2026.md) | NousResearch 오픈소스 자기 개선 AI 에이전트 — 설치, Skills 시스템, Claude Code 비교 |
+| 96 | [Claude Code Week 24 실전 가이드](./guides/96-claude-code-week24-features-guide.md) | 2026년 5월 11~15일 릴리스 핵심 업데이트 — v2.1.139~v2.1.145 신기능 총정리 |
 
 ### 주제별 가이드
 
@@ -319,6 +321,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [Cline](./cheatsheets/cline-cheatsheet.md) | 오픈소스 VS Code AI 코딩 에이전트 |
 | [Aider](./cheatsheets/aider-cheatsheet.md) | Git 네이티브 터미널 AI 코딩 에이전트 |
 | [Devin AI](./cheatsheets/devin-ai-cheatsheet.md) | Cognition Devin 2.0 AI 소프트웨어 엔지니어 |
+| [Hermes Agent](./cheatsheets/hermes-agent-cheatsheet.md) | NousResearch Hermes Agent CLI, TUI, Skills, Docker 핵심 명령어 |
+| [AI 에이전트 Anti-Patterns 2026](./cheatsheets/ai-agent-anti-patterns-cheatsheet-2026.md) | 프롬프트 터널링, 유령 컨텍스트 등 7가지 반패턴과 올바른 대안 |
 | [AI 에이전트 디버깅 플로우](./cheatsheets/ai-agent-debug-flow-cheatsheet.md) | AI 에이전트 에러 5단계 디버깅 플로우 |
 | [2026 AI 코드 리뷰 도구 비교](./cheatsheets/ai-code-review-tools-2026.md) | AI 코드 리뷰 도구 기능/가격 비교 |
 | [MCP 프로덕션 보안](./cheatsheets/mcp-production-security-cheatsheet.md) | MCP 서버 프로덕션 보안 운영 체크리스트 |
@@ -386,6 +390,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [CLI 도구 AI 자동 생성](./examples/cli-tool-ai-generation) | AI 에이전트로 CLI 도구 처음부터 끝까지 생성 |
 | [AI 세션 메모리 시스템](./examples/ai-session-memory-system) | AI 에이전트 세션 메모리 시스템 구현 |
 | [AI 스마트 계약 감사](./examples/ai-smart-contract-auditor) | Solidity 스마트 계약 AI 자동 보안 감사 |
+| [AI GraphQL Federation 구성](./examples/ai-graphql-federation) | Apollo Router 기반 GraphQL Federation 자동 구성 예제 |
 | [AI 모노레포 오너십 대시보드](./examples/ai-monorepo-ownership-dashboard) | AI 에이전트 기반 모노레포 코드 오너십 분석 대시보드 |
 | [AI CLI 챗봇](./examples/ai-cli-chatbot) | LangGraph + Claude API로 대화 메모리와 도구 호출 기능 갖춘 CLI 챗봇 구현 |
 | [AI Slack 알림 봇](./examples/ai-slack-notification-bot) | 코드 리뷰, 빌드 실패, 배포 이벤트를 맥락 있게 요약해 Slack 전송하는 봇 |
@@ -437,6 +442,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 멀티 모델 라우팅](./workflows/ai-multi-model-routing.md) | 태스크 복잡도별 AI 모델 자동 라우팅 |
 | [AI API 계약 테스트](./workflows/ai-api-contract-testing.md) | OpenAPI 기반 AI 계약 테스트 자동화 |
 | [AI 성능 프로파일링](./workflows/ai-performance-profiling.md) | AI 에이전트 기반 백엔드 성능 프로파일링 자동화 |
+| [Hermes Agent + Claude Code 하이브리드](./workflows/hermes-claude-hybrid-workflow.md) | Hermes Agent와 Claude Code 역할 분담 하이브리드 워크플로우 |
 | [AI 자율 에러 복구](./workflows/ai-autonomous-error-recovery.md) | AI 에이전트 자동 빌드/테스트 실패 감지 & 자율 복구 루프 |
 | [AI 실시간 페어 코딩](./workflows/ai-realtime-pair-coding.md) | 개발자 2명 + AI 에이전트 실시간 페어 코딩 세션 운영 |
 | [AI CI/CD 파이프라인 최적화](./workflows/ai-cicd-pipeline-optimization.md) | AI 에이전트로 GitHub Actions 빌드 시간 단축 & 파이프라인 병목 자동 해소 |
@@ -527,6 +533,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 에이전트 데이터베이스 쿼리 최적화](./claude-code/playbooks/62-database-query-optimization.md) | PostgreSQL/MySQL 쿼리 진단 — 인덱스 설계, EXPLAIN ANALYZE, 커넥션 풀 최적화 자동화 |
 | [AI 에이전트 상태 지속성 플레이북](./claude-code/playbooks/63-ai-agent-state-persistence-playbook.md) | 장시간 실행 에이전트의 상태를 체크포인트로 보존하고 복구하는 단계별 플레이북 |
 | [Claude Code 샌드박스 보안 설정](./claude-code/playbooks/64-sandbox-security-configuration.md) | bubblewrap 설정, 샌드박스 경로 커스터마이징, 권한 최소화, CI/CD 통합 실전 플레이북 |
+| [프론트엔드 성능 최적화](./claude-code/playbooks/65-frontend-performance-optimization.md) | Core Web Vitals, 번들 크기, 서버 응답 시간 AI 자동 최적화 플레이북 |
 
 ## 템플릿
 
