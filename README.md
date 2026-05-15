@@ -22,7 +22,7 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n96개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n97개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n22개 영상 코드"]
     R --> C["cheatsheets/\n67개 원페이저"]
     R --> EX["examples/\n45개 실전 예제"]
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~96 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~97 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -249,6 +249,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 94 | [에이전틱 워크플로우 설계 패턴 실전 가이드](./guides/94-agentic-workflow-design-patterns-guide.md) | 오케스트레이터-워커, 병렬 탐색, 반성 루프, 평가자-최적화 — 6가지 패턴과 Claude Code 실전 적용법 |
 | 95 | [Hermes Agent 실전 가이드 2026](./guides/95-hermes-agent-practical-guide-2026.md) | NousResearch 오픈소스 자기 개선 AI 에이전트 — 설치, Skills 시스템, Claude Code 비교 |
 | 96 | [Claude Code Week 24 실전 가이드](./guides/96-claude-code-week24-features-guide.md) | 2026년 5월 11~15일 릴리스 핵심 업데이트 — v2.1.139~v2.1.145 신기능 총정리 |
+| 97 | [Ralph Wiggum 패턴 — 단발 프롬프트에서 자율 에이전트 루프로](./guides/97-ralph-wiggum-autonomous-agent-loop.md) | 자율 에이전트 루프 설계, 종료 조건, 에러 복구, CLAUDE.md 패턴 실전 가이드 |
 
 ### 주제별 가이드
 
@@ -354,6 +355,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 에이전트 메모리 관리](./cheatsheets/ai-agent-memory-cheatsheet.md) | 단기/장기/외부 메모리 효과적 관리 패턴 — Mem0, Zep, CLAUDE.md 활용법 |
 | [AI 에이전트 프롬프트 디버깅](./cheatsheets/ai-prompt-debugging-cheatsheet.md) | 결과가 이상할 때 바로 쓰는 패턴 — 컨텍스트 누수, 모호한 지시, 모델 착각 유형별 대응 |
 | [Claude Code Week 23 신기능 설정](./cheatsheets/claude-code-week23-settings-cheatsheet.md) | /powerup 대화형 레슨, worktree.baseRef, 오프라인 캐시 활용 가이드 |
+| [컨텍스트 엔지니어링 필드 가이드](./cheatsheets/context-engineering-field-guide-cheatsheet.md) | 2026년 프롬프트 엔지니어링 대체 핵심 스킬 — 5가지 컨텍스트 레이어, CLAUDE.md 최적화, 상황별 설계 패턴 |
 
 ## 실전 예제
 
@@ -468,6 +470,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 코딩 도구 Shadow IT 리스크 관리](./workflows/ai-shadow-it-risk-management.md) | 무단 AI 도구 탐지, 보안 정책 수립, 바이브 코딩 위협 통제 5단계 워크플로우 |
 | [AI 에이전트 기반 공급망 보안](./workflows/ai-supply-chain-security-workflow.md) | 공급망 공격 탐지, 의심 의존성 격리, SBOM 생성 — SLSA 레벨 2, Sigstore 서명 검증 |
 | [AI 에이전트 기반 웹 접근성 자동화](./workflows/ai-accessibility-automation.md) | WCAG 2.2 오류 자동 감지 & 수정 — axe-core 통합, 스크린리더 테스트, 키보드 탐색 검증 |
+| [AI 에이전트 프로덕션 배포 워크플로우](./workflows/ai-agent-production-deployment.md) | AI 에이전트가 작성한 코드의 프로덕션 배포 — 단계적 롤아웃, 자동 롤백, 모니터링 통합 |
+| [AI 에이전트 프로덕션 워크플로 패턴 2026](./workflows/ai-agent-production-workflow-patterns.md) | 팀 컨텍스트 품질 향상으로 PR 리드타임 25% 단축 — 컨텍스트-퍼스트 PR, CLAUDE.md 버전 관리, AI 게이트 CI/CD |
 
 ## 플레이북
 
