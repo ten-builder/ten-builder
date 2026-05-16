@@ -22,7 +22,7 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n97개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n99개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n22개 영상 코드"]
     R --> C["cheatsheets/\n67개 원페이저"]
     R --> EX["examples/\n45개 실전 예제"]
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~97 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~99 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -250,6 +250,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 95 | [Hermes Agent 실전 가이드 2026](./guides/95-hermes-agent-practical-guide-2026.md) | NousResearch 오픈소스 자기 개선 AI 에이전트 — 설치, Skills 시스템, Claude Code 비교 |
 | 96 | [Claude Code Week 24 실전 가이드](./guides/96-claude-code-week24-features-guide.md) | 2026년 5월 11~15일 릴리스 핵심 업데이트 — v2.1.139~v2.1.145 신기능 총정리 |
 | 97 | [Ralph Wiggum 패턴 — 단발 프롬프트에서 자율 에이전트 루프로](./guides/97-ralph-wiggum-autonomous-agent-loop.md) | 자율 에이전트 루프 설계, 종료 조건, 에러 복구, CLAUDE.md 패턴 실전 가이드 |
+| 98 | [claude agents 디스패치 플래그 실전 가이드 2026](./guides/98-claude-agents-dispatch-flags-guide.md) | --settings, --add-dir, --mcp-config, --plugin-dir, --permission-mode, --model, --effort 플래그로 서브에이전트 환경 일관 제어 |
+| 99 | [Claude Code Agent View 실전 가이드 2026](./guides/99-claude-code-agent-view-guide.md) | Agent View 슈퍼바이저 아키텍처, 병렬 에이전트 워크플로우, Peek 패널, 워크트리 자동 격리, settings.autoMode |
 
 ### 주제별 가이드
 
