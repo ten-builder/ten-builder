@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n101개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n105개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n22개 영상 코드"]
-    R --> C["cheatsheets/\n67개 원페이저"]
+    R --> C["cheatsheets/\n69개 원페이저"]
     R --> EX["examples/\n45개 실전 예제"]
-    R --> W["workflows/\n59개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n59개 심화 플레이북"]
+    R --> W["workflows/\n61개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n68개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~101 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~105 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -542,6 +542,9 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 에이전트 상태 지속성 플레이북](./claude-code/playbooks/63-ai-agent-state-persistence-playbook.md) | 장시간 실행 에이전트의 상태를 체크포인트로 보존하고 복구하는 단계별 플레이북 |
 | [Claude Code 샌드박스 보안 설정](./claude-code/playbooks/64-sandbox-security-configuration.md) | bubblewrap 설정, 샌드박스 경로 커스터마이징, 권한 최소화, CI/CD 통합 실전 플레이북 |
 | [프론트엔드 성능 최적화](./claude-code/playbooks/65-frontend-performance-optimization.md) | Core Web Vitals, 번들 크기, 서버 응답 시간 AI 자동 최적화 플레이북 |
+| [멀티에이전트 세션 병렬 관리](./claude-code/playbooks/66-multitasking-agents-session-management.md) | 여러 Claude Code 에이전트를 동시에 병렬 실행할 때 세션 충돌 없이 작업을 완료하는 실전 플레이북 |
+| [AI 에이전트 코드 생성 품질 게이트 자동화](./claude-code/playbooks/67-ai-code-quality-gates.md) | AI 생성 코드를 Review Agent로 검증하는 패턴 — GitHub Actions 연동, 테스트 커버리지 게이트, 자동화 |
+| [멀티 레포 워크스페이스 구성](./claude-code/playbooks/68-multi-repo-workspace-setup.md) | 여러 레포지터리 동시 작업 시 AI 에이전트 워크스페이스 체계적 구성 — CLAUDE.md 계층 구조, 크로스-레포 컨텍스트 공유 |
 
 ## 템플릿
 
