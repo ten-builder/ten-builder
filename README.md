@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n106개 단계별 가이드\n+ 주제별 가이드"]
-    R --> E["episodes/\n24개 영상 코드"]
-    R --> C["cheatsheets/\n71개 원페이저"]
-    R --> EX["examples/\n45개 실전 예제"]
-    R --> W["workflows/\n63개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n69개 심화 플레이북"]
+    R["ten-builder"] --> G["guides/\n108개 단계별 가이드\n+ 주제별 가이드"]
+    R --> E["episodes/\n25개 영상 코드"]
+    R --> C["cheatsheets/\n72개 원페이저"]
+    R --> EX["examples/\n40개 실전 예제"]
+    R --> W["workflows/\n64개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n65개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~106 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~108 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
