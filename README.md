@@ -22,9 +22,9 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n108개 단계별 가이드\n+ 주제별 가이드"]
-    R --> E["episodes/\n25개 영상 코드"]
-    R --> C["cheatsheets/\n72개 원페이저"]
+    R["ten-builder"] --> G["guides/\n109개 단계별 가이드\n+ 주제별 가이드"]
+    R --> E["episodes/\n26개 영상 코드"]
+    R --> C["cheatsheets/\n73개 원페이저"]
     R --> EX["examples/\n40개 실전 예제"]
     R --> W["workflows/\n64개 자동화 워크플로"]
     R --> P["claude-code/playbooks/\n65개 심화 플레이북"]
@@ -257,12 +257,15 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 102 | [Zencoder + ZenFlow 실전 가이드 2026](./guides/102-zencoder-zenflow-practical-guide-2026.md) | 코딩 바깥의 75%를 AI로 자동화 — 플래닝, 코드 리뷰, 보고, 커뮤니케이션, 100+ MCP 도구 연동 |
 | 103 | [OpenAI Agents SDK 실전 가이드 2026](./guides/103-openai-agents-sdk-practical-guide-2026.md) | SandboxAgent, 서브에이전트 핸드오프, MCP 1등 지원 — 설치부터 프로덕션 배포까지 |
 | 104 | [에이전틱 테스팅 완전 가이드 2026](./guides/104-agentic-testing-automation-guide-2026.md) | AI 에이전트가 커버리지 공백을 찾고 셀프힐링 테스트를 자율 실행하는 새 테스팅 패러다임 |
+| 105 | [Code with Claude 2026 신기능 실전 가이드](./guides/105-code-with-claude-2026-agent-features-guide.md) | 관리형 에이전트, Dreaming 자기 개선, Outcomes 품질 검증, Routines 자동화 — 4가지 핵심 신기능 정리 |
+| 106 | [Claude Code Week 26 실전 가이드](./guides/106-claude-code-week26-features-guide.md) | 2026년 5월 19~23일 릴리스 핵심 업데이트 — Code with Claude 2026 이후 공개된 신기능 총정리 |
 
 ### 주제별 가이드
 
 | 가이드 | 설명 |
 |--------|------|
 | [PDF 구조화 & 카드 관리](./guides/pdf-card-management.md) | PDF를 마크다운으로 구조화하고 요약 카드를 관리하는 방법 |
+| [A2A + MCP 통합 실전 가이드](./guides/51-a2a-mcp-integration.md) | 에이전트 간 통신(A2A)과 도구 연결(MCP)을 함께 활용하는 실전 패턴 |
 
 ## 에피소드별 코드
 
@@ -370,6 +373,11 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 비용 모니터링 2026](./cheatsheets/ai-cost-monitoring-2026-cheatsheet.md) | Claude Code·Cursor·Gemini CLI 월별 비용 실시간 추적, 예산 초과 자동 차단 패턴 |
 | [AI 에이전트 파이프라인 디버깅](./cheatsheets/ai-agent-pipeline-debugging-cheatsheet.md) | 멀티에이전트 파이프라인 실패 시 원인 빠르게 찾고 수정하는 단계별 패턴 |
 | [OWASP 에이전틱 AI 보안 취약점](./cheatsheets/owasp-agentic-ai-security-cheatsheet-2026.md) | OWASP LLM Top 10 + 에이전트 특화 위협 — AI 코딩 에이전트 보안 취약점 한 페이지 정리 |
+| [AI 에이전트 비상 정지 및 복구](./cheatsheets/ai-agent-emergency-stop-cheatsheet.md) | 자율 에이전트 루프 탈출·예산 초과·의도치 않은 결과 시 즉시 개입하는 kill switch & 롤백 패턴 |
+| [AI 에이전트 멀티모달 입력 활용](./cheatsheets/ai-agent-multimodal-coding-cheatsheet.md) | 스크린샷·다이어그램·PDF를 Claude Code와 Gemini CLI에 효과적으로 활용하는 코딩 패턴 |
+| [A2A 프로토콜 치트시트](./cheatsheets/a2a-protocol-cheatsheet.md) | Google A2A 프로토콜 핵심 개념, 에이전트 카드, 태스크 생명주기, MCP와의 차이점 한 페이지 정리 |
+| [AI 에이전트 프롬프트 최적화 2026](./cheatsheets/ai-prompt-optimization-2026-cheatsheet.md) | 토큰 낭비 없이 고품질 출력을 얻는 패턴 — 역할 프레이밍, 체인 오브 씽킹, Few-shot, 출력 형식 전략 |
+| [Claude Code /autofix-pr](./cheatsheets/claude-code-autofix-pr-cheatsheet.md) | CI 실패와 리뷰 코멘트를 자동 수정하는 패턴 — 기본 사용법, CI 유형별 성공률, CLAUDE.md 설정 |
 
 ## 실전 예제
 
