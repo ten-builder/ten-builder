@@ -260,6 +260,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 105 | [Code with Claude 2026 신기능 실전 가이드](./guides/105-code-with-claude-2026-agent-features-guide.md) | 관리형 에이전트, Dreaming 자기 개선, Outcomes 품질 검증, Routines 자동화 — 4가지 핵심 신기능 정리 |
 | 106 | [Claude Code Week 26 실전 가이드](./guides/106-claude-code-week26-features-guide.md) | 2026년 5월 19~23일 릴리스 핵심 업데이트 — Code with Claude 2026 이후 공개된 신기능 총정리 |
 | 107 | [Claude Code Week 27 실전 가이드](./guides/107-claude-code-week27-features-guide.md) | 2026년 5월 21~23일 릴리스 최신 업데이트 총정리 |
+| 108 | [Claude Code Week 28 실전 가이드](./guides/108-claude-code-week28-features-guide.md) | 2026년 5월 26~28일 최신 업데이트 — 멀티에이전트 오케스트레이션 개선, 새 API 기능 총정리 |
 
 ### 주제별 가이드
 
@@ -298,6 +299,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | EP24 | OpenAI Agents SDK로 자율 코드 리뷰 봇 만들기 — SandboxAgent와 핸드오프로 PR 품질 자동 검증 | [`/episodes/EP24-openai-agents-sdk-review-bot`](./episodes/EP24-openai-agents-sdk-review-bot) |
 | EP25 | 에이전틱 AI 보안 실전 — OWASP 취약점 공격과 방어 라이브 코딩 | [`/episodes/EP25-agentic-ai-security-live`](./episodes/EP25-agentic-ai-security-live) |
 | EP26 | AI 에이전트로 실시간 스트리밍 앱 만들기 — WebSocket + Redis | [`/episodes/EP26-realtime-streaming-app`](./episodes/EP26-realtime-streaming-app) |
+| EP27 | AI 에이전트로 Rust 백엔드 처음부터 만들기 — Axum 실전 | [`/episodes/EP27-rust-axum-backend-live`](./episodes/EP27-rust-axum-backend-live) |
+| EP28 | AI 에이전트 팀으로 SaaS 대시보드 빌드하기 — 멀티에이전트 협업 실전 | [`/episodes/EP28-multi-agent-saas-dashboard`](./episodes/EP28-multi-agent-saas-dashboard) |
 
 ## 치트시트
 
@@ -573,6 +576,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [기업 AI 코딩 도구 승인 플레이북](./claude-code/playbooks/70-enterprise-ai-tool-approval-playbook.md) | Shadow IT 탐지부터 안전한 도구 승인 워크플로우 구축까지 — 도구 인벤토리, 리스크 등급화, CI/CD 게이트 |
 | [AI 에이전트 보안 코드 리뷰 — SAST/DAST 자동화](./claude-code/playbooks/71-security-code-review-sast-dast.md) | Semgrep, Snyk, OWASP ZAP 연동으로 PR마다 보안 취약점 자동 탐지 및 수정 제안 생성 |
 | [AI 에이전트 마이크로프론트엔드 아키텍처](./claude-code/playbooks/72-micro-frontend-architecture-playbook.md) | Module Federation, 독립 배포, 팀별 기술 스택 분리, 공유 상태 관리를 AI 에이전트와 함께 설계 |
+| [AI 에이전트 코드 리뷰 자동화](./claude-code/playbooks/73-ai-code-review-automation-playbook.md) | AI 에이전트를 PR 리뷰 파이프라인에 통합하는 완전 플레이북 — 리뷰 기준 설정, GitHub Actions 연동, 품질 게이트 자동화 |
 
 ## 템플릿
 
