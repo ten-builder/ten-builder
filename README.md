@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n110개 단계별 가이드\n+ 주제별 가이드"]
-    R --> E["episodes/\n26개 영상 코드"]
-    R --> C["cheatsheets/\n74개 원페이저"]
+    R["ten-builder"] --> G["guides/\n112개 단계별 가이드\n+ 주제별 가이드"]
+    R --> E["episodes/\n28개 영상 코드"]
+    R --> C["cheatsheets/\n76개 원페이저"]
     R --> EX["examples/\n46개 실전 예제"]
-    R --> W["workflows/\n64개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n67개 심화 플레이북"]
+    R --> W["workflows/\n66개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n68개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~110 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~112 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -261,6 +261,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 106 | [Claude Code Week 26 실전 가이드](./guides/106-claude-code-week26-features-guide.md) | 2026년 5월 19~23일 릴리스 핵심 업데이트 — Code with Claude 2026 이후 공개된 신기능 총정리 |
 | 107 | [Claude Code Week 27 실전 가이드](./guides/107-claude-code-week27-features-guide.md) | 2026년 5월 21~23일 릴리스 최신 업데이트 총정리 |
 | 108 | [Claude Code Week 28 실전 가이드](./guides/108-claude-code-week28-features-guide.md) | 2026년 5월 26~28일 최신 업데이트 — 멀티에이전트 오케스트레이션 개선, 새 API 기능 총정리 |
+| 109 | [Cline VS Code AI 코딩 에이전트 실전 가이드 2026](./guides/109-cline-vscode-agent-guide-2026.md) | 설치, 멀티 LLM 지원, Plan/Act 모드, MCP 연동, Claude Code 비교 — VS Code 오픈소스 에이전트 완전 가이드 |
+| 110 | [Claude Code Week 29 실전 가이드](./guides/110-claude-code-week29-features-guide.md) | 핀 백그라운드 세션 유지, continueOnBlock 훅, /code-review 개편, terminalSequence 알림 총정리 |
 
 ### 주제별 가이드
 
@@ -383,6 +385,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 에이전트 프롬프트 최적화 2026](./cheatsheets/ai-prompt-optimization-2026-cheatsheet.md) | 토큰 낭비 없이 고품질 출력을 얻는 패턴 — 역할 프레이밍, 체인 오브 씽킹, Few-shot, 출력 형식 전략 |
 | [Claude Code /autofix-pr](./cheatsheets/claude-code-autofix-pr-cheatsheet.md) | CI 실패와 리뷰 코멘트를 자동 수정하는 패턴 — 기본 사용법, CI 유형별 성공률, CLAUDE.md 설정 |
 | [AI 에이전트 코드 품질 워크플로우 2026](./cheatsheets/ai-agent-code-quality-workflow-cheatsheet.md) | 품질 게이트 자동화, 리뷰 패턴, 테스트 커버리지 유지 전략 한 페이지 정리 |
+| [Claude Code 라이브 앱 프리뷰 & 데브 서버 연동](./cheatsheets/claude-code-live-app-preview-cheatsheet.md) | launch.json 설정, 자동 감지 프레임워크, 멀티 서비스 연동, 오류 디버깅, 원격 프리뷰 한 페이지 정리 |
+| [AI 에이전트 멀티태스킹 패턴](./cheatsheets/ai-agent-multitasking-patterns-cheatsheet.md) | 여러 AI 에이전트 동시 운영 시 git worktree 활용, 에이전트 간 통신, 충돌 방지, 비용 최적화 패턴 |
 
 ## 실전 예제
 
