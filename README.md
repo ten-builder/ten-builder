@@ -22,7 +22,7 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n121개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n122개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n30개 영상 코드"]
     R --> C["cheatsheets/\n80개 원페이저"]
     R --> EX["examples/\n47개 실전 예제"]
@@ -274,6 +274,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 119 | [Antigravity CLI 실전 가이드 2026](./guides/119-antigravity-cli-practical-guide-2026.md) | Gemini CLI를 대체하는 Google 터미널 에이전트 — Gemini CLI 마이그레이션, 동적 서브에이전트, Hooks 자동화 |
 | 120 | [Warp 2026 실전 가이드](./guides/120-warp-agentic-terminal-practical-guide-2026.md) | 에이전트 모드, 병렬 에이전트, MCP 연동, Claude Code 조합 — 에이전틱 개발 환경으로 진화한 Warp 터미널 완전 정복 |
 | 121 | [Augment Intent 실전 가이드 2026](./guides/121-augment-intent-ide-practical-guide-2026.md) | 리빙 스펙 기반 멀티에이전트 개발 워크스페이스 — 코디네이터-스페셜리스트-검증자 3에이전트 구조, git worktree 격리, Cursor/Claude Code/Kiro 역할 분담 |
+| 122 | [Claude Code Week 31 실전 가이드](./guides/122-claude-code-week31-features-guide.md) | Opus 4.8 Dynamic Workflows, Fast Mode 실전 활용 — ultracode 트리거, /effort 기본값 저장, 백그라운드 세션 안정화, 병렬 툴 독립 실행, MCP 보안 개선 총정리 |
 
 ### 주제별 가이드
 
