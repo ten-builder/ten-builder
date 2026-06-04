@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n119개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n121개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n30개 영상 코드"]
     R --> C["cheatsheets/\n80개 원페이저"]
     R --> EX["examples/\n47개 실전 예제"]
-    R --> W["workflows/\n69개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n75개 심화 플레이북"]
+    R --> W["workflows/\n73개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n71개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -272,6 +272,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 117 | [CrewAI 실전 가이드 2026](./guides/117-crewai-multi-agent-practical-guide-2026.md) | 역할 기반 멀티에이전트 설계 — Agents, Tasks, Tools, Flows, FastAPI 래핑 완전 가이드 |
 | 118 | [PydanticAI 실전 가이드 2026](./guides/118-pydantic-ai-practical-guide-2026.md) | 타입 안전 에이전트 프레임워크 — RunContext, 구조화된 출력, 멀티에이전트 파이프라인, FastAPI 통합 |
 | 119 | [Antigravity CLI 실전 가이드 2026](./guides/119-antigravity-cli-practical-guide-2026.md) | Gemini CLI를 대체하는 Google 터미널 에이전트 — Gemini CLI 마이그레이션, 동적 서브에이전트, Hooks 자동화 |
+| 120 | [Warp 2026 실전 가이드](./guides/120-warp-agentic-terminal-practical-guide-2026.md) | 에이전트 모드, 병렬 에이전트, MCP 연동, Claude Code 조합 — 에이전틱 개발 환경으로 진화한 Warp 터미널 완전 정복 |
+| 121 | [Augment Intent 실전 가이드 2026](./guides/121-augment-intent-ide-practical-guide-2026.md) | 리빙 스펙 기반 멀티에이전트 개발 워크스페이스 — 코디네이터-스페셜리스트-검증자 3에이전트 구조, git worktree 격리, Cursor/Claude Code/Kiro 역할 분담 |
 
 ### 주제별 가이드
 
@@ -524,6 +526,10 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 에이전트 기반 개발자 일상 워크플로우 자동화](./workflows/ai-developer-workflow-automation.md) | 코드 리뷰, 온콜, 스프린트 기획 등 반복 워크플로우를 AI로 자동화해 집중 코딩 시간 확보 |
 | [AI 에이전트 기반 서버리스 앱 개발 워크플로우](./workflows/ai-serverless-development-workflow.md) | AWS Lambda/Vercel Functions 설계, 구현, 성능 최적화, 배포 — Cold Start 최소화, 비용 예측 |
 | [AI 에이전트 기반 ML 모델 배포](./workflows/ai-ml-model-deployment-workflow.md) | Hugging Face 모델을 AI 에이전트로 최적화하고 프로덕션 API 서버로 배포하는 단계별 워크플로우 |
+| [AI 코딩 에이전트 비용 절감 워크플로우](./workflows/ai-coding-cost-reduction-workflow.md) | 6개월 내 AI 코딩 도구 비용 40% 절감 — 모델 라우팅 최적화, 프롬프트 캐싱, 팀별 도구 선택, 사용량 모니터링 |
+| [AI 에이전트 기반 제품 출시 자동화](./workflows/ai-product-launch-automation.md) | 출시 전후 릴리스 노트 작성, 마케팅 카피 생성, 문서 동기화, 사용자 피드백 수집을 AI로 자동화 |
+| [AI 에이전트 기술 부채 탐지 및 우선순위화](./workflows/ai-tech-debt-detection-prioritization.md) | 기술 부채 자동 탐지, 비즈니스 임팩트 기반 우선순위화, 정적 분석 통합, 리팩토링 제안, 스프린트 계획 연동 |
+| [AI 에이전트 기반 주간 개발 리셋 워크플로우](./workflows/ai-weekly-dev-reset-workflow.md) | 코드 리뷰, PR 머지, 기술 부채 정리, 문서 업데이트를 일요일 밤 자동화 — 월요일 아침 바로 집중 코딩 시작 |
 
 ## 플레이북
 
@@ -596,6 +602,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [멀티 레포 워크스페이스 구성](./claude-code/playbooks/68-multi-repo-workspace-setup.md) | 여러 레포지터리 동시 작업 시 AI 에이전트 워크스페이스 체계적 구성 — CLAUDE.md 계층 구조, 크로스-레포 컨텍스트 공유 |
 | [풀스택 TypeScript 프로젝트 초기화](./claude-code/playbooks/69-fullstack-typescript-init-playbook.md) | Next.js App Router + tRPC + Prisma + Zod 스택을 AI 에이전트와 함께 처음부터 설정하는 플레이북 |
 | [기업 AI 코딩 도구 승인 플레이북](./claude-code/playbooks/70-enterprise-ai-tool-approval-playbook.md) | Shadow IT 탐지부터 안전한 도구 승인 워크플로우 구축까지 — 도구 인벤토리, 리스크 등급화, CI/CD 게이트 |
+| [멀티 에이전트 병렬 코딩 플레이북](./claude-code/playbooks/71-multi-agent-parallel-coding-playbook.md) | Claude Code, Copilot, Cursor, Codex를 역할별로 분리해 동시 운용 — 처리 속도 3-5배 향상 실전 가이드 |
 | [AI 에이전트 보안 코드 리뷰 — SAST/DAST 자동화](./claude-code/playbooks/71-security-code-review-sast-dast.md) | Semgrep, Snyk, OWASP ZAP 연동으로 PR마다 보안 취약점 자동 탐지 및 수정 제안 생성 |
 | [AI 에이전트 마이크로프론트엔드 아키텍처](./claude-code/playbooks/72-micro-frontend-architecture-playbook.md) | Module Federation, 독립 배포, 팀별 기술 스택 분리, 공유 상태 관리를 AI 에이전트와 함께 설계 |
 | [AI 에이전트 코드 리뷰 자동화](./claude-code/playbooks/73-ai-code-review-automation-playbook.md) | AI 에이전트를 PR 리뷰 파이프라인에 통합하는 완전 플레이북 — 리뷰 기준 설정, GitHub Actions 연동, 품질 게이트 자동화 |
