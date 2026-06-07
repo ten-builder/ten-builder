@@ -614,6 +614,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 에이전트 코드 리뷰 자동화](./claude-code/playbooks/73-ai-code-review-automation-playbook.md) | AI 에이전트를 PR 리뷰 파이프라인에 통합하는 완전 플레이북 — 리뷰 기준 설정, GitHub Actions 연동, 품질 게이트 자동화 |
 | [VS Code Agents 창 기반 AI 개발](./claude-code/playbooks/74-vscode-agents-window-playbook.md) | Agent 창으로 에이전트 퍼스트 개발 — 에이전트 시작, 파일 탐색, 빌드 자동화, 에러 수정 루프 |
 | [AI 에이전트 번들 최적화 & 코드 스플리팅](./claude-code/playbooks/75-bundle-optimization-code-splitting-playbook.md) | Next.js/Vite/React 번들 분석, 동적 임포트, Tree Shaking 자동화 — Lighthouse 점수 20점 이상 향상 |
+| [AI 에이전트 API-First 개발](./claude-code/playbooks/76-api-first-development-playbook.md) | OpenAPI 스펙 주도 설계, Mock 서버, 계약 테스트, 클라이언트 SDK 자동 생성까지 API 개발 전 단계 자동화 |
+| [AI 생성 코드 보안 검토](./claude-code/playbooks/77-ai-generated-code-security-review.md) | Semgrep + AI 리뷰 에이전트로 PR마다 보안 취약점을 자동 탐지하고 수정하는 파이프라인 |
 
 ## 템플릿
 
