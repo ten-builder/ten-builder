@@ -23,9 +23,9 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 ```mermaid
 flowchart TD
     R["ten-builder"] --> G["guides/\n125개 단계별 가이드\n+ 주제별 가이드"]
-    R --> E["episodes/\n29개 영상 코드"]
+    R --> E["episodes/\n30개 영상 코드"]
     R --> C["cheatsheets/\n83개 원페이저"]
-    R --> EX["examples/\n42개 실전 예제"]
+    R --> EX["examples/\n46개 실전 예제"]
     R --> W["workflows/\n73개 자동화 워크플로"]
     R --> P["claude-code/playbooks/\n72개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
@@ -408,6 +408,9 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [Claude Opus 4.8 개발자 치트시트](./cheatsheets/claude-opus-48-developer-cheatsheet.md) | 미드-컨버세이션 시스템 메시지, Dynamic Workflows, Fast Mode, Effort Control, 프롬프트 캐싱 변경사항 |
 | [Claude Code 라이브 앱 프리뷰 & 데브 서버 연동](./cheatsheets/claude-code-live-app-preview-cheatsheet.md) | launch.json 설정, 자동 감지 프레임워크, 멀티 서비스 연동, 오류 디버깅, 원격 프리뷰 한 페이지 정리 |
 | [AI 에이전트 멀티태스킹 패턴](./cheatsheets/ai-agent-multitasking-patterns-cheatsheet.md) | 여러 AI 에이전트 동시 운영 시 git worktree 활용, 에이전트 간 통신, 충돌 방지, 비용 최적화 패턴 |
+| [AI 에이전트 프레임워크 비교 2026](./cheatsheets/ai-agent-frameworks-comparison-2026-cheatsheet.md) | LangGraph vs CrewAI vs OpenAI Agents SDK vs Google ADK vs PydanticAI — 선택 기준, 성능, 러닝커브, 프로덕션 준비도 |
+| [AI 코딩 도구 비교 2026](./cheatsheets/ai-coding-tools-comparison-2026.md) | GitHub Copilot 이후 주요 AI 코딩 어시스턴트 한 페이지 비교 |
+| [Codex Cloud Agent](./cheatsheets/codex-cloud-agent-cheatsheet.md) | ChatGPT·Slack·GitHub에서 태스크를 비동기로 디스패치하고 PR을 자동 생성하는 Codex Cloud Agent 워크플로우 |
 
 ## 실전 예제
 
@@ -460,6 +463,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI Python 프로젝트 현대화](./examples/ai-python-modernization) | pip+requirements.txt → uv, Ruff, pyproject.toml 현대 스택으로 AI 에이전트가 자동 전환하는 예제 |
 | [AI 코드 품질 대시보드](./examples/ai-code-quality-dashboard) | SonarQube, ESLint, TypeScript 컴파일러 결과를 집계해 팀 코드 품질 트렌드를 실시간 시각화하는 Next.js 대시보드 |
 | [AI 실시간 알림 시스템](./examples/ai-notification-system) | Claude API + WebSocket + Redis로 구현하는 실시간 알림 — 이벤트 기반, 우선순위 큐, 모바일 푸시 연동 |
+| [AI 실시간 데이터 파이프라인](./examples/ai-realtime-data-pipeline) | Kafka + Python + Claude API로 실시간 이벤트 스트림을 처리하는 데이터 파이프라인 예제 |
 
 ## 워크플로
 
