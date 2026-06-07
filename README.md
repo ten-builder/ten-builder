@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n122개 단계별 가이드\n+ 주제별 가이드"]
-    R --> E["episodes/\n30개 영상 코드"]
-    R --> C["cheatsheets/\n80개 원페이저"]
-    R --> EX["examples/\n47개 실전 예제"]
+    R["ten-builder"] --> G["guides/\n125개 단계별 가이드\n+ 주제별 가이드"]
+    R --> E["episodes/\n29개 영상 코드"]
+    R --> C["cheatsheets/\n83개 원페이저"]
+    R --> EX["examples/\n42개 실전 예제"]
     R --> W["workflows/\n73개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n71개 심화 플레이북"]
+    R --> P["claude-code/playbooks/\n72개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -275,6 +275,9 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 120 | [Warp 2026 실전 가이드](./guides/120-warp-agentic-terminal-practical-guide-2026.md) | 에이전트 모드, 병렬 에이전트, MCP 연동, Claude Code 조합 — 에이전틱 개발 환경으로 진화한 Warp 터미널 완전 정복 |
 | 121 | [Augment Intent 실전 가이드 2026](./guides/121-augment-intent-ide-practical-guide-2026.md) | 리빙 스펙 기반 멀티에이전트 개발 워크스페이스 — 코디네이터-스페셜리스트-검증자 3에이전트 구조, git worktree 격리, Cursor/Claude Code/Kiro 역할 분담 |
 | 122 | [Claude Code Week 31 실전 가이드](./guides/122-claude-code-week31-features-guide.md) | Opus 4.8 Dynamic Workflows, Fast Mode 실전 활용 — ultracode 트리거, /effort 기본값 저장, 백그라운드 세션 안정화, 병렬 툴 독립 실행, MCP 보안 개선 총정리 |
+| 123 | [AI 에이전트 기반 경쟁 인텔리전스 자동화 가이드](./guides/123-ai-competitive-intelligence-automation-guide.md) | 경쟁사 업데이트, 업계 벤치마크, GitHub 트렌드를 AI 에이전트로 자동 수집하고 요약하는 실전 전략 |
+| 124 | [하네스 엔지니어링 실전 가이드 2026](./guides/124-harness-engineering-practical-guide-2026.md) | 프롬프트 대신 환경을 설계하는 AI 코딩의 새 패러다임 — Model/Harness/Surfaces 구조 실전 구현 |
+| 125 | [엔터프라이즈 AI 에이전트 도입 실전 가이드 2026](./guides/125-enterprise-ai-agent-adoption-guide.md) | 팀 단위 AI 코딩 에이전트 도입 장벽 — 보안 심사, 승인 프로세스, 단계별 롤아웃 전략 |
 
 ### 주제별 가이드
 
@@ -523,6 +526,8 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 에이전트 기반 웹 접근성 자동화](./workflows/ai-accessibility-automation.md) | WCAG 2.2 오류 자동 감지 & 수정 — axe-core 통합, 스크린리더 테스트, 키보드 탐색 검증 |
 | [AI 에이전트 프로덕션 배포 워크플로우](./workflows/ai-agent-production-deployment.md) | AI 에이전트가 작성한 코드의 프로덕션 배포 — 단계적 롤아웃, 자동 롤백, 모니터링 통합 |
 | [AI 에이전트 프로덕션 워크플로 패턴 2026](./workflows/ai-agent-production-workflow-patterns.md) | 팀 컨텍스트 품질 향상으로 PR 리드타임 25% 단축 — 컨텍스트-퍼스트 PR, CLAUDE.md 버전 관리, AI 게이트 CI/CD |
+| [AI 에이전트 주간 보안 감사](./workflows/ai-weekly-security-audit-workflow.md) | 코드베이스 취약점을 AI 에이전트로 매주 자동 탐지하고 수정 PR까지 자동 생성하는 파이프라인 |
+| [멀티 에이전트 코딩 조율 워크플로우](./workflows/ai-multi-agent-coordination-workflow.md) | 여러 AI 에이전트가 같은 저장소에서 충돌 없이 병렬 개발하는 조율 워크플로우 |
 | [AI 에이전트 코드 문서화 자동화](./workflows/ai-code-documentation-automation.md) | README, API 레퍼런스, 아키텍처 다이어그램, 변경 로그를 AI로 자동 생성하고 최신 상태 유지 |
 | [AI 에이전트 기반 개발자 일상 워크플로우 자동화](./workflows/ai-developer-workflow-automation.md) | 코드 리뷰, 온콜, 스프린트 기획 등 반복 워크플로우를 AI로 자동화해 집중 코딩 시간 확보 |
 | [AI 에이전트 기반 서버리스 앱 개발 워크플로우](./workflows/ai-serverless-development-workflow.md) | AWS Lambda/Vercel Functions 설계, 구현, 성능 최적화, 배포 — Cold Start 최소화, 비용 예측 |
