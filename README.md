@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n125개 단계별 가이드\n+ 주제별 가이드"]
+    R["ten-builder"] --> G["guides/\n129개 단계별 가이드\n+ 주제별 가이드"]
     R --> E["episodes/\n30개 영상 코드"]
-    R --> C["cheatsheets/\n83개 원페이저"]
-    R --> EX["examples/\n46개 실전 예제"]
-    R --> W["workflows/\n73개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n72개 심화 플레이북"]
+    R --> C["cheatsheets/\n86개 원페이저"]
+    R --> EX["examples/\n48개 실전 예제"]
+    R --> W["workflows/\n72개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n74개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -278,6 +278,10 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 123 | [AI 에이전트 기반 경쟁 인텔리전스 자동화 가이드](./guides/123-ai-competitive-intelligence-automation-guide.md) | 경쟁사 업데이트, 업계 벤치마크, GitHub 트렌드를 AI 에이전트로 자동 수집하고 요약하는 실전 전략 |
 | 124 | [하네스 엔지니어링 실전 가이드 2026](./guides/124-harness-engineering-practical-guide-2026.md) | 프롬프트 대신 환경을 설계하는 AI 코딩의 새 패러다임 — Model/Harness/Surfaces 구조 실전 구현 |
 | 125 | [엔터프라이즈 AI 에이전트 도입 실전 가이드 2026](./guides/125-enterprise-ai-agent-adoption-guide.md) | 팀 단위 AI 코딩 에이전트 도입 장벽 — 보안 심사, 승인 프로세스, 단계별 롤아웃 전략 |
+| 126 | [Claude Managed Agents 실전 가이드 2026](./guides/126-claude-managed-agents-practical-guide-2026.md) | 에이전트 생성, 멀티에이전트 오케스트레이션, Outcomes, Webhooks, Dreaming 단계별 실전 예제 |
+| 127 | [Claude Code 메모리 시스템 실전 가이드 2026](./guides/127-claude-code-memory-system-guide-2026.md) | Auto Memory, MEMORY.md, CLAUDE.md 세 가지 레이어 셋업 4단계, 팀 메모리 공유, 실전 패턴 |
+| 128 | [Claude Code Week 32 실전 가이드](./guides/128-claude-code-week32-features-guide.md) | Opus 4.8 Dynamic Workflows 심화, Mid-Conversation 시스템 메시지 패턴, Fast Mode, Effort Control |
+| 129 | [Claude Code Week 33 실전 가이드](./guides/129-claude-code-week33-features-guide.md) | 2026년 6월 8~12일 릴리스 핵심 업데이트 — 비동기 태스크 큐, 플러그인 v2 API, 워크스페이스 공유 |
 
 ### 주제별 가이드
 
@@ -411,6 +415,9 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 에이전트 프레임워크 비교 2026](./cheatsheets/ai-agent-frameworks-comparison-2026-cheatsheet.md) | LangGraph vs CrewAI vs OpenAI Agents SDK vs Google ADK vs PydanticAI — 선택 기준, 성능, 러닝커브, 프로덕션 준비도 |
 | [AI 코딩 도구 비교 2026](./cheatsheets/ai-coding-tools-comparison-2026.md) | GitHub Copilot 이후 주요 AI 코딩 어시스턴트 한 페이지 비교 |
 | [Codex Cloud Agent](./cheatsheets/codex-cloud-agent-cheatsheet.md) | ChatGPT·Slack·GitHub에서 태스크를 비동기로 디스패치하고 PR을 자동 생성하는 Codex Cloud Agent 워크플로우 |
+| [Claude Code 주간 한도 50% 증가 활용](./cheatsheets/claude-code-rate-limit-boost-2026-cheatsheet.md) | 7월 13일까지 한시적 50% 증가 기간 활용 전략 — 플랜별 전략, Hook 낭비 방지, 멀티에이전트 병렬 작업 |
+| [AI 코딩 도구 2026 하반기 비교](./cheatsheets/ai-coding-tools-h2-2026-comparison-cheatsheet.md) | Claude Code, Antigravity, Codex CLI, Cursor, Cline 5대 도구 요금제 및 컨텍스트 크기 비교 |
+| [AI 에이전트 코드 품질 지표 2026](./cheatsheets/ai-code-quality-metrics-2026-cheatsheet.md) | DORA부터 AI Code Share, 코드 변동률, PR 사이클 타임 등 AI 시대 품질 측정 지표 한 페이지 정리 |
 
 ## 실전 예제
 
@@ -620,6 +627,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 에이전트 번들 최적화 & 코드 스플리팅](./claude-code/playbooks/75-bundle-optimization-code-splitting-playbook.md) | Next.js/Vite/React 번들 분석, 동적 임포트, Tree Shaking 자동화 — Lighthouse 점수 20점 이상 향상 |
 | [AI 에이전트 API-First 개발](./claude-code/playbooks/76-api-first-development-playbook.md) | OpenAPI 스펙 주도 설계, Mock 서버, 계약 테스트, 클라이언트 SDK 자동 생성까지 API 개발 전 단계 자동화 |
 | [AI 생성 코드 보안 검토](./claude-code/playbooks/77-ai-generated-code-security-review.md) | Semgrep + AI 리뷰 에이전트로 PR마다 보안 취약점을 자동 탐지하고 수정하는 파이프라인 |
+| [AI 에이전트 성능 회귀 테스트 자동화](./claude-code/playbooks/78-ai-performance-regression-testing.md) | k6, Lighthouse CI 통합, 임계값 기반 자동 롤백으로 프로덕션 배포 전 성능 회귀를 탐지하는 플레이북 |
 
 ## 템플릿
 
