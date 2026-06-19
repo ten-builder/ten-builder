@@ -22,12 +22,12 @@ Claude Code, Gemini 등 AI를 실무에서 직접 써보고 검증한 내용을 
 
 ```mermaid
 flowchart TD
-    R["ten-builder"] --> G["guides/\n99개 단계별 가이드\n+ 주제별 가이드"]
-    R --> E["episodes/\n22개 영상 코드"]
-    R --> C["cheatsheets/\n67개 원페이저"]
-    R --> EX["examples/\n45개 실전 예제"]
-    R --> W["workflows/\n59개 자동화 워크플로"]
-    R --> P["claude-code/playbooks/\n59개 심화 플레이북"]
+    R["ten-builder"] --> G["guides/\n129개 단계별 가이드\n+ 주제별 가이드"]
+    R --> E["episodes/\n30개 영상 코드"]
+    R --> C["cheatsheets/\n86개 원페이저"]
+    R --> EX["examples/\n48개 실전 예제"]
+    R --> W["workflows/\n72개 자동화 워크플로"]
+    R --> P["claude-code/playbooks/\n74개 심화 플레이북"]
     R --> T["templates/\n설정 파일 & 스크립트"]
     R --> S["skills/\n3개 Claude Code 스킬"]
 
@@ -44,7 +44,7 @@ flowchart TD
 
 | 폴더 | 내용 | 난이도 |
 |------|------|--------|
-| [`/guides`](./guides) | 1~99 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
+| [`/guides`](./guides) | 1~112 단계별 + 주제별 실전 가이드 | ⭐⭐⭐ |
 | [`/episodes`](./episodes) | 영상별 코드 & 스크립트 | ⭐⭐ |
 | [`/cheatsheets`](./cheatsheets) | 원페이저 치트시트 | ⭐ |
 | [`/examples`](./examples) | 프로젝트별 실전 예제 | ⭐⭐ |
@@ -252,12 +252,43 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | 97 | [Ralph Wiggum 패턴 — 단발 프롬프트에서 자율 에이전트 루프로](./guides/97-ralph-wiggum-autonomous-agent-loop.md) | 자율 에이전트 루프 설계, 종료 조건, 에러 복구, CLAUDE.md 패턴 실전 가이드 |
 | 98 | [claude agents 디스패치 플래그 실전 가이드 2026](./guides/98-claude-agents-dispatch-flags-guide.md) | --settings, --add-dir, --mcp-config, --plugin-dir, --permission-mode, --model, --effort 플래그로 서브에이전트 환경 일관 제어 |
 | 99 | [Claude Code Agent View 실전 가이드 2026](./guides/99-claude-code-agent-view-guide.md) | Agent View 슈퍼바이저 아키텍처, 병렬 에이전트 워크플로우, Peek 패널, 워크트리 자동 격리, settings.autoMode |
+| 100 | [Claude Code Week 25 실전 가이드](./guides/100-claude-code-week25-features-guide.md) | /autofix-pr 자동화, Managed Agents 3종 업데이트, 멀티에이전트 세션 관리 — v2.1.146~v2.1.150 |
+| 101 | [AI 코딩 에이전트 기업 도입 거버넌스 가이드 2026](./guides/101-enterprise-ai-coding-governance-guide.md) | 도구 승인 프로세스, 코드 리뷰 정책, 데이터 분류, 감사 추적 — 팀 크기별 도입 로드맵 |
+| 102 | [Zencoder + ZenFlow 실전 가이드 2026](./guides/102-zencoder-zenflow-practical-guide-2026.md) | 코딩 바깥의 75%를 AI로 자동화 — 플래닝, 코드 리뷰, 보고, 커뮤니케이션, 100+ MCP 도구 연동 |
+| 103 | [OpenAI Agents SDK 실전 가이드 2026](./guides/103-openai-agents-sdk-practical-guide-2026.md) | SandboxAgent, 서브에이전트 핸드오프, MCP 1등 지원 — 설치부터 프로덕션 배포까지 |
+| 104 | [에이전틱 테스팅 완전 가이드 2026](./guides/104-agentic-testing-automation-guide-2026.md) | AI 에이전트가 커버리지 공백을 찾고 셀프힐링 테스트를 자율 실행하는 새 테스팅 패러다임 |
+| 105 | [Code with Claude 2026 신기능 실전 가이드](./guides/105-code-with-claude-2026-agent-features-guide.md) | 관리형 에이전트, Dreaming 자기 개선, Outcomes 품질 검증, Routines 자동화 — 4가지 핵심 신기능 정리 |
+| 106 | [Claude Code Week 26 실전 가이드](./guides/106-claude-code-week26-features-guide.md) | 2026년 5월 19~23일 릴리스 핵심 업데이트 — Code with Claude 2026 이후 공개된 신기능 총정리 |
+| 107 | [Claude Code Week 27 실전 가이드](./guides/107-claude-code-week27-features-guide.md) | 2026년 5월 21~23일 릴리스 최신 업데이트 총정리 |
+| 108 | [Claude Code Week 28 실전 가이드](./guides/108-claude-code-week28-features-guide.md) | 2026년 5월 26~28일 최신 업데이트 — 멀티에이전트 오케스트레이션 개선, 새 API 기능 총정리 |
+| 109 | [Cline VS Code AI 코딩 에이전트 실전 가이드 2026](./guides/109-cline-vscode-agent-guide-2026.md) | 설치, 멀티 LLM 지원, Plan/Act 모드, MCP 연동, Claude Code 비교 — VS Code 오픈소스 에이전트 완전 가이드 |
+| 110 | [Claude Code Week 29 실전 가이드](./guides/110-claude-code-week29-features-guide.md) | 핀 백그라운드 세션 유지, continueOnBlock 훅, /code-review 개편, terminalSequence 알림 총정리 |
+| 111 | [Devin 2.0 실전 가이드 2026](./guides/111-devin2-practical-guide-2026.md) | $20/월로 쓰는 자율 AI 소프트웨어 엔지니어 — Interactive Planning, Devin Wiki, Devin Search와 Claude Code 역할 분담 |
+| 112 | [AI 코딩 에이전트 자율성 5단계 가이드 2026](./guides/112-ai-coding-agent-autonomy-levels-guide.md) | Swarmia 5단계 자율성 분류 기반 Level 1~5 단계별 실전 사례, 측정 지표, 선택 기준 |
+| 113 | [AI 코딩 에이전트 2026 하반기 전망 가이드](./guides/113-ai-coding-2026-h2-outlook-guide.md) | 자율성 레벨 업그레이드, 멀티에이전트 팀, 컨텍스트 엔지니어링 심화, 에이전틱 테스팅, 거버넌스 성숙 5가지 핵심 트렌드 |
+| 114 | [LangGraph 멀티에이전트 워크플로우 실전 가이드 2026](./guides/114-langgraph-multi-agent-workflow-guide-2026.md) | 상태 기반 멀티에이전트 설계 — 노드, 엣지, 조건부 라우팅, 서브그래프, Claude API 연동 |
+| 115 | [Claude Code Week 30 실전 가이드](./guides/115-claude-code-week30-features-guide.md) | /ultrareview, 웹 버전 재설계, 세션 요약 기능, 커스텀 테마 개선 총정리 |
+| 116 | [Google ADK 실전 가이드 2026](./guides/116-google-adk-practical-guide-2026.md) | 오픈소스 멀티에이전트 프레임워크 — 설치, Vertex AI 배포, OpenAI Agents SDK 비교 |
+| 117 | [CrewAI 실전 가이드 2026](./guides/117-crewai-multi-agent-practical-guide-2026.md) | 역할 기반 멀티에이전트 설계 — Agents, Tasks, Tools, Flows, FastAPI 래핑 완전 가이드 |
+| 118 | [PydanticAI 실전 가이드 2026](./guides/118-pydantic-ai-practical-guide-2026.md) | 타입 안전 에이전트 프레임워크 — RunContext, 구조화된 출력, 멀티에이전트 파이프라인, FastAPI 통합 |
+| 119 | [Antigravity CLI 실전 가이드 2026](./guides/119-antigravity-cli-practical-guide-2026.md) | Gemini CLI를 대체하는 Google 터미널 에이전트 — Gemini CLI 마이그레이션, 동적 서브에이전트, Hooks 자동화 |
+| 120 | [Warp 2026 실전 가이드](./guides/120-warp-agentic-terminal-practical-guide-2026.md) | 에이전트 모드, 병렬 에이전트, MCP 연동, Claude Code 조합 — 에이전틱 개발 환경으로 진화한 Warp 터미널 완전 정복 |
+| 121 | [Augment Intent 실전 가이드 2026](./guides/121-augment-intent-ide-practical-guide-2026.md) | 리빙 스펙 기반 멀티에이전트 개발 워크스페이스 — 코디네이터-스페셜리스트-검증자 3에이전트 구조, git worktree 격리, Cursor/Claude Code/Kiro 역할 분담 |
+| 122 | [Claude Code Week 31 실전 가이드](./guides/122-claude-code-week31-features-guide.md) | Opus 4.8 Dynamic Workflows, Fast Mode 실전 활용 — ultracode 트리거, /effort 기본값 저장, 백그라운드 세션 안정화, 병렬 툴 독립 실행, MCP 보안 개선 총정리 |
+| 123 | [AI 에이전트 기반 경쟁 인텔리전스 자동화 가이드](./guides/123-ai-competitive-intelligence-automation-guide.md) | 경쟁사 업데이트, 업계 벤치마크, GitHub 트렌드를 AI 에이전트로 자동 수집하고 요약하는 실전 전략 |
+| 124 | [하네스 엔지니어링 실전 가이드 2026](./guides/124-harness-engineering-practical-guide-2026.md) | 프롬프트 대신 환경을 설계하는 AI 코딩의 새 패러다임 — Model/Harness/Surfaces 구조 실전 구현 |
+| 125 | [엔터프라이즈 AI 에이전트 도입 실전 가이드 2026](./guides/125-enterprise-ai-agent-adoption-guide.md) | 팀 단위 AI 코딩 에이전트 도입 장벽 — 보안 심사, 승인 프로세스, 단계별 롤아웃 전략 |
+| 126 | [Claude Managed Agents 실전 가이드 2026](./guides/126-claude-managed-agents-practical-guide-2026.md) | 에이전트 생성, 멀티에이전트 오케스트레이션, Outcomes, Webhooks, Dreaming 단계별 실전 예제 |
+| 127 | [Claude Code 메모리 시스템 실전 가이드 2026](./guides/127-claude-code-memory-system-guide-2026.md) | Auto Memory, MEMORY.md, CLAUDE.md 세 가지 레이어 셋업 4단계, 팀 메모리 공유, 실전 패턴 |
+| 128 | [Claude Code Week 32 실전 가이드](./guides/128-claude-code-week32-features-guide.md) | Opus 4.8 Dynamic Workflows 심화, Mid-Conversation 시스템 메시지 패턴, Fast Mode, Effort Control |
+| 129 | [Claude Code Week 33 실전 가이드](./guides/129-claude-code-week33-features-guide.md) | 2026년 6월 8~12일 릴리스 핵심 업데이트 — 비동기 태스크 큐, 플러그인 v2 API, 워크스페이스 공유 |
 
 ### 주제별 가이드
 
 | 가이드 | 설명 |
 |--------|------|
 | [PDF 구조화 & 카드 관리](./guides/pdf-card-management.md) | PDF를 마크다운으로 구조화하고 요약 카드를 관리하는 방법 |
+| [A2A + MCP 통합 실전 가이드](./guides/51-a2a-mcp-integration.md) | 에이전트 간 통신(A2A)과 도구 연결(MCP)을 함께 활용하는 실전 패턴 |
 
 ## 에피소드별 코드
 
@@ -285,6 +316,14 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | EP20 | Claude Code 데스크탑 재설계로 풀스택 병렬 개발하기 | [`/episodes/EP20-claude-code-desktop-parallel`](./episodes/EP20-claude-code-desktop-parallel) |
 | EP21 | AI 에이전트 메모리 시스템 라이브 빌드 — Mem0 기반 상태 지속 시스템 | [`/episodes/EP21-ai-agent-memory-live`](./episodes/EP21-ai-agent-memory-live) |
 | EP22 | Claude Code로 팀 온보딩 30분 만에 끝내기 — /powerup, AGENTS.md 팀 설정 | [`/episodes/EP22-team-onboarding-live`](./episodes/EP22-team-onboarding-live) |
+| EP23 | Zencoder ZenFlow로 스펙 주도 개발 실전 — 플래닝부터 배포까지 | [`/episodes/EP23-zenflow-spec-driven-live`](./episodes/EP23-zenflow-spec-driven-live) |
+| EP24 | OpenAI Agents SDK로 자율 코드 리뷰 봇 만들기 — SandboxAgent와 핸드오프로 PR 품질 자동 검증 | [`/episodes/EP24-openai-agents-sdk-review-bot`](./episodes/EP24-openai-agents-sdk-review-bot) |
+| EP25 | 에이전틱 AI 보안 실전 — OWASP 취약점 공격과 방어 라이브 코딩 | [`/episodes/EP25-agentic-ai-security-live`](./episodes/EP25-agentic-ai-security-live) |
+| EP26 | AI 에이전트로 실시간 스트리밍 앱 만들기 — WebSocket + Redis | [`/episodes/EP26-realtime-streaming-app`](./episodes/EP26-realtime-streaming-app) |
+| EP27 | AI 에이전트로 Rust 백엔드 처음부터 만들기 — Axum 실전 | [`/episodes/EP27-rust-axum-backend-live`](./episodes/EP27-rust-axum-backend-live) |
+| EP28 | AI 에이전트 팀으로 SaaS 대시보드 빌드하기 — 멀티에이전트 협업 실전 | [`/episodes/EP28-multi-agent-saas-dashboard`](./episodes/EP28-multi-agent-saas-dashboard) |
+| EP29 | Cline + Claude API로 풀스택 앱 처음부터 만들기 — VS Code 에이전트 실전 | [`/episodes/EP29-cline-fullstack-live`](./episodes/EP29-cline-fullstack-live) |
+| EP30 | MCP 서버 10개 실시간 연동 — GitHub, Linear, Slack, Sentry 완전 통합 | [`/episodes/EP30-mcp-server-setup-live`](./episodes/EP30-mcp-server-setup-live) |
 
 ## 치트시트
 
@@ -358,6 +397,27 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 에이전트 프롬프트 디버깅](./cheatsheets/ai-prompt-debugging-cheatsheet.md) | 결과가 이상할 때 바로 쓰는 패턴 — 컨텍스트 누수, 모호한 지시, 모델 착각 유형별 대응 |
 | [Claude Code Week 23 신기능 설정](./cheatsheets/claude-code-week23-settings-cheatsheet.md) | /powerup 대화형 레슨, worktree.baseRef, 오프라인 캐시 활용 가이드 |
 | [컨텍스트 엔지니어링 필드 가이드](./cheatsheets/context-engineering-field-guide-cheatsheet.md) | 2026년 프롬프트 엔지니어링 대체 핵심 스킬 — 5가지 컨텍스트 레이어, CLAUDE.md 최적화, 상황별 설계 패턴 |
+| [AI 비용 모니터링 2026](./cheatsheets/ai-cost-monitoring-2026-cheatsheet.md) | Claude Code·Cursor·Gemini CLI 월별 비용 실시간 추적, 예산 초과 자동 차단 패턴 |
+| [AI 에이전트 파이프라인 디버깅](./cheatsheets/ai-agent-pipeline-debugging-cheatsheet.md) | 멀티에이전트 파이프라인 실패 시 원인 빠르게 찾고 수정하는 단계별 패턴 |
+| [OWASP 에이전틱 AI 보안 취약점](./cheatsheets/owasp-agentic-ai-security-cheatsheet-2026.md) | OWASP LLM Top 10 + 에이전트 특화 위협 — AI 코딩 에이전트 보안 취약점 한 페이지 정리 |
+| [AI 에이전트 비상 정지 및 복구](./cheatsheets/ai-agent-emergency-stop-cheatsheet.md) | 자율 에이전트 루프 탈출·예산 초과·의도치 않은 결과 시 즉시 개입하는 kill switch & 롤백 패턴 |
+| [AI 에이전트 멀티모달 입력 활용](./cheatsheets/ai-agent-multimodal-coding-cheatsheet.md) | 스크린샷·다이어그램·PDF를 Claude Code와 Gemini CLI에 효과적으로 활용하는 코딩 패턴 |
+| [A2A 프로토콜 치트시트](./cheatsheets/a2a-protocol-cheatsheet.md) | Google A2A 프로토콜 핵심 개념, 에이전트 카드, 태스크 생명주기, MCP와의 차이점 한 페이지 정리 |
+| [AI 에이전트 프롬프트 최적화 2026](./cheatsheets/ai-prompt-optimization-2026-cheatsheet.md) | 토큰 낭비 없이 고품질 출력을 얻는 패턴 — 역할 프레이밍, 체인 오브 씽킹, Few-shot, 출력 형식 전략 |
+| [Claude Code /autofix-pr](./cheatsheets/claude-code-autofix-pr-cheatsheet.md) | CI 실패와 리뷰 코멘트를 자동 수정하는 패턴 — 기본 사용법, CI 유형별 성공률, CLAUDE.md 설정 |
+| [AI 에이전트 코드 품질 워크플로우 2026](./cheatsheets/ai-agent-code-quality-workflow-cheatsheet.md) | 품질 게이트 자동화, 리뷰 패턴, 테스트 커버리지 유지 전략 한 페이지 정리 |
+| [MCP 서버 생태계 2026](./cheatsheets/mcp-server-ecosystem-2026-cheatsheet.md) | 카테고리별 필수 MCP 서버 50개 이상 정리 — GitHub, Linear, Playwright, Figma, Sentry 등 |
+| [AI 코딩 에이전트 가격 모델 비교 2026](./cheatsheets/ai-coding-agent-pricing-2026-cheatsheet.md) | 구독제 vs 사용량 기반, 토큰 효율, 팀 규모별 비용 최적화, ROI 계산 한 페이지 정리 |
+| [AI 코딩 도구 2026 상반기 총정리](./cheatsheets/ai-coding-tools-h1-2026-comparison-cheatsheet.md) | Claude Code, Cursor, Copilot, Gemini CLI 등 주요 6개 도구 SWE-bench 점수, 가격, 장단점 비교 |
+| [Claude Opus 4.8 개발자 치트시트](./cheatsheets/claude-opus-48-developer-cheatsheet.md) | 미드-컨버세이션 시스템 메시지, Dynamic Workflows, Fast Mode, Effort Control, 프롬프트 캐싱 변경사항 |
+| [Claude Code 라이브 앱 프리뷰 & 데브 서버 연동](./cheatsheets/claude-code-live-app-preview-cheatsheet.md) | launch.json 설정, 자동 감지 프레임워크, 멀티 서비스 연동, 오류 디버깅, 원격 프리뷰 한 페이지 정리 |
+| [AI 에이전트 멀티태스킹 패턴](./cheatsheets/ai-agent-multitasking-patterns-cheatsheet.md) | 여러 AI 에이전트 동시 운영 시 git worktree 활용, 에이전트 간 통신, 충돌 방지, 비용 최적화 패턴 |
+| [AI 에이전트 프레임워크 비교 2026](./cheatsheets/ai-agent-frameworks-comparison-2026-cheatsheet.md) | LangGraph vs CrewAI vs OpenAI Agents SDK vs Google ADK vs PydanticAI — 선택 기준, 성능, 러닝커브, 프로덕션 준비도 |
+| [AI 코딩 도구 비교 2026](./cheatsheets/ai-coding-tools-comparison-2026.md) | GitHub Copilot 이후 주요 AI 코딩 어시스턴트 한 페이지 비교 |
+| [Codex Cloud Agent](./cheatsheets/codex-cloud-agent-cheatsheet.md) | ChatGPT·Slack·GitHub에서 태스크를 비동기로 디스패치하고 PR을 자동 생성하는 Codex Cloud Agent 워크플로우 |
+| [Claude Code 주간 한도 50% 증가 활용](./cheatsheets/claude-code-rate-limit-boost-2026-cheatsheet.md) | 7월 13일까지 한시적 50% 증가 기간 활용 전략 — 플랜별 전략, Hook 낭비 방지, 멀티에이전트 병렬 작업 |
+| [AI 코딩 도구 2026 하반기 비교](./cheatsheets/ai-coding-tools-h2-2026-comparison-cheatsheet.md) | Claude Code, Antigravity, Codex CLI, Cursor, Cline 5대 도구 요금제 및 컨텍스트 크기 비교 |
+| [AI 에이전트 코드 품질 지표 2026](./cheatsheets/ai-code-quality-metrics-2026-cheatsheet.md) | DORA부터 AI Code Share, 코드 변동률, PR 사이클 타임 등 AI 시대 품질 측정 지표 한 페이지 정리 |
 
 ## 실전 예제
 
@@ -408,6 +468,9 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI GitHub App 코드 리뷰 봇](./examples/ai-github-app-reviewer) | PR 오픈 시 코드 품질, 보안, 테스트 커버리지를 자동 분석하고 인라인 코멘트를 남기는 GitHub App |
 | [AI 로그 이상 감지 시스템](./examples/ai-log-anomaly-detection) | OpenSearch RCF + Claude API로 대규모 서비스 로그의 이상 패턴을 실시간 감지하고 근본 원인 분석 |
 | [AI Python 프로젝트 현대화](./examples/ai-python-modernization) | pip+requirements.txt → uv, Ruff, pyproject.toml 현대 스택으로 AI 에이전트가 자동 전환하는 예제 |
+| [AI 코드 품질 대시보드](./examples/ai-code-quality-dashboard) | SonarQube, ESLint, TypeScript 컴파일러 결과를 집계해 팀 코드 품질 트렌드를 실시간 시각화하는 Next.js 대시보드 |
+| [AI 실시간 알림 시스템](./examples/ai-notification-system) | Claude API + WebSocket + Redis로 구현하는 실시간 알림 — 이벤트 기반, 우선순위 큐, 모바일 푸시 연동 |
+| [AI 실시간 데이터 파이프라인](./examples/ai-realtime-data-pipeline) | Kafka + Python + Claude API로 실시간 이벤트 스트림을 처리하는 데이터 파이프라인 예제 |
 
 ## 워크플로
 
@@ -474,6 +537,16 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 에이전트 기반 웹 접근성 자동화](./workflows/ai-accessibility-automation.md) | WCAG 2.2 오류 자동 감지 & 수정 — axe-core 통합, 스크린리더 테스트, 키보드 탐색 검증 |
 | [AI 에이전트 프로덕션 배포 워크플로우](./workflows/ai-agent-production-deployment.md) | AI 에이전트가 작성한 코드의 프로덕션 배포 — 단계적 롤아웃, 자동 롤백, 모니터링 통합 |
 | [AI 에이전트 프로덕션 워크플로 패턴 2026](./workflows/ai-agent-production-workflow-patterns.md) | 팀 컨텍스트 품질 향상으로 PR 리드타임 25% 단축 — 컨텍스트-퍼스트 PR, CLAUDE.md 버전 관리, AI 게이트 CI/CD |
+| [AI 에이전트 주간 보안 감사](./workflows/ai-weekly-security-audit-workflow.md) | 코드베이스 취약점을 AI 에이전트로 매주 자동 탐지하고 수정 PR까지 자동 생성하는 파이프라인 |
+| [멀티 에이전트 코딩 조율 워크플로우](./workflows/ai-multi-agent-coordination-workflow.md) | 여러 AI 에이전트가 같은 저장소에서 충돌 없이 병렬 개발하는 조율 워크플로우 |
+| [AI 에이전트 코드 문서화 자동화](./workflows/ai-code-documentation-automation.md) | README, API 레퍼런스, 아키텍처 다이어그램, 변경 로그를 AI로 자동 생성하고 최신 상태 유지 |
+| [AI 에이전트 기반 개발자 일상 워크플로우 자동화](./workflows/ai-developer-workflow-automation.md) | 코드 리뷰, 온콜, 스프린트 기획 등 반복 워크플로우를 AI로 자동화해 집중 코딩 시간 확보 |
+| [AI 에이전트 기반 서버리스 앱 개발 워크플로우](./workflows/ai-serverless-development-workflow.md) | AWS Lambda/Vercel Functions 설계, 구현, 성능 최적화, 배포 — Cold Start 최소화, 비용 예측 |
+| [AI 에이전트 기반 ML 모델 배포](./workflows/ai-ml-model-deployment-workflow.md) | Hugging Face 모델을 AI 에이전트로 최적화하고 프로덕션 API 서버로 배포하는 단계별 워크플로우 |
+| [AI 코딩 에이전트 비용 절감 워크플로우](./workflows/ai-coding-cost-reduction-workflow.md) | 6개월 내 AI 코딩 도구 비용 40% 절감 — 모델 라우팅 최적화, 프롬프트 캐싱, 팀별 도구 선택, 사용량 모니터링 |
+| [AI 에이전트 기반 제품 출시 자동화](./workflows/ai-product-launch-automation.md) | 출시 전후 릴리스 노트 작성, 마케팅 카피 생성, 문서 동기화, 사용자 피드백 수집을 AI로 자동화 |
+| [AI 에이전트 기술 부채 탐지 및 우선순위화](./workflows/ai-tech-debt-detection-prioritization.md) | 기술 부채 자동 탐지, 비즈니스 임팩트 기반 우선순위화, 정적 분석 통합, 리팩토링 제안, 스프린트 계획 연동 |
+| [AI 에이전트 기반 주간 개발 리셋 워크플로우](./workflows/ai-weekly-dev-reset-workflow.md) | 코드 리뷰, PR 머지, 기술 부채 정리, 문서 업데이트를 일요일 밤 자동화 — 월요일 아침 바로 집중 코딩 시작 |
 
 ## 플레이북
 
@@ -513,6 +586,7 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [에이전트 로컬 테스트](./claude-code/playbooks/36-ai-agent-local-testing.md) | AI 에이전트 로컬 테스트 환경 구축 |
 | [컨텍스트 윈도우 관리](./claude-code/playbooks/37-context-window-management.md) | 대규모 코드베이스 컨텍스트 윈도우 관리 |
 | [비용 최적화](./claude-code/playbooks/38-cost-optimization-playbook.md) | AI 코딩 에이전트 비용 최적화 실전 전략 |
+| [AI 의존성 업그레이드](./claude-code/playbooks/38-dependency-upgrade.md) | 레거시 의존성을 AI와 함께 안전하게 업그레이드 — 호환성 확인부터 회귀 테스트까지 |
 | [코드베이스 헬스체크](./claude-code/playbooks/39-codebase-health-check.md) | AI 에이전트로 코드베이스 종합 진단 |
 | [인텐트 기반 태스크 분해](./claude-code/playbooks/40-intent-based-task-decomposition.md) | AI 에이전트 인텐트 맵 & 의존성 그래프 기반 태스크 분해 |
 | [멀티 파일 동시 편집](./claude-code/playbooks/41-multi-file-coherent-editing.md) | AI 에이전트 멀티 파일 일관성 있는 동시 수정 전략 |
@@ -540,6 +614,20 @@ cd ten-builder/episodes/ep5-agent-teams-with-tmux
 | [AI 에이전트 상태 지속성 플레이북](./claude-code/playbooks/63-ai-agent-state-persistence-playbook.md) | 장시간 실행 에이전트의 상태를 체크포인트로 보존하고 복구하는 단계별 플레이북 |
 | [Claude Code 샌드박스 보안 설정](./claude-code/playbooks/64-sandbox-security-configuration.md) | bubblewrap 설정, 샌드박스 경로 커스터마이징, 권한 최소화, CI/CD 통합 실전 플레이북 |
 | [프론트엔드 성능 최적화](./claude-code/playbooks/65-frontend-performance-optimization.md) | Core Web Vitals, 번들 크기, 서버 응답 시간 AI 자동 최적화 플레이북 |
+| [멀티에이전트 세션 병렬 관리](./claude-code/playbooks/66-multitasking-agents-session-management.md) | 여러 Claude Code 에이전트를 동시에 병렬 실행할 때 세션 충돌 없이 작업을 완료하는 실전 플레이북 |
+| [AI 에이전트 코드 생성 품질 게이트 자동화](./claude-code/playbooks/67-ai-code-quality-gates.md) | AI 생성 코드를 Review Agent로 검증하는 패턴 — GitHub Actions 연동, 테스트 커버리지 게이트, 자동화 |
+| [멀티 레포 워크스페이스 구성](./claude-code/playbooks/68-multi-repo-workspace-setup.md) | 여러 레포지터리 동시 작업 시 AI 에이전트 워크스페이스 체계적 구성 — CLAUDE.md 계층 구조, 크로스-레포 컨텍스트 공유 |
+| [풀스택 TypeScript 프로젝트 초기화](./claude-code/playbooks/69-fullstack-typescript-init-playbook.md) | Next.js App Router + tRPC + Prisma + Zod 스택을 AI 에이전트와 함께 처음부터 설정하는 플레이북 |
+| [기업 AI 코딩 도구 승인 플레이북](./claude-code/playbooks/70-enterprise-ai-tool-approval-playbook.md) | Shadow IT 탐지부터 안전한 도구 승인 워크플로우 구축까지 — 도구 인벤토리, 리스크 등급화, CI/CD 게이트 |
+| [멀티 에이전트 병렬 코딩 플레이북](./claude-code/playbooks/71-multi-agent-parallel-coding-playbook.md) | Claude Code, Copilot, Cursor, Codex를 역할별로 분리해 동시 운용 — 처리 속도 3-5배 향상 실전 가이드 |
+| [AI 에이전트 보안 코드 리뷰 — SAST/DAST 자동화](./claude-code/playbooks/71-security-code-review-sast-dast.md) | Semgrep, Snyk, OWASP ZAP 연동으로 PR마다 보안 취약점 자동 탐지 및 수정 제안 생성 |
+| [AI 에이전트 마이크로프론트엔드 아키텍처](./claude-code/playbooks/72-micro-frontend-architecture-playbook.md) | Module Federation, 독립 배포, 팀별 기술 스택 분리, 공유 상태 관리를 AI 에이전트와 함께 설계 |
+| [AI 에이전트 코드 리뷰 자동화](./claude-code/playbooks/73-ai-code-review-automation-playbook.md) | AI 에이전트를 PR 리뷰 파이프라인에 통합하는 완전 플레이북 — 리뷰 기준 설정, GitHub Actions 연동, 품질 게이트 자동화 |
+| [VS Code Agents 창 기반 AI 개발](./claude-code/playbooks/74-vscode-agents-window-playbook.md) | Agent 창으로 에이전트 퍼스트 개발 — 에이전트 시작, 파일 탐색, 빌드 자동화, 에러 수정 루프 |
+| [AI 에이전트 번들 최적화 & 코드 스플리팅](./claude-code/playbooks/75-bundle-optimization-code-splitting-playbook.md) | Next.js/Vite/React 번들 분석, 동적 임포트, Tree Shaking 자동화 — Lighthouse 점수 20점 이상 향상 |
+| [AI 에이전트 API-First 개발](./claude-code/playbooks/76-api-first-development-playbook.md) | OpenAPI 스펙 주도 설계, Mock 서버, 계약 테스트, 클라이언트 SDK 자동 생성까지 API 개발 전 단계 자동화 |
+| [AI 생성 코드 보안 검토](./claude-code/playbooks/77-ai-generated-code-security-review.md) | Semgrep + AI 리뷰 에이전트로 PR마다 보안 취약점을 자동 탐지하고 수정하는 파이프라인 |
+| [AI 에이전트 성능 회귀 테스트 자동화](./claude-code/playbooks/78-ai-performance-regression-testing.md) | k6, Lighthouse CI 통합, 임계값 기반 자동 롤백으로 프로덕션 배포 전 성능 회귀를 탐지하는 플레이북 |
 
 ## 템플릿
 
